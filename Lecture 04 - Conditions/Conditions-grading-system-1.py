@@ -1,0 +1,6 @@
+x = int(input())
+if x >= 85: print('Excellent')
+elif x >= 75: print('Very Good')
+elif x >= 65: print('Good')
+elif x >= 50: print('Pass')
+else: print('Fail')
