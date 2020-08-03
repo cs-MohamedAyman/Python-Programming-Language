@@ -348,101 +348,101 @@ print("math.degrees(2*math.pi) :", math.degrees(2*math.pi))		#math.degrees(2*mat
 2- math.radians(x)
 Convert angle x from degrees to radians.
 '''
-print("math.radians(0) :", math.radians(0))					#math.radians(0) : 0.0
-print("math.radians(30) :", math.radians(30))				#math.radians(30) : 0.5235987755982988
-print("math.radians(45) :", math.radians(45))				#math.radians(45) : 0.7853981633974483
-print("math.radians(60) :", math.radians(60))				#math.radians(60) : 1.0471975511965976
-print("math.radians(90) :", math.radians(90))				#math.radians(90) : 1.5707963267948966
-print("math.radians(180) :", math.radians(180))				#math.radians(180) : 3.141592653589793
-print("math.radians(270) :", math.radians(270))				#math.radians(270) : 4.71238898038469
-print("math.radians(360) :", math.radians(360))				#math.radians(360) : 6.283185307179586
-'''
-#Trigonometric functions
-'''
-'''
-1- math.sin(x)
-Return the sine of x radians.
-'''
-print("math.sin(0) :", math.sin(0))							#math.sin(0) : 0.0
-print("math.sin(math.pi/6) :", math.sin(math.pi/6))			#math.sin(math.pi/6) : 0.49999999999999994
-print("math.sin(math.pi/4) :", math.sin(math.pi/4))			#math.sin(math.pi/4) : 0.7071067811865475
-print("math.sin(math.pi/3) :", math.sin(math.pi/3))			#math.sin(math.pi/3) : 0.8660254037844386
-print("math.sin(math.pi/2) :", math.sin(math.pi/2))			#math.sin(math.pi/2) : 1.0
-print("math.sin(math.pi) :", math.sin(math.pi))				#math.sin(math.pi) : 0.0
-print("math.sin(3*math.pi/2) :", math.sin(3*math.pi/2))		#math.sin(3*math.pi/2) : -1.0
-print("math.sin(2*math.pi) :", math.sin(2*math.pi))			#math.sin(2*math.pi) : 0.0
+print("math.radians(0) :", math.radians(0))						#math.radians(0) : 0.0
+print("math.radians(30) :", math.radians(30))					#math.radians(30) : 0.5235987755982988
+print("math.radians(45) :", math.radians(45))					#math.radians(45) : 0.7853981633974483
+print("math.radians(60) :", math.radians(60))					#math.radians(60) : 1.0471975511965976
+print("math.radians(90) :", math.radians(90))					#math.radians(90) : 1.5707963267948966
+print("math.radians(180) :", math.radians(180))					#math.radians(180) : 3.141592653589793
+print("math.radians(270) :", math.radians(270))					#math.radians(270) : 4.71238898038469
+print("math.radians(360) :", math.radians(360))					#math.radians(360) : 6.283185307179586
+'''	
+#Trigonometric functions	
+'''	
+'''	
+1- math.sin(x)	
+Return the sine of x radians.	
+'''	
+print("math.sin(0) :", math.sin(0))								#math.sin(0) : 0.0
+print("math.sin(math.pi/6) :", math.sin(math.pi/6))				#math.sin(math.pi/6) : 0.49999999999999994
+print("math.sin(math.pi/4) :", math.sin(math.pi/4))				#math.sin(math.pi/4) : 0.7071067811865475
+print("math.sin(math.pi/3) :", math.sin(math.pi/3))				#math.sin(math.pi/3) : 0.8660254037844386
+print("math.sin(math.pi/2) :", math.sin(math.pi/2))				#math.sin(math.pi/2) : 1.0
+print("math.sin(math.pi) :", math.sin(math.pi))					#math.sin(math.pi) : 0.0
+print("math.sin(3*math.pi/2) :", math.sin(3*math.pi/2))			#math.sin(3*math.pi/2) : -1.0
+print("math.sin(2*math.pi) :", math.sin(2*math.pi))				#math.sin(2*math.pi) : 0.0
 '''
 2- math.cos(x)
 Return the cosine of x radians.
 '''
-print("math.cos(0) :", math.cos(0))							#math.cos(0) : 1.0
-print("math.cos(math.pi/6) :", math.cos(math.pi/6))			#math.cos(math.pi/6) : 0.8660254037844387
-print("math.cos(math.pi/4) :", math.cos(math.pi/4))			#math.cos(math.pi/4) : 0.7071067811865476
-print("math.cos(math.pi/3) :", math.cos(math.pi/3))			#math.cos(math.pi/3) : 0.5000000000000001
-print("math.cos(math.pi/2) :", math.cos(math.pi/2))			#math.cos(math.pi/2) : 0.0
-print("math.cos(math.pi) :", math.cos(math.pi))				#math.cos(math.pi) : -1.0
-print("math.cos(3*math.pi/2) :", math.cos(3*math.pi/2))		#math.cos(3*math.pi/2) : 0.0
-print("math.cos(2*math.pi) :", math.cos(2*math.pi))			#math.cos(2*math.pi) : 1.0
-'''
-3- math.tan(x)
-Return the tangent of x radians.
-'''
-print("math.tan(-math.pi/2) :", math.tan(-math.pi/2))		#math.tan(-math.pi/2) : -inf
-print("math.tan(-math.pi/3) :", math.tan(-math.pi/3))		#math.tan(-math.pi/3) : -1.7320508075688767
-print("math.tan(-math.pi/4) :", math.tan(-math.pi/4))		#math.tan(-math.pi/4) : -0.9999999999999999
-print("math.tan(-math.pi/6) :", math.tan(-math.pi/6))		#math.tan(-math.pi/6) : -0.5773502691896257
-print("math.tan(0) :", math.tan(0))							#math.tan(0) : 0.0
-print("math.tan(math.pi/6) :", math.tan(math.pi/6))			#math.tan(math.pi/6) : 0.5773502691896257
-print("math.tan(math.pi/4) :", math.tan(math.pi/4))			#math.tan(math.pi/4) : 0.9999999999999999
-print("math.tan(math.pi/3) :", math.tan(math.pi/3))			#math.tan(math.pi/3) : 1.7320508075688767
-print("math.tan(math.pi/2) :", math.tan(math.pi/2))			#math.tan(math.pi/2) : inf
+print("math.cos(0) :", math.cos(0))								#math.cos(0) : 1.0
+print("math.cos(math.pi/6) :", math.cos(math.pi/6))				#math.cos(math.pi/6) : 0.8660254037844387
+print("math.cos(math.pi/4) :", math.cos(math.pi/4))				#math.cos(math.pi/4) : 0.7071067811865476
+print("math.cos(math.pi/3) :", math.cos(math.pi/3))				#math.cos(math.pi/3) : 0.5000000000000001
+print("math.cos(math.pi/2) :", math.cos(math.pi/2))				#math.cos(math.pi/2) : 0.0
+print("math.cos(math.pi) :", math.cos(math.pi))					#math.cos(math.pi) : -1.0
+print("math.cos(3*math.pi/2) :", math.cos(3*math.pi/2))			#math.cos(3*math.pi/2) : 0.0
+print("math.cos(2*math.pi) :", math.cos(2*math.pi))				#math.cos(2*math.pi) : 1.0
+'''	
+3- math.tan(x)	
+Return the tangent of x radians.	
+'''	
+print("math.tan(-math.pi/2) :", math.tan(-math.pi/2))			#math.tan(-math.pi/2) : -inf
+print("math.tan(-math.pi/3) :", math.tan(-math.pi/3))			#math.tan(-math.pi/3) : -1.7320508075688767
+print("math.tan(-math.pi/4) :", math.tan(-math.pi/4))			#math.tan(-math.pi/4) : -0.9999999999999999
+print("math.tan(-math.pi/6) :", math.tan(-math.pi/6))			#math.tan(-math.pi/6) : -0.5773502691896257
+print("math.tan(0) :", math.tan(0))								#math.tan(0) : 0.0
+print("math.tan(math.pi/6) :", math.tan(math.pi/6))				#math.tan(math.pi/6) : 0.5773502691896257
+print("math.tan(math.pi/4) :", math.tan(math.pi/4))				#math.tan(math.pi/4) : 0.9999999999999999
+print("math.tan(math.pi/3) :", math.tan(math.pi/3))				#math.tan(math.pi/3) : 1.7320508075688767
+print("math.tan(math.pi/2) :", math.tan(math.pi/2))				#math.tan(math.pi/2) : inf
 '''
 4- math.asin(x)
 Return the arc sine of x, in radians.
 '''
-print("math.asin(-1) :", math.asin(-1))						#math.asin(-1) : -1.5707963267948966
-print("math.asin(-0.8) :", math.asin(-0.8))					#math.asin(-0.8) : -0.9272952180016123
-print("math.asin(-0.6) :", math.asin(-0.6))					#math.asin(-0.6) : -0.6435011087932844
-print("math.asin(-0.4) :", math.asin(-0.4))					#math.asin(-0.4) : -0.41151684606748806
-print("math.asin(-0.2) :", math.asin(-0.2))					#math.asin(-0.2) : -0.2013579207903308
-print("math.asin(0) :", math.asin(0))						#math.asin(0) : 0.0
-print("math.asin(0.2) :", math.asin(0.2))					#math.asin(0.2) : 0.2013579207903308
-print("math.asin(0.4) :", math.asin(0.4))					#math.asin(0.4) : 0.41151684606748806
-print("math.asin(0.6) :", math.asin(0.6))					#math.asin(0.6) : 0.6435011087932844
-print("math.asin(0.8) :", math.asin(0.8))					#math.asin(0.8) : 0.9272952180016123
-print("math.asin(1) :", math.asin(1))						#math.asin(1) : 1.5707963267948966
-'''
-5- math.acos(x)
-Return the arc cosine of x, in radians.
-'''
-print("math.acos(-1) :", math.acos(-1))						#math.acos(-1) : 3.141592653589793
-print("math.acos(-0.8) :", math.acos(-0.8))					#math.acos(-0.8) : 2.498091544796509
-print("math.acos(-0.6) :", math.acos(-0.6))					#math.acos(-0.6) : 2.214297435588181
-print("math.acos(-0.4) :", math.acos(-0.4))					#math.acos(-0.4) : 1.9823131728623846
-print("math.acos(-0.2) :", math.acos(-0.2))					#math.acos(-0.2) : 1.7721542475852274
-print("math.acos(0) :", math.acos(0))						#math.acos(0) : 1.5707963267948966
-print("math.acos(0.2) :", math.acos(0.2))					#math.acos(0.2) : 1.369438406004566
-print("math.acos(0.4) :", math.acos(0.4))					#math.acos(0.4) : 1.1592794807274085
-print("math.acos(0.6) :", math.acos(0.6))					#math.acos(0.6) : 0.9272952180016123
-print("math.acos(0.8) :", math.acos(0.8))					#math.acos(0.8) : 0.6435011087932843
-print("math.acos(1) :", math.acos(1))						#math.acos(1) : 0.0
+print("math.asin(-1) :", math.asin(-1))							#math.asin(-1) : -1.5707963267948966
+print("math.asin(-0.8) :", math.asin(-0.8))						#math.asin(-0.8) : -0.9272952180016123
+print("math.asin(-0.6) :", math.asin(-0.6))						#math.asin(-0.6) : -0.6435011087932844
+print("math.asin(-0.4) :", math.asin(-0.4))						#math.asin(-0.4) : -0.41151684606748806
+print("math.asin(-0.2) :", math.asin(-0.2))						#math.asin(-0.2) : -0.2013579207903308
+print("math.asin(0) :", math.asin(0))							#math.asin(0) : 0.0
+print("math.asin(0.2) :", math.asin(0.2))						#math.asin(0.2) : 0.2013579207903308
+print("math.asin(0.4) :", math.asin(0.4))						#math.asin(0.4) : 0.41151684606748806
+print("math.asin(0.6) :", math.asin(0.6))						#math.asin(0.6) : 0.6435011087932844
+print("math.asin(0.8) :", math.asin(0.8))						#math.asin(0.8) : 0.9272952180016123
+print("math.asin(1) :", math.asin(1))							#math.asin(1) : 1.5707963267948966
+'''	
+5- math.acos(x)	
+Return the arc cosine of x, in radians.	
+'''	
+print("math.acos(-1) :", math.acos(-1))							#math.acos(-1) : 3.141592653589793
+print("math.acos(-0.8) :", math.acos(-0.8))						#math.acos(-0.8) : 2.498091544796509
+print("math.acos(-0.6) :", math.acos(-0.6))						#math.acos(-0.6) : 2.214297435588181
+print("math.acos(-0.4) :", math.acos(-0.4))						#math.acos(-0.4) : 1.9823131728623846
+print("math.acos(-0.2) :", math.acos(-0.2))						#math.acos(-0.2) : 1.7721542475852274
+print("math.acos(0) :", math.acos(0))							#math.acos(0) : 1.5707963267948966
+print("math.acos(0.2) :", math.acos(0.2))						#math.acos(0.2) : 1.369438406004566
+print("math.acos(0.4) :", math.acos(0.4))						#math.acos(0.4) : 1.1592794807274085
+print("math.acos(0.6) :", math.acos(0.6))						#math.acos(0.6) : 0.9272952180016123
+print("math.acos(0.8) :", math.acos(0.8))						#math.acos(0.8) : 0.6435011087932843
+print("math.acos(1) :", math.acos(1))							#math.acos(1) : 0.0
 '''
 6- math.atan(x)
 Return the arc tangent of x, in radians.
 '''
-print("math.atan(math.inf) :", math.atan(math.inf))			#math.atan(math.inf) : 1.5707963267948966
-print("math.atan(-1) :", math.atan(-1))						#math.atan(-1) : -0.7853981633974483
-print("math.atan(-0.8) :", math.atan(-0.8))					#math.atan(-0.8) : -0.6747409422235527
-print("math.atan(-0.6) :", math.atan(-0.6))					#math.atan(-0.6) : -0.5404195002705842
-print("math.atan(-0.4) :", math.atan(-0.4))					#math.atan(-0.4) : -0.3805063771123649
-print("math.atan(-0.2) :", math.atan(-0.2))					#math.atan(-0.2) : -0.19739555984988078
-print("math.atan(0) :", math.atan(0))						#math.atan(0) : 0.0
-print("math.atan(0.2) :", math.atan(0.2))					#math.atan(0.2) : 0.19739555984988078
-print("math.atan(0.4) :", math.atan(0.4))					#math.atan(0.4) : 0.3805063771123649
-print("math.atan(0.6) :", math.atan(0.6))					#math.atan(0.6) : 0.5404195002705842
-print("math.atan(0.8) :", math.atan(0.8))					#math.atan(0.8) : 0.6747409422235527
-print("math.atan(1) :", math.atan(1))						#math.atan(1) : 0.7853981633974483
-print("math.atan(-math.inf) :", math.atan(-math.inf))		#math.atan(-math.inf) : -1.5707963267948966
+print("math.atan(math.inf) :", math.atan(math.inf))				#math.atan(math.inf) : 1.5707963267948966
+print("math.atan(-1) :", math.atan(-1))							#math.atan(-1) : -0.7853981633974483
+print("math.atan(-0.8) :", math.atan(-0.8))						#math.atan(-0.8) : -0.6747409422235527
+print("math.atan(-0.6) :", math.atan(-0.6))						#math.atan(-0.6) : -0.5404195002705842
+print("math.atan(-0.4) :", math.atan(-0.4))						#math.atan(-0.4) : -0.3805063771123649
+print("math.atan(-0.2) :", math.atan(-0.2))						#math.atan(-0.2) : -0.19739555984988078
+print("math.atan(0) :", math.atan(0))							#math.atan(0) : 0.0
+print("math.atan(0.2) :", math.atan(0.2))						#math.atan(0.2) : 0.19739555984988078
+print("math.atan(0.4) :", math.atan(0.4))						#math.atan(0.4) : 0.3805063771123649
+print("math.atan(0.6) :", math.atan(0.6))						#math.atan(0.6) : 0.5404195002705842
+print("math.atan(0.8) :", math.atan(0.8))						#math.atan(0.8) : 0.6747409422235527
+print("math.atan(1) :", math.atan(1))							#math.atan(1) : 0.7853981633974483
+print("math.atan(-math.inf) :", math.atan(-math.inf))			#math.atan(-math.inf) : -1.5707963267948966
 '''
 7- math.atan2(y, x)
 Return atan(y / x), in radians. The result is between -pi and pi. 
@@ -451,13 +451,17 @@ The point of atan2() is that the signs of both inputs are known to it,
 so it can compute the correct quadrant for the angle. 
 For example, atan(1) and atan2(1, 1) are both pi/4, but atan2(-1, -1) is -3*pi/4.
 '''
-
+print("math.atan2(1.2, 1.5) :", math.atan2(1.2, 1.5))			#math.atan2(1.2, 1.5) : 0.6747409422235526
+print("math.atan2(-1.2, -1.5) :", math.atan2(-1.2, -1.5))		#math.atan2(-1.2, -1.5) : -2.4668517113662407
+print("math.atan2(1.2, -1.5) :", math.atan2(1.2, -1.5))			#math.atan2(1.2, -1.5) : 2.4668517113662407
+print("math.atan2(-1.2, 1.5) :", math.atan2(-1.2, 1.5))			#math.atan2(-1.2, 1.5) : -0.6747409422235526
 '''
 8- math.dist(p, q)
 Return the Euclidean distance between two points p and q, each given as a sequence (or iterable) of coordinates. 
 The two points must have the same dimension.
 '''
-
+print("math.dist([4, 7], [1, 3]) :", math.dist([4, 7], [1, 3]))					#math.dist([4, 7], [1, 3]) : 5.0
+print("math.dist([4, 7, 0], [1, 3, 0]) :", math.dist([4, 7, 0], [1, 3, 0]))		#math.dist([4, 7, 0], [1, 3, 0]) : 5.0
 '''
 9- math.hypot(*coordinates)
 Return the Euclidean norm, sqrt(sum(x**2 for x in coordinates)). 
@@ -466,7 +470,8 @@ For a two dimensional point (x, y), this is equivalent to computing the hypotenu
 using the Pythagorean theorem, sqrt(x*x + y*y).
 Changed in version 3.8: Added support for n-dimensional points. Formerly, only the two dimensional case was supported.
 '''
-
+print("math.hypot(-3, 4) :", math.hypot(-3, 4))  				#math.hypot(-3, 4) : 5.0
+print("math.hypot(12, 9) :", math.hypot(12, 9))  				#math.hypot(12, 9) : 15.0
 '''
 #Hyperbolic functions
 '''
