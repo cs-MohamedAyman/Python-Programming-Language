@@ -32,16 +32,16 @@ Returns a Python integer with k random bits. This method is supplied with the Me
 and some other generators may also provide it as an optional part of the API. When available, getrandbits() 
 enables randrange() to handle arbitrarily large ranges.
 '''
-print("random.getrandbits(1) :", random.getrandbits(1))							#random.getrandbits(1) : 0
-print("random.getrandbits(1) :", random.getrandbits(1))							#random.getrandbits(1) : 1
-print("random.getrandbits(2) :", random.getrandbits(2))							#random.getrandbits(2) : 2
-print("random.getrandbits(2) :", random.getrandbits(2))							#random.getrandbits(2) : 0
-print("random.getrandbits(3) :", random.getrandbits(3))							#random.getrandbits(3) : 7
-print("random.getrandbits(3) :", random.getrandbits(3))							#random.getrandbits(3) : 3
-print("random.getrandbits(6) :", random.getrandbits(6))							#random.getrandbits(6) : 57
-print("random.getrandbits(6) :", random.getrandbits(6))							#random.getrandbits(6) : 48
-print("random.getrandbits(6) :", random.getrandbits(6))							#random.getrandbits(6) : 22
-print("random.getrandbits(6) :", random.getrandbits(6))							#random.getrandbits(6) : 6
+print("random.getrandbits(1) :", random.getrandbits(1))                   #random.getrandbits(1) : 0
+print("random.getrandbits(1) :", random.getrandbits(1))                   #random.getrandbits(1) : 1
+print("random.getrandbits(2) :", random.getrandbits(2))                   #random.getrandbits(2) : 2
+print("random.getrandbits(2) :", random.getrandbits(2))                   #random.getrandbits(2) : 0
+print("random.getrandbits(3) :", random.getrandbits(3))                   #random.getrandbits(3) : 7
+print("random.getrandbits(3) :", random.getrandbits(3))                   #random.getrandbits(3) : 3
+print("random.getrandbits(6) :", random.getrandbits(6))                   #random.getrandbits(6) : 57
+print("random.getrandbits(6) :", random.getrandbits(6))                   #random.getrandbits(6) : 48
+print("random.getrandbits(6) :", random.getrandbits(6))                   #random.getrandbits(6) : 22
+print("random.getrandbits(6) :", random.getrandbits(6))                   #random.getrandbits(6) : 6
 '''
 #Functions for integers
 '''
@@ -53,30 +53,30 @@ This is equivalent to choice(range(start, stop, step)), but doesn’t actually b
 The positional argument pattern matches that of range(). 
 Keyword arguments should not be used because the function may use them in unexpected ways.
 '''
-print("random.randrange(3) :", random.randrange(3)) 							#random.randrange(3) : 0 
-print("random.randrange(3) :", random.randrange(3)) 							#random.randrange(3) : 1 
-print("random.randrange(3) :", random.randrange(3)) 							#random.randrange(3) : 2 
-print("random.randrange(3) :", random.randrange(3)) 							#random.randrange(3) : 0 
-print("random.randrange(12, 15) :", random.randrange(12, 15)) 					#random.randrange(12, 15) : 14
-print("random.randrange(12, 15) :", random.randrange(12, 15)) 					#random.randrange(12, 15) : 13
-print("random.randrange(12, 15) :", random.randrange(12, 15)) 					#random.randrange(12, 15) : 12
-print("random.randrange(12, 15) :", random.randrange(12, 15)) 					#random.randrange(12, 15) : 13
-print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2)) 			#random.randrange(22, 28, 2) : 26
-print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2)) 			#random.randrange(22, 28, 2) : 22
-print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2)) 			#random.randrange(22, 28, 2) : 24
-print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2)) 			#random.randrange(22, 28, 2) : 26
-print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1)) 			#random.randrange(28, 22, -1) : 23
-print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1)) 			#random.randrange(28, 22, -1) : 23
-print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1)) 			#random.randrange(28, 22, -1) : 26
-print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1)) 			#random.randrange(28, 22, -1) : 28
+print("random.randrange(3) :", random.randrange(3))                       #random.randrange(3) : 0 
+print("random.randrange(3) :", random.randrange(3))                       #random.randrange(3) : 1 
+print("random.randrange(3) :", random.randrange(3))                       #random.randrange(3) : 2 
+print("random.randrange(3) :", random.randrange(3))                       #random.randrange(3) : 0 
+print("random.randrange(12, 15) :", random.randrange(12, 15))             #random.randrange(12, 15) : 14
+print("random.randrange(12, 15) :", random.randrange(12, 15))             #random.randrange(12, 15) : 13
+print("random.randrange(12, 15) :", random.randrange(12, 15))             #random.randrange(12, 15) : 12
+print("random.randrange(12, 15) :", random.randrange(12, 15))             #random.randrange(12, 15) : 13
+print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2))       #random.randrange(22, 28, 2) : 26
+print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2))       #random.randrange(22, 28, 2) : 22
+print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2))       #random.randrange(22, 28, 2) : 24
+print("random.randrange(22, 28, 2) :", random.randrange(22, 28, 2))       #random.randrange(22, 28, 2) : 26
+print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1))     #random.randrange(28, 22, -1) : 23
+print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1))     #random.randrange(28, 22, -1) : 23
+print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1))     #random.randrange(28, 22, -1) : 26
+print("random.randrange(28, 22, -1) :", random.randrange(28, 22, -1))     #random.randrange(28, 22, -1) : 28
 '''
 2- random.randint(a, b)
 Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1)
 '''
-print("random.randint(0, 3) :", random.randint(0, 3))							#random.randint(0, 3) : 1
-print("random.randint(0, 3) :", random.randint(0, 3))							#random.randint(0, 3) : 3
-print("random.randint(0, 3) :", random.randint(0, 3))							#random.randint(0, 3) : 2
-print("random.randint(0, 3) :", random.randint(0, 3))							#random.randint(0, 3) : 0
+print("random.randint(0, 3) :", random.randint(0, 3))                     #random.randint(0, 3) : 1
+print("random.randint(0, 3) :", random.randint(0, 3))                     #random.randint(0, 3) : 3
+print("random.randint(0, 3) :", random.randint(0, 3))                     #random.randint(0, 3) : 2
+print("random.randint(0, 3) :", random.randint(0, 3))                     #random.randint(0, 3) : 0
 '''
 #Functions for sequences
 '''
@@ -84,10 +84,10 @@ print("random.randint(0, 3) :", random.randint(0, 3))							#random.randint(0, 3
 1- random.choice(seq)
 Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError.
 '''
-print("random.choice([5, -3.2, 'abc']) :", random.choice([5, -3.2, 'abc']))		#random.choice([5, -3.2, 'abc']) : -3.2
-print("random.choice([5, -3.2, 'abc']) :", random.choice([5, -3.2, 'abc']))		#random.choice([5, -3.2, 'abc']) : 5
-print("random.choice((5, -3.2, 'abc')) :", random.choice((5, -3.2, 'abc')))		#random.choice((5, -3.2, 'abc')) : abc
-print("random.choice((5, -3.2, 'abc')) :", random.choice((5, -3.2, 'abc')))		#random.choice((5, -3.2, 'abc')) : 5
+print("random.choice([5, -3.2, 'abc']) :", random.choice([5, -3.2, 'abc']))        #random.choice([5, -3.2, 'abc']) : -3.2
+print("random.choice([5, -3.2, 'abc']) :", random.choice([5, -3.2, 'abc']))        #random.choice([5, -3.2, 'abc']) : 5
+print("random.choice((5, -3.2, 'abc')) :", random.choice((5, -3.2, 'abc')))        #random.choice((5, -3.2, 'abc')) : abc
+print("random.choice((5, -3.2, 'abc')) :", random.choice((5, -3.2, 'abc')))        #random.choice((5, -3.2, 'abc')) : 5
 '''
 2- random.choices(population, weights=None, *, cum_weights=None, k=1)
 Return a k sized list of elements chosen from the population with replacement. 
@@ -108,10 +108,10 @@ than repeated calls to choice(). The algorithm used by choices() uses floating p
 for internal consistency and speed. The algorithm used by choice() defaults to integer arithmetic 
 with repeated selections to avoid small biases from round-off error.
 '''
-print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))			#['c', 'a', 'b', 'a', 'a', 'c', 'a', 'a', 'a', 'c']
-print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))			#['c', 'a', 'c', 'a', 'a', 'a', 'a', 'a', 'c', 'a']
-print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))			#['a', 'a', 'a', 'c', 'a', 'c', 'a', 'a', 'b', 'a']
-print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))			#['a', 'b', 'a', 'a', 'a', 'a', 'a', 'a', 'c', 'a']
+print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))               #['c', 'a', 'b', 'a', 'a', 'c', 'a', 'a', 'a', 'c']
+print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))               #['c', 'a', 'c', 'a', 'a', 'a', 'a', 'a', 'c', 'a']
+print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))               #['a', 'a', 'a', 'c', 'a', 'c', 'a', 'a', 'b', 'a']
+print(random.choices(['a', 'b', 'c'], [6, 1.5, 2.5], k=10))               #['a', 'b', 'a', 'a', 'a', 'a', 'a', 'a', 'c', 'a']
 '''
 3- random.shuffle(x[, random])
 Shuffle the sequence x in place.
@@ -125,13 +125,13 @@ the Mersenne Twister random number generator.
 '''
 x = ['b', 'a', 3.5]
 random.shuffle(x)
-print(x)						#['a', 3.5, 'b']
+print(x)                        #['a', 3.5, 'b']
 random.shuffle(x)
-print(x)						#[3.5, 'a', 'b']
+print(x)                        #[3.5, 'a', 'b']
 random.shuffle(x)
-print(x)						#[3.5, 'a', 'b']
+print(x)                        #[3.5, 'a', 'b']
 random.shuffle(x)
-print(x)						#['a', 3.5, 'b']
+print(x)                        #['a', 3.5, 'b']
 '''
 4- random.sample(population, k)
 Return a k length list of unique elements chosen from the population sequence or set. 
@@ -145,10 +145,10 @@ To choose a sample from a range of integers, use a range() object as an argument
 This is especially fast and space efficient for sampling from a large population: sample(range(10000000), k=60).
 If the sample size is larger than the population size, a ValueError is raised.
 '''
-print(random.sample([5.2, 2, 1.6, 4, -5], 3)) 							#[-5, 1.6, 2]
-print(random.sample([5.2, 2, 1.6, 4, -5], 3)) 							#[5.2, -5, 4]
-print(random.sample([5.2, 2, 1.6, 4, -5], 3)) 							#[2, -5, 1.6]
-print(random.sample([5.2, 2, 1.6, 4, -5], 3)) 							#[5.2, 1.6, 2]
+print(random.sample([5.2, 2, 1.6, 4, -5], 3))                             #[-5, 1.6, 2]
+print(random.sample([5.2, 2, 1.6, 4, -5], 3))                             #[5.2, -5, 4]
+print(random.sample([5.2, 2, 1.6, 4, -5], 3))                             #[2, -5, 1.6]
+print(random.sample([5.2, 2, 1.6, 4, -5], 3))                             #[5.2, 1.6, 2]
 '''
 #Real-valued distributions
 The following functions generate specific real-valued distributions. 
@@ -159,34 +159,34 @@ as used in common mathematical practice; most of these equations can be found in
 1- random.random()
 Return the next random floating point number in the range [0.0, 1.0).
 '''
-print("random.random() :", random.random()) 							#random.random() : 0.13643821384653154
-print("random.random() :", random.random()) 							#random.random() : 0.5808364090140392
-print("random.random() :", random.random()) 							#random.random() : 0.7880128089993633
-print("random.random() :", random.random()) 							#random.random() : 0.30273604106811236
+print("random.random() :", random.random())                               #random.random() : 0.13643821384653154
+print("random.random() :", random.random())                               #random.random() : 0.5808364090140392
+print("random.random() :", random.random())                               #random.random() : 0.7880128089993633
+print("random.random() :", random.random())                               #random.random() : 0.30273604106811236
 '''
 2- random.uniform(a, b)
 Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.
 The end-point value b may or may not be included in the range depending on floating-point 
 rounding in the equation a + (b-a) * random().
 '''
-print("random.uniform(3, 5) :", random.uniform(3, 5)) 					#random.uniform(3, 5) : 4.849814175620888
-print("random.uniform(3, 5) :", random.uniform(3, 5)) 					#random.uniform(3, 5) : 4.249325992783081
-print("random.uniform(3, 5) :", random.uniform(3, 5)) 					#random.uniform(3, 5) : 3.4934536146666026
-print("random.uniform(3, 5) :", random.uniform(3, 5)) 					#random.uniform(3, 5) : 3.0400059289682564
+print("random.uniform(3, 5) :", random.uniform(3, 5))                     #random.uniform(3, 5) : 4.849814175620888
+print("random.uniform(3, 5) :", random.uniform(3, 5))                     #random.uniform(3, 5) : 4.249325992783081
+print("random.uniform(3, 5) :", random.uniform(3, 5))                     #random.uniform(3, 5) : 3.4934536146666026
+print("random.uniform(3, 5) :", random.uniform(3, 5))                     #random.uniform(3, 5) : 3.0400059289682564
 '''
 3- random.triangular(low, high, mode)
 Return a random floating point number N such that low <= N <= high and with 
 the specified mode between those bounds. The low and high bounds default to zero and one. 
 The mode argument defaults to the midpoint between the bounds, giving a symmetric distribution.
 '''
-print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18)) 	#random.triangular(5, 20, 18) : 9.12119697527266
-print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))   #random.triangular(5, 20, 18) : 15.051128394436743
-print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))   #random.triangular(5, 20, 18) : 15.831803304486217
-print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))   #random.triangular(5, 20, 18) : 17.014855771945996
-print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))     #random.triangular(5, 20, 7) : 8.021484983799377
-print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))     #random.triangular(5, 20, 7) : 8.461733959079835
-print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))     #random.triangular(5, 20, 7) : 9.579946520047496
-print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))     #random.triangular(5, 20, 7) : 14.17509040921485
+print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))     #random.triangular(5, 20, 18) : 9.12119697527266
+print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))     #random.triangular(5, 20, 18) : 15.051128394436743
+print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))     #random.triangular(5, 20, 18) : 15.831803304486217
+print("random.triangular(5, 20, 18) :", random.triangular(5, 20, 18))     #random.triangular(5, 20, 18) : 17.014855771945996
+print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))       #random.triangular(5, 20, 7) : 8.021484983799377
+print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))       #random.triangular(5, 20, 7) : 8.461733959079835
+print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))       #random.triangular(5, 20, 7) : 9.579946520047496
+print("random.triangular(5, 20, 7) :", random.triangular(5, 20, 7))       #random.triangular(5, 20, 7) : 14.17509040921485
 '''
 4- random.betavariate(alpha, beta)
 Beta distribution. Conditions on the parameters are alpha > 0 and beta > 0. Returned values range between 0 and 1.
@@ -255,3 +255,4 @@ If a new seeding method is added, then a backward compatible seeder will be offe
 The generator’s random() method will continue to produce the same sequence 
 when the compatible seeder is given the same seed.
 '''
+
