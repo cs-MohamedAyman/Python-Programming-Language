@@ -1,7 +1,7 @@
 # Python-Programming-Language
 Python programming language lectures for computer science students.
 
-## Part 1: Python Basics and Functions
+## Part 1: Python Basics and Functions [20H]
 
 ### Lecture 01 - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2001%20-%20Overview)
 ### Lecture 02 - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2002%20-%20Variable-Types)
@@ -10,7 +10,7 @@ Python programming language lectures for computer science students.
 ### Lecture 05 - [Loops](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2005%20-%20Loops)
 ### Lecture 06 - [Functions](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2006%20-%20Functions)
 
-## Part 2: Python Collections and Strings
+## Part 2: Python Collections and Strings [20H]
 
 ### Lecture 07 - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2007%20-%20Strings)
 ### Lecture 08 - [Lists](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2008%20-%20Lists)
