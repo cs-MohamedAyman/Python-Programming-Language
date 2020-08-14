@@ -47,18 +47,18 @@ print("math.nan :", math.nan)                                    #math.nan : nan
 1- math.ceil(x)
 Return the ceiling of x, the smallest integer greater than or equal to x. If x is not a float
 '''
-print("math.floor(15.2) :", math.floor(15.2))                    #math.floor(15.2) : 15
-print("math.floor(15.7) :", math.floor(15.7))                    #math.floor(15.7) : 15
-print("math.floor(-15.2) :", math.floor(-15.2))                  #math.floor(-15.2) : -16
-print("math.floor(-15.7) :", math.floor(-15.7))                  #math.floor(-15.7) : -16
-'''
-2- math.floor(x)
-Return the floor of x, the largest integer less than or equal to x. If x is not a float
-'''
 print("math.ceil(15.2) :", math.ceil(15.2))                      #math.ceil(15.2) : 16
 print("math.ceil(15.7) :", math.ceil(15.7))                      #math.ceil(15.7) : 16
 print("math.ceil(-15.2) :", math.ceil(-15.2))                    #math.ceil(-15.2) : -15
 print("math.ceil(-15.7) :", math.ceil(-15.7))                    #math.ceil(-15.7) : -15
+'''
+2- math.floor(x)
+Return the floor of x, the largest integer less than or equal to x. If x is not a float
+'''
+print("math.floor(15.2) :", math.floor(15.2))                    #math.floor(15.2) : 15
+print("math.floor(15.7) :", math.floor(15.7))                    #math.floor(15.7) : 15
+print("math.floor(-15.2) :", math.floor(-15.2))                  #math.floor(-15.2) : -16
+print("math.floor(-15.7) :", math.floor(-15.7))                  #math.floor(-15.7) : -16
 '''
 3- math.factorial(x)
 Return x factorial as an integer. Raises ValueError if x is not integral or is negative.
