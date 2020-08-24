@@ -11,7 +11,7 @@ The grid will look like this:
 N, M = 6, 7
 grid = [['.'] * M for i in range(N)]
 
-#This function prints the grid of Tic-Tac-Toe as the game progresses
+#This function prints the grid of Connect Four Game as the game progresses
 def print_grid():
     print("Player 1: X  vs  Player 2: O")
     print('--' + '---' * M + '--')
