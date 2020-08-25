@@ -156,7 +156,7 @@ def check_valid_direction(i):
 #This function clears the grid
 def grid_clear():
 	global grid
-	grid = [['.'] * N for i in range(N)]
+	grid = [[0] * N for i in range(N)]
 
 
 #MAIN FUNCTION
