@@ -164,7 +164,7 @@ def play_game():
     print("2048 Game!")
     print("Welcome...")
     print("============================")
-    while not check_full():
+    while True:
         #Generate a cell in the grid
         generate_cell()
         #Prints the grid
