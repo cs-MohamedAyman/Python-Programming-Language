@@ -19,14 +19,14 @@ Python programming language lectures for computer science students.
 ### Lecture 11 - [Sets](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2011%20-%20Sets)
 ### Lecture 12 - [Numbers](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2012%20-%20Numbers)
 
-## Part 3: Python Object Oriented `[20H]`
+## Part 3: Python Object Oriented `[15H]`
 
 ### Lecture 13 - [Object Oriented Overview]()
 ### Lecture 14 - [Data Encapsulation]()
 ### Lecture 15 - [Operator Overloading & Function Overloading]()
 ### Lecture 16 - [Inheritance & Function Overriding]()
 
-## Part 4: Python Files and Standard Libraries `[20H]`
+## Part 4: Python Files and Standard Libraries `[15H]`
 
 ### Lecture 17 - [Modules & Standard Libraries]()
 ### Lecture 18 - [Polymorphism & Abstract Class]()
