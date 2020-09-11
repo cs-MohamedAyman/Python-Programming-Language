@@ -170,6 +170,6 @@ Python programming language lectures for computer science students.
   <li>Math Module</li>
   <li>Fractions Module</li>
   <li>Random Module</li>
-  <li>Itertools  Module</li>
+  <li>Itertools Module</li>
 </ul>
 </details>
