@@ -154,7 +154,7 @@ Python programming language lectures for computer science students.
 <br>
 <ul>
   <li>Introduction to Set</li>
-  <li> Basic Set Operations</li>
+  <li>Basic Set Operations</li>
   <li>Set Comprehension</li>
   <li>Set Relations</li>
   <li>Built-in Set Functions</li>
