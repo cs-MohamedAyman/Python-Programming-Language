@@ -1,4 +1,4 @@
-# Python-Programming-Language
+# Python-Programming-Language `50H`
 Python programming language lectures for computer science students.
 
 ## Part 1: Python Basics and Functions `[25H]`
