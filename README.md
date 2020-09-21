@@ -173,3 +173,10 @@ Python programming language lectures for computer science students.
   <li>Itertools Module</li>
 </ul>
 </details>
+
+## Textbooks
+
+* ***Think Python***, Allen B. Downey
+* ***Learn Python 3 the Hard Way***, Zed A. Shaw
+* ***Effective Python***, Brett Slatkin
+* ***Python Programming***, John Zelle
