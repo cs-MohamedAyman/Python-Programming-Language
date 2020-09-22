@@ -180,3 +180,28 @@ Python programming language lectures for computer science students.
 * ***Learn Python 3 the Hard Way***, Zed A. Shaw
 * ***Effective Python***, Brett Slatkin
 * ***Python Programming***, John Zelle
+
+<img align="right" width="90" height="50" src="https://github.com/cs-MohamedAyman/Coursera-Specializations/blob/master/organizations-logos/coursera.jpg">
+
+## Coursera-Specializations
+
+* ***Introduction to Scripting in Python Specialization*** by Rice University
+  * Python Programming Essentials
+  * Python Data Representations
+  * Python Data Analysis
+  * Python Data Visualization
+* ***Python 3 Programming Specialization*** by University of Michigan
+  * Python Basics
+  * Python Functions, Files, and Dictionaries
+  * Data Collection and Processing with Python
+  * Python Classes and Inheritance
+  * Python Project: pillow, tesseract, and opencv
+* ***Fundamentals of Computing Specialization*** by Rice University
+  * An Introduction to Interactive Programming in Python (Part 1)
+  * An Introduction to Interactive Programming in Python (Part 2)
+  * Principles of Computing (Part 1)
+  * Principles of Computing (Part 2)
+  * Algorithmic Thinking (Part 1)
+  * Algorithmic Thinking (Part 2)
+  * The Fundamentals of Computing Capstone Exam
+* ***Learn to Program: Crafting Quality Code*** by University of Toronto
