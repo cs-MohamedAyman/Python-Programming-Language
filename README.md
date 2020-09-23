@@ -1,7 +1,7 @@
 # Python-Programming-Language `50H`
 Python programming language lectures for computer science students.
 
-## Part 1: Python Basics and Functions `[25H]`
+## `Part 1:` Python Basics and Functions `25H`
 
 ### Lecture 01 - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2001%20-%20Overview)
 <details>
@@ -94,7 +94,7 @@ Python programming language lectures for computer science students.
 </ul>
 </details>
 
-## Part 2: Python Collections and Strings `[25H]`
+## `Part 2:` Python Collections and Strings `25H`
 
 ### Lecture 07 - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture%2007%20-%20Strings)
 <details>
@@ -173,6 +173,8 @@ Python programming language lectures for computer science students.
   <li>Itertools Module</li>
 </ul>
 </details>
+
+<img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/organizations-logos/textbook.jpg">
 
 ## Textbooks
 
