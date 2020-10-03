@@ -8,10 +8,10 @@ Python programming language lectures for computer science students.
 ### Lecture 01 - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
 ### 1.1- History of Python
 ### 1.2- Interpreter vs. Compiler
-### 1.3- Python Identifiers & Reserved Words
+### 1.3- Python Identifiers and Reserved Words
 ### 1.4- Lines and Indentation
 ### 1.5- Multi-Line Statements
-### 1.6- Quotation & Comments
+### 1.6- Quotation and Comments
 
 ### Lecture 02 - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-02-Variable-Types)
 ### 2.1- Python Variables
@@ -54,11 +54,11 @@ Python programming language lectures for computer science students.
 ### 6.1- Function Definition
 ### 6.2- Calling a Function
 ### 6.3- Return Statement
-### 6.4- Passing by Reference & Value
+### 6.4- Passing by Reference and Value
 ### 6.5- Function Arguments
 ### 6.6- Anonymous Function
 ### 6.7- Inner Functions
-### 6.8- Global & Local Variables
+### 6.8- Global and Local Variables
 
 ## `Part 2:` Python Collections and Strings `25H`
 
