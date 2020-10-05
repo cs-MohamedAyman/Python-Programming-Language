@@ -3,7 +3,12 @@
 # Lecture 01 - Overview
 ## 1.1- History of Python
 ## 1.2- Interpreter vs. Compiler
+## Quiz
 ## 1.3- Python Identifiers and Reserved Words
+## Quiz
 ## 1.4- Lines and Indentation
+## Quiz
 ## 1.5- Multi-Line Statements
+## Quiz
 ## 1.6- Quotation and Comments
+## Quiz
