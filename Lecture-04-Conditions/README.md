@@ -4,6 +4,12 @@
 ## 4.1- Decision making Definition
 ## 4.2- IF Statement
 ## 4.3- IF and ELSE Statements
+## Quiz
 ## 4.4- IF, ELIF and ELSE Statements
+## Quiz
+## Practice
 ## 4.5- Nested IF Statements
+## Quiz
+## Practice
 ## 4.6- Single Statement Suites
+## Practice
