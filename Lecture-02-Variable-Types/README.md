@@ -3,17 +3,17 @@
 # Lecture 02 - Variable Types
 ## 2.1- Python Variables
 ## 2.2- Python Numbers
-## Quiz
+### Quiz
 ## 2.3- Python Strings
-## Quiz
+### Quiz
 ## 2.4- Python Lists
-## Quiz
+### Quiz
 ## 2.5- Python Tuples
-## Quiz
+### Quiz
 ## 2.6- Python Dictionary
-## Quiz
+### Quiz
 ## 2.7- Python Set
-## Quiz
+### Quiz
 ## 2.8- Data Type Conversion
-## Quiz
-## Practice
+### Quiz
+### Practice
