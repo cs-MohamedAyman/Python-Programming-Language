@@ -6,7 +6,6 @@
 ## 7.3- String Special Operators
 ## 7.4- String Formatting Operator
 ## Quiz
-## Practice
 ## 7.5- Built-in String Functions
 ## Quiz
 ## Practice
