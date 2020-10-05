@@ -5,9 +5,9 @@
 ## 7.2- Basic String Operations
 ## 7.3- String Special Operators
 ## 7.4- String Formatting Operator
-## Quiz
+### Quiz
 ## 7.5- Built-in String Functions
-## Quiz
-## Practice
-## Quiz
-## Practice
+### Quiz
+### Practice
+### Quiz
+### Practice
