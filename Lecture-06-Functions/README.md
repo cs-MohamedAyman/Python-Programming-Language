@@ -8,8 +8,8 @@
 #Calling a Function
 
 def summation(x, y):
-	res = x + y
-	return res
+    res = x + y
+    return res
 
 r = summation(4, 3)
 print(r)
@@ -24,8 +24,8 @@ print(r)
 #Return Statement
 
 def add_one_hundred(x, y):
-	x += 100
-	y += '100'
+    x += 100
+    y += '100'
 
 a, b = 6, '8'
 a, b = add_one_hundred(a, b)
