@@ -11,7 +11,9 @@ print(url)
 
 n = 5
 print(n)
-
+```
+- ***Multiple Assignment***
+```python
 #Multiple Assignment
 
 a, b, c = 5, 3.2, "Hello"
@@ -25,7 +27,9 @@ x = y = z = "same"
 print(x)
 print(y)
 print(z)
-
+```
+- ***Python Constant***
+```python
 #Python Constant
 
 PI = 3.14
@@ -70,6 +74,10 @@ print(x[-8:-2])
 print(x[4:-2])
 print(x[-8:14])
 print(x[:])
+```
+- ***Python Strings***
+```python
+#Python Strings
 
 x = "Hello Python"
 print(x)
@@ -79,6 +87,10 @@ print(x[:6] + 'World')
 print(x * 2)
 print(2 * x[6:])
 print((x[6:8] + ' ') * 3)
+```
+- ***Python Strings***
+```python
+#Python Strings
 
 x = "Hello Python"
 print(x)
@@ -91,6 +103,10 @@ print(x[::-1])
 print(x[::-2])
 print(x[::-3])
 print(x[::-4])
+```
+- ***Python Strings***
+```python
+#Python Strings
 
 x = "Hello Python"
 print(x)
@@ -121,6 +137,10 @@ print(x[2:])
 print(x[-1])
 print(x[-4:])
 print(x[:-3])
+```
+- ***Python Lists***
+```python
+#Python Lists
 
 x = ['python', 2000, 'c++', 3.2, 'java']
 print(x)
@@ -132,6 +152,10 @@ print(x[2] * 3)
 print(x[1] * 3)
 print(x[2:4] * 2)
 print((x[1:3] + x[4:5]) * 2)
+```
+- ***Python Lists***
+```python
+#Python Lists
 
 x = ['python', 2000, 'c++', 3.2, 'java']
 print(x)
@@ -144,6 +168,10 @@ print(x[::-1])
 print(x[::-2])
 print(x[::-3])
 print(x[::-4])
+```
+- ***Python Lists***
+```python
+#Python Lists
 
 x = ['python', 2000, 'c++', 3.2, 'java']
 print(x)
@@ -174,6 +202,10 @@ print(x[2:])
 print(x[-1])
 print(x[-4:])
 print(x[:-3])
+```
+- ***Python Tuples***
+```python
+#Python Tuples
 
 x = ('python', 2000, 'c++', 3.2, 'java')
 print(x)
@@ -185,6 +217,10 @@ print(x[2] * 3)
 print(x[1] * 3)
 print(x[2:4] * 2)
 print((x[1:3] + x[4:5]) * 2)
+```
+- ***Python Tuples***
+```python
+#Python Tuples
 
 x = ('python', 2000, 'c++', 3.2, 'java')
 print(x)
@@ -197,6 +233,10 @@ print(x[::-1])
 print(x[::-2])
 print(x[::-3])
 print(x[::-4])
+```
+- ***Python Tuples***
+```python
+#Python Tuples
 
 x = ('python', 2000, 'c++', 3.2, 'java')
 print(x)
@@ -227,6 +267,10 @@ print(x)
 print(len(x))
 print(x['c#'])
 print(x['c++'])
+```
+- ***Python Dictionaries***
+```python
+#Python Dictionaries
 
 x = {'London': 6, 'Paris': 8, 'Barcelone': 11}
 print(x)
@@ -280,6 +324,10 @@ print(int(10.6))
 print(int(-10.6))
 print(float('2.5'))
 print(str(25))
+```
+- ***Data Type Conversion***
+```python
+#Data Type Conversion
 
 x, y, z = '11000', '24', 24.0
 print(int(x, 2))
@@ -293,6 +341,10 @@ print(float(z))
 print(str(x))
 print(str(y))
 print(str(z))
+```
+- ***Data Type Conversion***
+```python
+#Data Type Conversion
 
 x = [7, 'abc', -4.3, 7]
 y = (7, 'abc', -4.3, 7)
@@ -306,6 +358,10 @@ print(tuple(z))
 print(set(x))
 print(set(y))
 print(set(z))
+```
+- ***Data Type Conversion***
+```python
+#Data Type Conversion
 
 x, y, z = 'a', 97, 24
 print(ord(x))
@@ -313,11 +369,19 @@ print(chr(y))
 print(hex(z))
 print(oct(z))
 print(bin(z))
+```
+- ***Data Type Conversion***
+```python
+#Data Type Conversion
 
 x = 'hello python'
 print(list(x))
 print(tuple(x))
 print(set(x))
+```
+- ***Data Type Conversion***
+```python
+#Data Type Conversion
 
 print(bool(5))
 print(bool(-7))
@@ -332,6 +396,10 @@ print(bool(()))
 print(bool({}))
 print(bool(set()))
 print(bool(dict()))
+```
+- ***Data Type Conversion***
+```python
+#Data Type Conversion
 
 x = 5
 print(type(x))
@@ -365,6 +433,10 @@ print(type(x))
 x = float(input('Enter a float number: '))
 print(x)
 print(type(x))
+```
+- ***Python Input***
+```python
+#Python Input
 
 x, y, z = input('Enter 3 values: ').split()
 print(x, y, z)
@@ -372,6 +444,10 @@ print(type(x), type(y), type(z))
 x, y, z = int(x), str(y), float(z)
 print(x, y, z)
 print(type(x), type(y), type(z))
+```
+- ***Python Input***
+```python
+#Python Input
 
 x, y, z = map(str, input('Enter 3 strings: ').split())
 print(x, y, z)
