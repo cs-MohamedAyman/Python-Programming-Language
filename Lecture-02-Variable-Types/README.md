@@ -302,6 +302,10 @@ print(len(x))
 x = {'ab', 'ef', 'cd', 'ab', 'ef'}
 print(x)
 print(len(x))
+```
+- ***Python Sets***
+```python
+#Python Sets
 
 x = {0, 2, 'ab', 4, 6, 'cd', 8}
 y = {1, 2, 'ef', 3, 4, 'cd', 5}
