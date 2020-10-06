@@ -174,35 +174,84 @@ print(days_between(2010, 1, 1,  2000, 12,31))
 print(days_between(2020, 4, 31, 2020, 7, 31))
 ```
 ## 6.4- Passing by Reference and Value
-- ***Python Input***
+- ***Passing by Reference and Value in Numbers***
 ```python
-#Python Input
+#Passing by Reference and Value
+def change_int(x):
+    print(x)
+    x += 11.5
+    print(x)
 
+y = 5
+print(y)
+change_int(y)
+print(y)
 ```
-- ***Python Input***
+- ***Passing by Reference and Value in Strings***
 ```python
-#Python Input
+#Passing by Reference and Value
+def change_str(x):
+    print(x)
+    x += 'cd'
+    print(x)
 
+y = 'ab'
+print(y)
+change_str(y)
+print(y)
 ```
-- ***Python Input***
+- ***Passing by Reference and Value in Tuples***
 ```python
-#Python Input
+#Passing by Reference and Value
+def change_tuple(x):
+    print(x)
+    x += (2.3, 'cd')
+    print(x)
 
+y = ('ab', 8)
+print(y)
+change_tuple(y)
+print(y)
 ```
-- ***Python Input***
+- ***Passing by Reference and Value in Lists***
 ```python
-#Python Input
+#Passing by Reference and Value
+def change_list(x):
+    print(x)
+    x += [2.3, 'cd']
+    print(x)
 
+y = ['ab', 8]
+print(y)
+change_list(y)
+print(y)
 ```
-- ***Python Input***
+- ***Passing by Reference and Value in Dictionaries***
 ```python
-#Python Input
+#Passing by Reference and Value
+def change_dict(x):
+    print(x)
+    x['python'] = 3
+    x['java'] = 10
+    print(x)
 
+y = {'c++': 17, 'python': 2}
+print(y)
+change_dict(y)
+print(y)
 ```
-- ***Python Input***
+- ***Passing by Reference and Value in Sets***
 ```python
-#Python Input
+#Passing by Reference and Value
+def change_set(x):
+    print(x)
+    x |= {3.2, 'gp'}
+    print(x)
 
+y = {'ed', 9}
+print(y)
+change_set(y)
+print(y)
 ```
 ### Practice
 - ***Python Input***
@@ -217,25 +266,72 @@ print(days_between(2020, 4, 31, 2020, 7, 31))
 ```
 ### Quiz
 ## 6.5- Function Arguments
-- ***Python Input***
+- ***Function Arguments - Required Argument***
 ```python
-#Python Input
+#Function Arguments - Required Argument 
+def summation(x, y, z):
+    res = x + y + z
+    return res
 
+r = summation(4, 7, 2)
+print(r)
+
+r = summation(4, 7, 2, 5)
+
+r = summation(4, 7)
 ```
-- ***Python Input***
+- ***Function Arguments - Keyword Argument***
 ```python
-#Python Input
+#Function Arguments - Keyword Argument
+def print_info(name, level, gpa, department):
+    print('name:', name)
+    print('level:', level)
+    print('gpa:', gpa)
+    print('department:', department)
 
+print_info(department='CS', name='Mark', gpa=3.7, level=3)
+print_info(level=4, department='IT', name='Peter', gpa=3.4)
+print_info(gpa=3.5, name='Mark', level=2, department='IS')
 ```
-- ***Python Input***
+- ***Function Arguments - Default Argument***
 ```python
-#Python Input
+#Function Arguments - Default Argument
+def summation(x, y=2, z=6):
+    res = x + y + z
+    return res
 
+r = summation(4, 7, 2)
+print(r)
+
+r = summation(4, 7)
+print(r)
+
+r = summation(4)
+print(r)
 ```
-- ***Python Input***
+- ***Function Arguments - Variable Length Argument***
 ```python
-#Python Input
+#Function Arguments - Variable Length Argument
+def summation(*x):
+    print(len(x))
+    print(type(x))
+    print(x)
+    res = 0
+    for i in x:
+        res += i
+    return res
 
+r = summation()
+print(r)
+
+r = summation(4)
+print(r)
+
+r = summation(4, 7)
+print(r)
+
+r = summation(4, 7, 2)
+print(r)
 ```
 ### Quiz
 ### Practice
@@ -364,15 +460,67 @@ x, y = map(int, input().split())
 print(summation(y) - summation(x-1))
 ```
 ## 6.7- Inner Functions
-- ***Python Input***
+- ***Inner Functions***
 ```python
-#Python Input
+#Inner Functions
+def outer_function():
+    print("Hello from outer function")
 
+    def inner_function():
+        print("Hello from inner function")
+
+    inner_function()
+
+outer_function()
 ```
-- ***Python Input***
+- ***Inner Functions***
 ```python
-#Python Input
+#Inner Functions
+def outer_function(x):
 
+    def secret_increment(x):
+        return x + 2
+
+    y = secret_increment(x)
+    print(x)
+    print(y)
+
+secret_increment(5)
+```
+- ***Inner Functions***
+```python
+#Inner Functions
+def outer_function(x):
+
+    def secret_increment(x):
+        return x + 2
+
+    y = secret_increment(x)
+    print(x)
+    print(y)
+
+outer_function(5)
+```
+- ***Closure Function***
+```python
+#Closure Function
+def power_generator(n):
+
+    def power(p):
+        return n ** p
+
+    return power
+
+p2 = power_generator(2)
+p3 = power_generator(3)
+
+print(p2)
+print(p3)
+print(type(p2))
+print(type(p3))
+
+print(p2(5))
+print(p3(4))
 ```
 ### Quiz
 ### Practice
@@ -382,25 +530,79 @@ print(summation(y) - summation(x-1))
 
 ```
 ## 6.8- Global and Local Variables
-- ***Python Input***
+- ***Global Variables***
 ```python
-#Python Input
+#Global Variables
+x = 3
 
+def print_info():
+    print(x)
+
+print_info()
+print(x)
 ```
-- ***Python Input***
+- ***Global Variables***
 ```python
-#Python Input
+#Global Variables
+x = 3
 
+def print_info():
+    x *= 2
+    print(x)
+
+print_info()
+print(x)
 ```
-- ***Python Input***
+- ***Global Variables***
 ```python
-#Python Input
+#Global Variables
+x = 3
 
+def print_info():
+    global x
+    x *= 2
+    print(x)
+
+print_info()
+print(x)
 ```
-- ***Python Input***
+- ***Local Variable***
 ```python
-#Python Input
+#Local Variable
+def print_info():
+    x = 3
+    print(x)
 
+print_info()
+print(x)
+```
+- ***Global variable and Local variable***
+```python
+#Global variable and Local variable
+x = 5
+
+def print_info():
+    x = 10
+    print(x)
+
+print_info()
+print(x)
+```
+- ***Nonlocal variable***
+```python
+#Nonlocal variable
+def outer():
+    x = 3
+
+    def inner():
+        nonlocal x
+        x = 7
+        print(x)
+
+    inner()
+    print(x)
+
+outer()
 ```
 ### Quiz
 ### Practice
