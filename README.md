@@ -26,8 +26,8 @@ Python programming language lectures for computer science students.
 # Textbooks
 
 * ***Python 3 TutorialsPoint***
-* ***Python Tutorial***, guido van rossum
-* ***Python for everybody***, Charles R. Severance
+* ***Python Tutorial***, Guido van Rossum
+* ***Python for Everybody***, Charles R. Severance
 * ***Learning to Program Using Python***, Cody Jackson
 * ***Think Python***, Allen B. Downey
 * ***Learn Python 3 the Hard Way***, Zed A. Shaw
