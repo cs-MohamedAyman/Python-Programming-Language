@@ -30,7 +30,6 @@ Python programming language lectures for computer science students.
 * ***Python for Everybody***, Charles R. Severance
 * ***Learning to Program Using Python***, Cody Jackson
 * ***Think Python***, Allen B. Downey
-* ***Learn Python 3 the Hard Way***, Zed A. Shaw
 * ***Effective Python***, Brett Slatkin
 * ***Python Programming***, John Zelle
 
