@@ -3,14 +3,8 @@
 # Lecture 12 - Numbers
 ## 12.1- Numbers in Python
 ## 12.2- Math Module
-### Quiz
-### Practice
 ## 12.3- Fractions Module
-### Quiz
-### Practice
 ## 12.4- Random Module
-### Quiz
-### Practice
 ## 12.5- Itertools Module
-### Quiz
+### Practice
 ### Practice
