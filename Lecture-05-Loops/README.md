@@ -25,7 +25,7 @@ while i < 3:
 else:
     print('i not less than 3')
 ```
-### Quiz
+##
 ### Practice
 - ***Practice While Loops factorial***
 ```python
@@ -101,7 +101,7 @@ for i in range(len(x)):
 else:
     print('we reach the end of the list')
 ```
-### Quiz
+##
 ### Practice
 - ***Practice For Loops factorial***
 ```python
@@ -151,7 +151,7 @@ for i in range(1, 4):
         print(i*j, end = ' ')
     print()
 ```
-### Quiz
+##
 ### Practice
 - ***Practice While Loops identity matrix***
 ```python
@@ -228,7 +228,7 @@ n = int(input())
 for i in range(n):
     pass
 ```
-### Quiz
+##
 ### Practice
 - ***Practice While Loops prime number***
 ```python
