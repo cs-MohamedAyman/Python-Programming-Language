@@ -3,7 +3,7 @@
 # Lecture 01 - Overview
 
 ## Table of content
-### [1.1- History of Python](#History-of-Python)
+### [1.1- History of Python](#1.1--History-of-Python)
 ### [1.2- Interpreter vs. Compiler](#Interpreter-vs.-Compiler)
 ### [1.3- Python Identifiers and Reserved Words](#Python-Identifiers-and-Reserved-Words)
 ### [1.4- Lines and Indentation](#Lines-and-Indentation)
