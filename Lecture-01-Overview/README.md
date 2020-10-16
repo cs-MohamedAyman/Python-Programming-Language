@@ -3,12 +3,12 @@
 # Lecture 01 - Overview
 
 ## Table of content
-### [1.1- History of Python](#1.1--History-of-Python)
-### [1.2- Interpreter vs. Compiler](#1.2- Interpreter vs. Compiler)
-### [1.3- Python Identifiers and Reserved Words](#1.3- Python Identifiers and Reserved Words)
-### [1.4- Lines and Indentation](#1.4- Lines and Indentation)
-### [1.5- Multi-Line Statements](#1.5- Multi-Line Statements)
-### [1.6- Quotation and Comments](#1.6- Quotation and Comments)
+### [1.1- History of Python](#1.1-History-of-Python)
+### [1.2- Interpreter vs. Compiler](#1.2-Interpreter-vs.-Compiler)
+### [1.3- Python Identifiers and Reserved Words](#1.3-Python-Identifiers-and-Reserved-Words)
+### [1.4- Lines and Indentation](#1.4-Lines-and-Indentation)
+### [1.5- Multi-Line Statements](#1.5-Multi-Line-Statements)
+### [1.6- Quotation and Comments](#1.6-Quotation-and-Comments)
 
 ## 1.1- History of Python
 ## 1.2- Interpreter vs. Compiler
