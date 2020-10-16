@@ -54,7 +54,6 @@ x = 1+2j
 print(x)
 ```
 
-### Quiz
 ## 2.3- Python Strings
 - ***Python Strings***
 ```python
@@ -121,7 +120,6 @@ print(x[7:2:-3])
 print(x[7:2:-4])
 ```
 
-### Quiz
 ## 2.4- Python Lists
 - ***Python Lists***
 ```python
@@ -186,7 +184,6 @@ print(x[-2:0:-2])
 print(x[-2:0:-1])
 ```
 
-### Quiz
 ## 2.5- Python Tuples
 - ***Python Tuples***
 ```python
@@ -251,7 +248,6 @@ print(x[-2:0:-2])
 print(x[-2:0:-1])
 ```
 
-### Quiz
 ## 2.6- Python Dictionaries
 - ***Python Dictionaries***
 ```python
@@ -281,7 +277,6 @@ print(x['Paris']['Zurich'])
 print(x['Barcelone'][:3])
 ```
 
-### Quiz
 ## 2.7- Python Sets
 - ***Python Sets***
 ```python
@@ -317,7 +312,6 @@ print(y - x)
 print(x ^ y)
 ```
 
-### Quiz
 ## 2.8- Data Type Conversion
 - ***Data Type Conversion***
 ```python
@@ -482,7 +476,6 @@ print('The value of x is %.3f' % x)
 print('The value of x is %.4f' % x)
 ```
 
-### Quiz
 ### Practice
 
 - ***Practice input 1***
