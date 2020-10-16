@@ -4,13 +4,7 @@
 ## 8.1- Introduction to List
 ## 8.2- Basic List Operations
 ## 8.3- List Comprehension
-### Quiz
-### Practice
 ## 8.4- Multi-dimensional Lists
-### Quiz
-### Practice
 ## 8.5- Built-in List Functions
-### Quiz
 ### Practice
-### Quiz
 ### Practice
