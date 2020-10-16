@@ -26,7 +26,7 @@ if n % 2 == 0:
 else:
     print("it's an odd number")
 ```
-### Quiz
+
 ## 4.4- IF, ELIF and ELSE Statements
 - ***IF, ELIF and ELSE Statements***
 ```python
@@ -40,7 +40,7 @@ elif n < 0:
 else:
     print("It's zero")
 ```
-### Quiz
+##
 ### Practice
 - ***Practice max number***
 ```python
@@ -78,7 +78,7 @@ else:
     else:
         print("this number not divisible by 2 nor 3")
 ```
-### Quiz
+##
 ### Practice
 - ***Practice grading system 2***
 ```python
@@ -115,7 +115,7 @@ n = 3
 print('even') if n % 2 == 0 else print('odd')
 print('even' if n % 2 == 0 else 'odd')
 ```
-### Quiz
+##
 ### Practice
 - ***Practice grading system 3***
 ```python
