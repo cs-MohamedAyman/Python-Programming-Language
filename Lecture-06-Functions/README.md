@@ -32,7 +32,7 @@ a, b = add_one_hundred(a, b)
 print(a)
 print(b)
 ```
-### Quiz
+##
 ### Practice
 - ***Practice computing the number of days in a month***
 ```python
@@ -207,7 +207,7 @@ print(y)
 #Python Input
 
 ```
-### Quiz
+##
 ## 6.5- Function Arguments
 - ***Function Arguments - Required Argument***
 ```python
@@ -276,7 +276,7 @@ print(r)
 r = summation(4, 7, 2)
 print(r)
 ```
-### Quiz
+##
 ### Practice
 - ***Practice prime number***
 ```python
@@ -365,7 +365,7 @@ y = [1, 5, 4, 6, 8]
 r = list(map(lambda x: x * 2, y))
 print(r)
 ```
-### Quiz
+##
 ### Practice
 - ***Practice distance two points***
 ```python
@@ -465,7 +465,7 @@ print(type(p3))
 print(p2(5))
 print(p3(4))
 ```
-### Quiz
+##
 ### Practice
 - ***Python Input***
 ```python
@@ -547,7 +547,7 @@ def outer():
 
 outer()
 ```
-### Quiz
+##
 ### Practice
 - ***Python Input***
 ```python
