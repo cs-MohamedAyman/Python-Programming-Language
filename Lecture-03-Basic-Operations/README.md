@@ -17,7 +17,7 @@ print(x ** y)
 x, y = 11, 5
 print(x // y)
 ```
-### Quiz
+
 ## 3.2- Comparison Operators
 - ***Comparison Operators***
 ```python
@@ -39,7 +39,7 @@ print(x < y)
 print(x >= y)
 print(x <= y)
 ```
-### Quiz
+
 ## 3.3- Bitwise Operators
 - ***Bitwise Operators***
 ```python
@@ -57,7 +57,7 @@ print(y, bin(y))
 print(y >> 3)
 print(y << 3)
 ```
-### Quiz
+
 ## 3.4- Assignment Operators
 - ***Assignment Operators***
 ```python
@@ -79,7 +79,7 @@ print(z)
 z /= y
 print(z)
 ```
-### Quiz
+
 ## 3.5- Logical Operators
 - ***Logical Operators***
 ```python
@@ -97,7 +97,7 @@ print(a > b or c < d)
 print(not a > b)
 print(not c < d)
 ```
-### Quiz
+
 ## 3.6- Membership Operators
 - ***Membership Operators***
 ```python
@@ -117,7 +117,7 @@ print('W' in z[2])
 print('World' in z[2])
 print('W' not in z)
 ```
-### Quiz
+
 ## 3.7- Identity Operators
 - ***Identity Operators***
 ```python
@@ -193,7 +193,7 @@ print(x, id(x))
 print(y, id(y))
 print(x is y)
 ```
-### Quiz
+
 ## 3.8- Operators Precedence
 - ***Operators Precedence***
 ```python
@@ -213,7 +213,7 @@ print(a or b and c or d)
 print(a and not b or c and d)
 print(a or b and not c or d)
 ```
-### Quiz
+
 ### Practice
 - ***Practice fahrenheit conversion***
 ```python
