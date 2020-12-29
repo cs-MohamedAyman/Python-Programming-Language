@@ -4,9 +4,9 @@
 
 ## Table of Content
 
-- ***History of Python***
-- ***Interpreter vs. Compiler***
-- ***Python Identifiers and Reserved Words***
-- ***Lines and Indentation***
-- ***Multi-Line Statements***
-- ***Quotation and Comments***
+- ***Python Features***
+- ***Python Content***
+- ***Practice on Online Judges***
+- ***Tutorials and References***
+- ***Online Courses***
+- ***Python Installation***
