@@ -52,6 +52,8 @@ def check_win():
 		s |= {grid[i][N-i-1]}
 	if len(s) == 1 and '.' not in s:
 		return True
+    #Otherwise, there isn't a win state in the game, 
+    #if all cases above not reached
 	return False
 
 #This function checks if row or column or diagonal is full with same characters
@@ -86,6 +88,8 @@ def check_tie(mark):
 			s |= {grid[i][N-i-1]}
 	if len(s) == 1:
 		return False
+    #Otherwise, there isn't a win state in the game, 
+    #if all cases above not reached
 	return True
 
 #This function checks if given cell is empty or not 
