@@ -13,6 +13,7 @@ The grid will look like this:
 '''
 import random
 N = 9
+root_N = 3
 grid = [[0] * N for i in range(N)]
 
 #This function prints the grid of 2048 Game as the game progresses
@@ -21,12 +22,12 @@ def print_grid():
     for i in range(N):
         print(end='|  ')
         for j in range(N):
-            if j % 3 == 0 and j > 0:
+            if j % root_N == 0 and j > 0:
                 print('|  ', end='')
             print(grid[i][j], end='  ')
         print(end='|')
         print()
-        if i % 3 == 2:
+        if i % root_N == root_N - 1:
             print('-' + '----' * N)
 
 #This function checks if all rows and columns and boxes is full with all numbers
@@ -43,11 +44,11 @@ def check_win():
             s.add(grid[j][i])
         if len(s) != N or 0 in s:
             return False
-    for i in range(0, N, 3):
-        for j in range(0, N, 3):
+    for i in range(0, N, root_N):
+        for j in range(0, N, root_N):
             s = set()
-            for k in range(i, i+3):
-                for w in range(j, j+3):
+            for k in range(i, i+root_N):
+                for w in range(j, j+root_N):
                     s.add(grid[k][w])
             if len(s) != N*N or 0 in s:
                 return False
@@ -72,8 +73,8 @@ def check_valid_value(i, j, v):
         if grid[k][j] == v:
             return False
     b, e = i//3*3, j//3*3
-    for k in range(b, b+3):
-        for w in range(e, e+3):
+    for k in range(b, b+root_N):
+        for w in range(e, e+root_N):
             if grid[k][w] == v:
                 return False
     return True
@@ -86,10 +87,10 @@ def set_cell(i, j, v):
 def generate_cells():
     vals = []
     for i in range(1, N+1):
-        vals += [i] * (N//3)
-    for i in range(0, N, 3):
-        for j in range(0, N, 3):
-            for w in range(3):
+        vals += [i] * (N//root_N)
+    for i in range(0, N, root_N):
+        for j in range(0, N, root_N):
+            for w in range(root_N):
                 random.shuffle(vals)
                 k = random.choice(vals)
                 while not check_valid_value(i+w, j+w, k):
