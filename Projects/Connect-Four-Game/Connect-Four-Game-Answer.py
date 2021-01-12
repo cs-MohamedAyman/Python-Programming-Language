@@ -53,6 +53,8 @@ def check_win():
             s = {grid[i][j], grid[i+1][j-1], grid[i+2][j-2], grid[i+3][j-3]}
             if grid[i][j] != '.' and len(s) == 1:
                 return True
+    #Otherwise, there isn't a win state in the game, 
+    #if all cases above not reached
     return False
 
 #This function checks if row or column or diagonal is full with same characters
@@ -81,6 +83,8 @@ def check_tie(mark):
             s = {mark, grid[i][j], grid[i+1][j-1], grid[i+2][j-2], grid[i+3][j-3]}
             if '.' in s and len(s) == 2:
                 return False
+    #Otherwise, there isn't a win state in the game, 
+    #if all cases above not reached
     return True
 
 #This function checks if given cell is empty or not 
@@ -140,8 +144,8 @@ def play_game():
 
 
 while True:
-	play_game()
 	grid_clear()
+	play_game()
 	c = input('Play Again [Y/N] ')
 	if c not in 'yY':
 		break
