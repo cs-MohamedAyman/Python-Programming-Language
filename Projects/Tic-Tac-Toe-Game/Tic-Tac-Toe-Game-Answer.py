@@ -6,7 +6,7 @@ The grid will look like this:
   2,0 | 2,1 | 2,2
 '''
 N = 3
-grid = [['.'] * N for i in range(N)]
+grid = []
 
 #This function prints the grid of Tic-Tac-Toe as the game progresses
 def print_grid():
@@ -145,8 +145,8 @@ def play_game():
 
 
 while True:
-	play_game()
 	grid_clear()
+	play_game()
 	c = input('Play Again [Y/N] ')
 	if c not in 'yY':
 		break
