@@ -6,7 +6,7 @@ The grid will look like this:
   2,0 | 2,1 | 2,2
 '''
 N = 3
-grid = [['.'] * N for i in range(N)]
+grid = []
 
 #This function prints the grid of Tic-Tac-Toe as the game progresses
 def print_grid():
@@ -22,54 +22,27 @@ def print_grid():
 
 #This function checks if row or column or diagonal is full with same characters
 def check_win():
-    #If row is full with same characters, 
-	#the game is over and the player with that character has won
-
-    #If column is full with same characters, 
-	#the game is over and the player with that character has won
-
-    #If diagonal is full with same characters, 
-	#the game is over and the player with that character has won
-
-    #If diagonal is full with same characters, 
-	#the game is over and the player with that character has won
-
-    #Otherwise, there isn't a win state in the game, 
-    #if all cases above not reached
-
-	pass
+    pass
 
 #This function checks if row or column or diagonal is full with same characters
 def check_tie(mark):
-    #If row a single type of characters
-
-    #If column a single type of characters
-
-    #If diagonal a single type of characters
-
-    #If diagonal a single type of characters
-
-    #Otherwise, there isn't a win state in the game, 
-    #if all cases above not reached
-
-	pass
+    pass
 
 #This function checks if given cell is empty or not 
 def check_empty(i, j):
-	pass
+    pass
 
 #This function checks if given position is valid or not 
 def check_valid_position(i, j):
-	pass
+    pass
 
 #This function sets a value to a cell
 def set_cell(i, j, mark):
-	pass
+    pass
 
 #This function clears the grid
 def grid_clear():
-	pass
-
+    pass
 
 #MAIN FUNCTION
 def play_game():
@@ -106,8 +79,8 @@ def play_game():
 
 
 while True:
-	play_game()
 	grid_clear()
+	play_game()
 	c = input('Play Again [Y/N] ')
 	if c not in 'yY':
 		break
