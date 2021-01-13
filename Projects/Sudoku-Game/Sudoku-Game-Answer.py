@@ -14,7 +14,7 @@ The grid will look like this:
 import random
 N = 9
 root_N = 3
-grid = [[0] * N for i in range(N)]
+grid, cpy_grid = [], []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
@@ -50,7 +50,7 @@ def check_win():
             for k in range(i, i+root_N):
                 for w in range(j, j+root_N):
                     s.add(grid[k][w])
-            if len(s) != N*N or 0 in s:
+            if len(s) != N or 0 in s:
                 return False
     return True
 
@@ -62,10 +62,16 @@ def check_valid_position(i, j):
 def check_empty_cell(i, j):
     return grid[i][j] == 0
 
+#This function checks if given cell is original or not
+def check_original_cell(i, j):
+    return cpy_grid[i][j] != 0
+
 #This function checks if the given cell is valid with the given numbers
 def check_valid_value(i, j, v):
     if v == 0:
         return True
+    if v > N:
+        return False
     for k in range(N):
         if grid[i][k] == v:
             return False
@@ -95,13 +101,15 @@ def generate_cells():
                 k = random.choice(vals)
                 while not check_valid_value(i+w, j+w, k):
                     k = random.choice(vals)
-                set_cell(i+w, j+w, k)
+                grid[i+w][j+w] = k
+                cpy_grid[i+w][j+w] = k
                 vals.remove(k)
 
 #This function clears the grid
 def grid_clear():
-	global grid
+	global grid, cpy_grid
 	grid = [[0] * N for i in range(N)]
+	cpy_grid = [[0] * N for i in range(N)]
 
 
 #MAIN FUNCTION
@@ -113,7 +121,7 @@ def play_game():
         #Prints the grid
         print_grid()
         i, j, v = map(int, input('Enter the position and value: ').split())
-        while not check_valid_position(i, j) or not check_valid_value(i, j, v):
+        while not check_valid_position(i, j) or not check_valid_value(i, j, v) or check_original_cell(i, j):
             i, j, v = map(int, input('Enter a valid position and value: ').split())
         #Set the input position with the value
         set_cell(i, j, v)
@@ -125,9 +133,9 @@ def play_game():
             break
 
 while True:
+    grid_clear()
     generate_cells()
     play_game()
-    grid_clear()
     c = input('Play Again [Y/N] ')
     if c not in 'yY':
         break
