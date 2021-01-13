@@ -32,18 +32,21 @@ def print_grid():
 
 #This function checks if all rows and columns and boxes is full with all numbers
 def check_win():
+    #If row is not full with all numbers, the game is still running
     for i in range(N):
         s = set()
         for j in range(N):
             s.add(grid[i][j])
         if len(s) != N or 0 in s:
             return False
+    #If column is not full with all numbers, the game is still running
     for i in range(N):
         s = set()
         for j in range(N):
             s.add(grid[j][i])
         if len(s) != N or 0 in s:
             return False
+    #If box is not full with all numbers, the game is still running
     for i in range(0, N, root_N):
         for j in range(0, N, root_N):
             s = set()
@@ -52,6 +55,8 @@ def check_win():
                     s.add(grid[k][w])
             if len(s) != N or 0 in s:
                 return False
+    #Otherwise, there is a win state in the game, 
+    #if all cases above not reached		
     return True
 
 #This function checks if given position is valid or not 
@@ -68,21 +73,28 @@ def check_original_cell(i, j):
 
 #This function checks if the given cell is valid with the given numbers
 def check_valid_value(i, j, v):
+	#Check delete case
     if v == 0:
         return True
-    if v > N:
+	#Check invalid value
+    if v < 0 or v > N:
         return False
+	#Check duplicate in all rows
     for k in range(N):
         if grid[i][k] == v:
             return False
+	#Check duplicate in all columns
     for k in range(N):
         if grid[k][j] == v:
             return False
+	#Check duplicate in all boxes
     b, e = i//root_N*root_N, j//root_N*root_N
     for k in range(b, b+root_N):
         for w in range(e, e+root_N):
             if grid[k][w] == v:
                 return False
+    #Otherwise, the given value is valid,
+    #if all cases above not reached		
     return True
 
 #This function sets a value to a cell
@@ -93,7 +105,7 @@ def set_cell(i, j, v):
 def generate_cells():
     vals = []
     for i in range(1, N+1):
-        vals += [i] * (N//root_N)
+        vals += [i] * root_N
     for i in range(0, N, root_N):
         for j in range(0, N, root_N):
             for w in range(root_N):
