@@ -13,7 +13,8 @@ The grid will look like this:
 '''
 import random
 N = 9
-grid = [[0] * N for i in range(N)]
+root_N = 3
+grid, cpy_grid = [], []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
@@ -21,12 +22,12 @@ def print_grid():
     for i in range(N):
         print(end='|  ')
         for j in range(N):
-            if j % 3 == 0 and j > 0:
+            if j % root_N == 0 and j > 0:
                 print('|  ', end='')
             print(grid[i][j], end='  ')
         print(end='|')
         print()
-        if i % 3 == 2:
+        if i % root_N == root_N - 1:
             print('-' + '----' * N)
 
 #This function checks if all rows and columns and boxes is full with all numbers
@@ -41,6 +42,10 @@ def check_valid_position(i, j):
 def check_empty_cell(i, j):
     pass
 
+#This function checks if given cell is original or not
+def check_original_cell(i, j):
+    pass
+
 #This function checks if the given cell is valid with the given numbers
 def check_valid_value(i, j, v):
     pass
@@ -53,15 +58,16 @@ def set_cell(i, j, v):
 def generate_cells():
     vals = []
     for i in range(1, N+1):
-        vals += [i] * (N//3)
-    for i in range(0, N, 3):
-        for j in range(0, N, 3):
-            for w in range(3):
+        vals += [i] * (N//root_N)
+    for i in range(0, N, root_N):
+        for j in range(0, N, root_N):
+            for w in range(root_N):
                 random.shuffle(vals)
                 k = random.choice(vals)
                 while not check_valid_value(i+w, j+w, k):
                     k = random.choice(vals)
-                set_cell(i+w, j+w, k)
+                grid[i+w][j+w] = k
+                cpy_grid[i+w][j+w] = k
                 vals.remove(k)
 
 #This function clears the grid
@@ -78,7 +84,7 @@ def play_game():
         #Prints the grid
         print_grid()
         i, j, v = map(int, input('Enter the position and value: ').split())
-        while not check_valid_position(i, j) or not check_valid_value(i, j, v):
+        while not check_valid_position(i, j) or not check_valid_value(i, j, v) or check_original_cell(i, j):
             i, j, v = map(int, input('Enter a valid position and value: ').split())
         #Set the input position with the value
         set_cell(i, j, v)
@@ -90,9 +96,9 @@ def play_game():
             break
 
 while True:
+    grid_clear()
     generate_cells()
     play_game()
-    grid_clear()
     c = input('Play Again [Y/N] ')
     if c not in 'yY':
         break
