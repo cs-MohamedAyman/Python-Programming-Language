@@ -8,7 +8,7 @@ The grid will look like this:
 '''
 import random
 N = 4
-grid = [[0] * N for i in range(N)]
+grid = []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
@@ -26,11 +26,12 @@ def print_grid():
 
 #This function generates a cell with value 2 
 def generate_cell():
-    pass
-
-#This function checks if the game state reachs 2048 or not 
-def check_win():
-    pass
+    a = random.randint(0, N-1)
+    b = random.randint(0, N-1)
+    while grid[a][b] != 0:
+        a = random.randint(0, N-1)
+        b = random.randint(0, N-1)
+    grid[a][b] = 2
 
 #This function rotates the grid by 90 degree
 def rotate_90():
@@ -42,13 +43,30 @@ def rotate_90():
             grid[N-i-1][N-j-1] = grid[j][N-i-1]
             grid[j][N-i-1]     = k
 
+#This function checks if the game state reachs 2048 or not 
+def check_win():
+    pass
+
 #This function checks if the direction have state reachs 2048 or not 
 def check_available_direction():
     pass
 
 #This function checks if any direction have state reachs 2048 or not
-def check_available_move(dir):
-    pass
+def check_available_move(d):
+    res = False
+    #check direction right
+    if d == 3: res = check_available_direction()
+    rotate_90()
+    #check direction down
+    if d == 5: res = check_available_direction()
+    rotate_90()
+    #check direction left
+    if d == 1: res = check_available_direction()
+    rotate_90()
+    #check direction up
+    if d == 2: res = check_available_direction()
+    rotate_90()
+    return res
 
 #This function checks if the game state over or not
 def check_full():
@@ -59,16 +77,38 @@ def merge():
     pass
 
 #This function checks if the direction have state reachs 2048 or not 
-def merge_direction(dir):
-    pass
+def merge_direction(d):
+    #merge direction right
+    if d == 3: merge()
+    rotate_90()
+    #merge direction down
+    if d == 5: merge()
+    rotate_90()
+    #merge direction left
+    if d == 1: merge()
+    rotate_90()
+    #merge direction up
+    if d == 2: merge()
+    rotate_90()
 
 #This function moves the grid with given direction 
 def move():
     pass
 
 #This function checks if the direction have state reachs 2048 or not 
-def move_direction(dir):
-    pass
+def move_direction(d):
+    #move direction left
+    if d == 1: move()
+    rotate_90()
+    #move direction up
+    if d == 2: move()
+    rotate_90()
+    #move direction right
+    if d == 3: move()
+    rotate_90()
+    #move direction down
+    if d == 5: move()
+    rotate_90()
 
 #This function checks if given position is valid or not 
 def check_valid_direction(i):
@@ -112,8 +152,8 @@ def play_game():
             break
 
 while True:
-	play_game()
 	grid_clear()
+	play_game()
 	c = input('Play Again [Y/N] ')
 	if c not in 'yY':
 		break
