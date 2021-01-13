@@ -9,7 +9,7 @@ The grid will look like this:
   5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6
 '''
 N, M = 6, 7
-grid = [['.'] * M for i in range(N)]
+grid = []
 
 #This function prints the grid of Connect Four Game as the game progresses
 def print_grid():
@@ -26,28 +26,28 @@ def print_grid():
 #This function checks if row or column or diagonal is full with same characters
 def check_win():
     #If row is full with same characters, 
-	#the game is over and the player with that character has won
+    #the game is over and the player with that character has won
     for i in range(N):
         for j in range(M-3):
             s = {grid[i][j], grid[i][j+1], grid[i][j+2], grid[i][j+3]}
             if grid[i][j] != '.' and len(s) == 1:
                 return True
-	#If column is full with same characters, 
-	#the game is over and the player with that character has won
+    #If column is full with same characters, 
+    #the game is over and the player with that character has won
     for j in range(N-3):
         for i in range(M):
             s = {grid[j][i], grid[j+1][i], grid[j+2][i], grid[j+3][i]}
             if grid[j][i] != '.' and len(s) == 1:
                 return True
     #If diagonal is full with same characters, 
-	#the game is over and the player with that character has won
+    #the game is over and the player with that character has won
     for i in range(N-3):
         for j in range(M-3):
             s = {grid[i][j], grid[i+1][j+1], grid[i+2][j+2], grid[i+3][j+3]}
             if grid[i][j] != '.' and len(s) == 1:
                 return True
     #If diagonal is full with same characters, 
-	#the game is over and the player with that character has won
+    #the game is over and the player with that character has won
     for i in range(N-3):
         for j in range(3, M):
             s = {grid[i][j], grid[i+1][j-1], grid[i+2][j-2], grid[i+3][j-3]}
@@ -89,23 +89,23 @@ def check_tie(mark):
 
 #This function checks if given cell is empty or not 
 def check_empty(i):
-	return grid[0][i] == '.'
+    return grid[0][i] == '.'
 
 #This function checks if given position is valid or not 
 def check_valid_column(i):
-	return 0 <= i < M
+    return 0 <= i < M
 
 #This function sets a value to a cell
 def set_cell(i, mark):
-	for j in range(N-1, -1, -1):
-		if grid[j][i] == '.':
-			grid[j][i] = mark
-			break
+    for j in range(N-1, -1, -1):
+        if grid[j][i] == '.':
+            grid[j][i] = mark
+            break
 
 #This function clears the grid
 def grid_clear():
-	global grid
-	grid = [['.'] * M for i in range(N)]
+    global grid
+    grid = [['.'] * M for i in range(N)]
 
 
 #MAIN FUNCTION
