@@ -17,7 +17,7 @@ def print_grid():
         print(end='|  ')
         for j in range(N):
             r = (5 - len(str(grid[i][j]))) // 2
-            e = (' ' * r) + str(grid[i][j]) + (' ' * r)
+            e = (' ' * r) + (str(grid[i][j]) if grid[i][j] != 0 else ' ') + (' ' * r)
             if len(e) < 5: e += ' '
             print(e, end='')
         print(end='  |')
@@ -38,8 +38,8 @@ def rotate_90():
     for i in range(N//2):
         for j in range(i, N-i-1):
             k                  = grid[i][j]
-            grid[i][j]         = grid[N-j-1][i];
-            grid[N-j-1][i]     = grid[N-i-1][N-j-1];
+            grid[i][j]         = grid[N-j-1][i]
+            grid[N-j-1][i]     = grid[N-i-1][N-j-1]
             grid[N-i-1][N-j-1] = grid[j][N-i-1]
             grid[j][N-i-1]     = k
 
