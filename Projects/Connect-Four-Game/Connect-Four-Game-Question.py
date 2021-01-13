@@ -9,7 +9,7 @@ The grid will look like this:
   5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6
 '''
 N, M = 6, 7
-grid = [['.'] * M for i in range(N)]
+grid = []
 
 #This function prints the grid of Connect Four Game as the game progresses
 def print_grid():
@@ -25,27 +25,27 @@ def print_grid():
 
 #This function checks if row or column or diagonal is full with same characters
 def check_win():
-	pass
-	
+    pass
+
 #This function checks if row or column or diagonal is full with same characters
 def check_tie(mark):
-	pass
+    pass
 
 #This function checks if given cell is empty or not 
 def check_empty(i):
-	pass
+    pass
 
 #This function checks if given position is valid or not 
 def check_valid_column(i):
-	pass
+    pass
 
 #This function sets a value to a cell
 def set_cell(i, mark):
-	pass
+    pass
 
 #This function clears the grid
 def grid_clear():
-	pass
+    pass
 
 
 #MAIN FUNCTION
@@ -84,8 +84,8 @@ def play_game():
 
 
 while True:
-	play_game()
 	grid_clear()
+	play_game()
 	c = input('Play Again [Y/N] ')
 	if c not in 'yY':
 		break
