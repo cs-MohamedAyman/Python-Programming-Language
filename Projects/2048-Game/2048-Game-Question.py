@@ -17,7 +17,7 @@ def print_grid():
         print(end='|  ')
         for j in range(N):
             r = (5 - len(str(grid[i][j]))) // 2
-            e = (' ' * r) + str(grid[i][j]) + (' ' * r)
+            e = (' ' * r) + (str(grid[i][j]) if grid[i][j] != 0 else ' ') + (' ' * r)
             if len(e) < 5: e += ' '
             print(e, end='')
         print(end='  |')
