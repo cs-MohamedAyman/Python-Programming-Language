@@ -72,7 +72,7 @@ def check_valid_value(i, j, v):
     for k in range(N):
         if grid[k][j] == v:
             return False
-    b, e = i//3*3, j//3*3
+    b, e = i//root_N*root_N, j//root_N*root_N
     for k in range(b, b+root_N):
         for w in range(e, e+root_N):
             if grid[k][w] == v:
