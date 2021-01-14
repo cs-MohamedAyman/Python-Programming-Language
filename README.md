@@ -44,3 +44,22 @@ Python programming language lectures for computer science students.
 <img align="right" width="80" height="50" src="https://github.com/cs-MohamedAyman/YouTube-Playlists/blob/master/organizations-logos/youtube.jpg">
 
 # YouTube-Playlists
+
+* MIT OpenCourseWare - Introduction to Computer Science and Programming in Python. Fall 2016
+* freeCodeCamp.org - Python Tutorials
+* thenewboston - Python 3.4 Programming Tutorials
+* edureka! - Python Tutorial For Beginners
+* Telusko - Python Tutorial for Beginners
+* ProgrammingKnowledge - Python Tutorial for Beginners (For Absolute Beginners)
+* ProgrammingKnowledge - Python 3 Tutorial for Beginners
+* ProgrammingKnowledge - Object-Oriented Programming (OOP) in Python 3
+* Clever Programmer - Learn Python Programming
+* CodeWithHarry - Python Tutorials For Absolute Beginners In Hindi
+* The Net Ninja - Python 3 Tutorial for Beginners
+* Intellipaat - Python Tutorial for Beginners
+* Simplilearn - Python Tutorial Videos
+* Tech With Tim - Python Programming Tutorials
+* Microsoft Developer - Python for Beginners
+* Sundeep Saradhi Kanthety - Python Programming for Beginners
+* Harshit vashisth - Complete Python tutorial in Hindi (2020)
+* Amulya's Academy - Python Programming Video Tutorials for Beginners
