@@ -2,11 +2,33 @@
 
 # Lecture 01 - Overview
 
-## Table of Content
+<details>
+	<summary>1.1- History of Python</summary>
 
-- ***History of Python***
-- ***Interpreter vs. Compiler***
-- ***Python Identifiers and Reserved Words***
-- ***Lines and Indentation***
-- ***Multi-Line Statements***
-- ***Quotation and Comments***
+</details>
+
+<details>
+	<summary>1.2- Interpreter vs. Compiler</summary>
+
+</details>
+
+<details>
+	<summary>1.3- Python Identifiers and Reserved Words</summary>
+
+</details>
+
+<details>
+	<summary>1.4- Lines and Indentation</summary>
+
+</details>
+
+<details>
+	<summary>1.5- Multi-Line Statements</summary>
+
+</details>
+
+<details>
+	<summary>1.6- Quotation and Comments</summary>
+
+</details>
+
