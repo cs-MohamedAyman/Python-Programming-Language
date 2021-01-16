@@ -100,46 +100,46 @@
 <details>
 	<summary>3.5- Logical Operators</summary>
 
-	- ***Logical Operators***
-	```python
-	#Logical Operators
+  - ***Logical Operators***
+  ```python
+  #Logical Operators
 
-	x, y = True, False
-	print(x and y)
-	print(x or y)
-	print(not x)
-	print(not y)
+  x, y = True, False
+  print(x and y)
+  print(x or y)
+  print(not x)
+  print(not y)
 
-	a, b, c, d = 10, 5, 7, 3
-	print(a > b and c < d)
-	print(a > b or c < d)
-	print(not a > b)
-	print(not c < d)
-	```
+  a, b, c, d = 10, 5, 7, 3
+  print(a > b and c < d)
+  print(a > b or c < d)
+  print(not a > b)
+  print(not c < d)
+  ```
 
 </details>
 
 <details>
 	<summary>3.6- Membership Operators</summary>
 
-	- ***Membership Operators***
-	```python
-	#Membership Operators
+  - ***Membership Operators***
+  ```python
+  #Membership Operators
 
-	x = 'Hello World'
-	y = {'a':1, 'b':2, 'c':3}
-	z = [17, -31, 'Hello World', [20, 61], (15, -9)]
-	print('H' in x)
-	print('Hello' in x)
-	print('b' in y)
-	print(3 not in y)
-	print(-31 in z)
-	print(61 not in z)
-	print(61 in z[3])
-	print('W' in z[2])
-	print('World' in z[2])
-	print('W' not in z)
-	```
+  x = 'Hello World'
+  y = {'a':1, 'b':2, 'c':3}
+  z = [17, -31, 'Hello World', [20, 61], (15, -9)]
+  print('H' in x)
+  print('Hello' in x)
+  print('b' in y)
+  print(3 not in y)
+  print(-31 in z)
+  print(61 not in z)
+  print(61 in z[3])
+  print('W' in z[2])
+  print('World' in z[2])
+  print('W' not in z)
+  ```
 
 </details>
 
