@@ -8,24 +8,25 @@ The grid will look like this:
 '''
 import random
 N = 4
+GOAL = 2 ** (3*N-1)
 grid = []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
-    print(('-' * (N//2)) + ('--------' * N) + ('-' * (N//2)) + '-')
+    print(('-' * N) + ('-' * ((N+4) * N)) + '-')
     for i in range(N):
         print(end='|')
         for j in range(N):
             if grid[i][j] == 0:
-                e = ' ' * 8
+                e = ' ' * (N+4)
             else:
                 str_len = len(str(grid[i][j]))
-                r1 = (8 - str_len) // 2
-                r2 = (8 - str_len) - r1
+                r1 = ((N+4) - str_len + 1) // 2
+                r2 = ((N+4) - str_len) - r1
                 e = (' ' * r1) + str(grid[i][j]) + (' ' * r2)
             print(e, end='|')
         print()
-        print(('-' * (N//2)) + ('--------' * N) + ('-' * (N//2)) + '-')
+        print(('-' * N) + ('-' * ((N+4) * N)) + '-')
 
 #This function generates a cell with value 2 
 def generate_cell():
@@ -48,10 +49,9 @@ def rotate_90():
 
 #This function checks if the game state reachs 2048 or not 
 def check_win():
-    #Search for cell with value 2048
     for i in range(N):
         for j in range(N):
-            if grid[i][j] == 2048:
+            if grid[i][j] == GOAL:
                 return True
     return False
 
@@ -165,7 +165,7 @@ def grid_clear():
 
 #MAIN FUNCTION
 def play_game():
-    print("2048 Game!")
+    print(str(GOAL) + " Game!")
     print("Welcome...")
     print("============================")
     while True:

@@ -13,22 +13,26 @@ The grid will look like this:
 '''
 import random
 N = 9
-root_N = 3
+root_N = int(N ** 0.5)
 grid, cpy_grid = [], []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
-    print('-' + '----' * N)
+    dd_len = len(str(N))
+    print(('-' * (N*(dd_len+2))) + ('---' * root_N) + '-')
     for i in range(N):
         print(end='|  ')
         for j in range(N):
             if j % root_N == 0 and j > 0:
                 print('|  ', end='')
-            print(grid[i][j], end='  ')
+            if grid[i][j] == 0:
+                print('.'*dd_len, end='  ')
+            else:
+                print('0'*(dd_len - len(str(grid[i][j]))) + str(grid[i][j]), end='  ')
         print(end='|')
         print()
         if i % root_N == root_N - 1:
-            print('-' + '----' * N)
+            print(('-' * (N*(dd_len+2))) + ('---' * root_N) + '-')
 
 #This function checks if all rows and columns and boxes is full with all numbers
 def check_win():
