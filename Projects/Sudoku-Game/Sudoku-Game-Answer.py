@@ -101,21 +101,49 @@ def check_valid_value(i, j, v):
 def set_cell(i, j, v):
 	grid[i][j] = v
 
+#This function solve the grid
+def solve_grid(i, j):
+    if j == N:
+        i += 1
+        j = 0
+    if i == N:
+        return True
+    if check_original_cell(i, j):
+        return solve_grid(i, j + 1)
+    for k in range(1, N+1):
+        if check_valid_value(i, j, k):
+            grid[i][j] = k
+            cpy_grid[i][j] = k
+            if solve_grid(i, j + 1):
+                return True
+        grid[i][j] = 0
+        cpy_grid[i][j] = 0
+    return False
+
 #This function generates cells in the grid
 def generate_cells():
-    vals = []
-    for i in range(1, N+1):
-        vals += [i] * root_N
-    for i in range(0, N, root_N):
-        for j in range(0, N, root_N):
-            for w in range(root_N):
-                random.shuffle(vals)
-                k = random.choice(vals)
-                while not check_valid_value(i+w, j+w, k):
-                    k = random.choice(vals)
-                grid[i+w][j+w] = k
-                cpy_grid[i+w][j+w] = k
-                vals.remove(k)
+    #Generate cells in the diagonal boxes of the grid
+    for k in range(0, N, root_N):
+        for i in range(root_N):
+            for j in range(root_N):
+                n = random.randint(1, N+1)
+                while not check_valid_value(k+i, k+j, n) or check_original_cell(k+i, k+j):
+                    n = random.randint(1, N+1)
+                grid[k+i][k+j] = n
+                cpy_grid[k+i][k+j] = n
+    #Solve the complete grid
+    solve_grid(0, 0)
+    #Remove cells in the grid to be solved
+    prev_x, prev_y = 0, 0
+    for k in range(N*N - (N*root_N + root_N*root_N)):
+        i = (random.randint(0, N-1) + prev_x + root_N) % N
+        j = (random.randint(0, N-1) + prev_y + root_N) % N
+        while not check_original_cell(i, j):
+            i = (random.randint(0, N-1) + prev_x + root_N) % N
+            j = (random.randint(0, N-1) + prev_y + root_N) % N
+        grid[i][j] = 0
+        cpy_grid[i][j] = 0
+        prev_x, prev_y = i, j
 
 #This function clears the grid
 def grid_clear():
