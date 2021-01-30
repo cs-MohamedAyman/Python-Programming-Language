@@ -12,17 +12,20 @@ grid = []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
-    print('--' + '-----' * N + '----')
+    print(('-' * (N//2)) + ('--------' * N) + ('-' * (N//2)) + '-')
     for i in range(N):
-        print(end='|  ')
+        print(end='|')
         for j in range(N):
-            r = (5 - len(str(grid[i][j]))) // 2
-            e = (' ' * r) + (str(grid[i][j]) if grid[i][j] != 0 else ' ') + (' ' * r)
-            if len(e) < 5: e += ' '
-            print(e, end='')
-        print(end='  |')
+            if grid[i][j] == 0:
+                e = ' ' * 8
+            else:
+                str_len = len(str(grid[i][j]))
+                r1 = (8 - str_len) // 2
+                r2 = (8 - str_len) - r1
+                e = (' ' * r1) + str(grid[i][j]) + (' ' * r2)
+            print(e, end='|')
         print()
-        print('--' + '-----' * N + '----')
+        print(('-' * (N//2)) + ('--------' * N) + ('-' * (N//2)) + '-')
 
 #This function generates a cell with value 2 
 def generate_cell():
