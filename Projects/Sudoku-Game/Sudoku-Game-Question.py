@@ -92,7 +92,7 @@ def generate_cells():
     solve_grid(0, 0)
     #Remove cells in the grid to be solved
     prev_x, prev_y = 0, 0
-    for k in range(N*N - (N*root_N + root_N*root_N)):
+    for k in range(N*N - N//2*N):
         i = (random.randint(0, N-1) + prev_x + root_N) % N
         j = (random.randint(0, N-1) + prev_y + root_N) % N
         while not check_original_cell(i, j):
