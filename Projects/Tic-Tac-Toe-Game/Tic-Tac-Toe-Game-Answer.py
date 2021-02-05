@@ -121,7 +121,7 @@ def play_game():
         print_grid()
         #Set mark value based on the player
         mark = 'X' if player == 0 else 'O'
-        #Takes input from the user to fill in the grid
+        #Read an input from the player
         print('Player %s' % mark)
         i, j = map(int, input('Enter the row index and column index: ').split())
         while not check_valid_position(i, j) or not check_empty(i, j):
