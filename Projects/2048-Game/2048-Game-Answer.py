@@ -98,7 +98,7 @@ def check_full():
             return False
     for i in range(N-1):
         for j in range(N-1):
-            if grid[i][j] == grid[i+1][j] or grid[i][j+1] == grid[i][j]:
+            if grid[i][j] == grid[i+1][j] or grid[i][j] == grid[i][j+1]:
                 return False
     return True
 
@@ -173,6 +173,13 @@ def play_game():
         generate_cell()
         #Prints the grid
         print_grid()
+        #Check if the state of the grid has a tie state
+        if check_full():
+            #Prints the grid
+            print_grid()
+            print("Woah! That's a tie!")
+            break
+        #Read an input from the player
         i = int(input('Enter the direction: '))
         while not check_valid_direction(i) or not check_available_move(i):
             i = int(input('Enter a valid direction: '))
@@ -187,13 +194,9 @@ def play_game():
             #Prints the grid
             print_grid()
             print('Congrats, You won!')
-            break
-        #Check if the state of the grid has a tie state
-        if check_full():
-            #Prints the grid
-            print_grid()
-            print("Woah! That's a tie!")
-            break
+            c = input('Continue [Y/N] ')
+            if c not in 'yY':
+                break
 
 while True:
 	grid_clear()
