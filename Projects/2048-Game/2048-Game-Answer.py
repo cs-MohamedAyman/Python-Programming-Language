@@ -175,8 +175,6 @@ def play_game():
         print_grid()
         #Check if the state of the grid has a tie state
         if check_full():
-            #Prints the grid
-            print_grid()
             print("Woah! That's a tie!")
             break
         #Read an input from the player
