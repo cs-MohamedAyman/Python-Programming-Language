@@ -8,7 +8,7 @@ The grid will look like this:
 '''
 import random
 N = 4
-GOAL = 2 ** (3*N-1)
+GOAL = 1 << (3*N-1)
 grid = []
 
 #This function prints the grid of 2048 Game as the game progresses
