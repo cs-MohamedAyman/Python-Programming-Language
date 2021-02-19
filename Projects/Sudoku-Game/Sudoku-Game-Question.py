@@ -70,9 +70,9 @@ def generate_cells():
     for k in range(0, N, root_N):
         for i in range(root_N):
             for j in range(root_N):
-                n = random.randint(1, N+1)
+                n = random.randint(1, N)
                 while not check_valid_value(k+i, k+j, n) or check_original_cell(k+i, k+j):
-                    n = random.randint(1, N+1)
+                    n = random.randint(1, N)
                 grid[k+i][k+j] = n
                 cpy_grid[k+i][k+j] = n
     #Solve the complete grid
