@@ -3,23 +3,21 @@ N = 9
 root_N = int(N ** 0.5)
 grid, cpy_grid = [], []
 
-#This function prints the grid of 2048 Game as the game progresses
+#This function prints the grid of Sudoku Game as the game progresses
 def print_grid():
-    dd_len = len(str(N))
-    print(('-' * (N*(dd_len+2))) + ('---' * root_N) + '-')
+    symbols = ['.', '1', '2', '3', '4', '5', '6', '7', \
+               '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
+    print(('-' * (N*3)) + ('---' * root_N) + '-')
     for i in range(N):
         print(end='|  ')
         for j in range(N):
             if j % root_N == 0 and j > 0:
                 print('|  ', end='')
-            if grid[i][j] == 0:
-                print('.'*dd_len, end='  ')
-            else:
-                print('0'*(dd_len - len(str(grid[i][j]))) + str(grid[i][j]), end='  ')
+            print(symbols[grid[i][j]], end='  ')
         print(end='|')
         print()
         if i % root_N == root_N - 1:
-            print(('-' * (N*(dd_len+2))) + ('---' * root_N) + '-')
+            print(('-' * (N*3)) + ('---' * root_N) + '-')
 
 #This function checks if all rows and columns and boxes is full with all numbers
 def check_win():
@@ -68,7 +66,7 @@ def check_valid_value(i, j, v):
     if v == 0:
         return True
 	#Check invalid value
-    if v < 0 or v > N:
+    if v < 1 or v > N:
         return False
 	#Check duplicate in all rows
     for k in range(N):
@@ -113,7 +111,7 @@ def solve_grid(i, j):
 
 #This function generates cells in the grid
 def generate_cells():
-    #Generate cells in the diagonal boxes of the grid
+    #Generate cells in the grid
     for k in range(0, N, root_N):
         for i in range(root_N):
             for j in range(root_N):
