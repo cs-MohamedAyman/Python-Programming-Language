@@ -1,18 +1,18 @@
-N = 15
+N, M = 15, 15
 a_row = 5
 grid = []
 
 #This function prints the grid of Gomoku as the game progresses
 def print_grid():
     print("Player 1: B  vs  Player 2: W")
-    print('--' + '---' * N + '--')
+    print('--' + '---' * M + '--')
     for i in range(N):
         print(end='|  ')
-        for j in range(N):
+        for j in range(M):
             print(grid[i][j], end='  ')
         print(end='|')
         print()
-        print('--' + '---' * N + '--')
+        print('--' + '---' * M + '--')
 
 #This function checks if row or column or diagonal is full with same characters
 def check_win():
