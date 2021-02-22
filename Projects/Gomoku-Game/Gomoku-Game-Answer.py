@@ -1,25 +1,25 @@
-N = 15
+N, M = 10, 6
 a_row = 5
 grid = []
 
 #This function prints the grid of Gomoku as the game progresses
 def print_grid():
     print("Player 1: B  vs  Player 2: W")
-    print('--' + '---' * N + '--')
+    print('--' + '---' * M + '--')
     for i in range(N):
         print(end='|  ')
-        for j in range(N):
+        for j in range(M):
             print(grid[i][j], end='  ')
         print(end='|')
         print()
-        print('--' + '---' * N + '--')
+        print('--' + '---' * M + '--')
 
 #This function checks if row or column or diagonal is full with same characters
 def check_win():
     #If row is full with same characters, 
 	#the game is over and the player with that character has won
     for i in range(N):
-        for j in range(N-a_row+1):
+        for j in range(M-a_row+1):
             s = set()
             for k in range(j, j+a_row):
                 s |= {grid[i][k]}
@@ -27,7 +27,7 @@ def check_win():
                 return True
     #If column is full with same characters, 
 	#the game is over and the player with that character has won
-    for i in range(N):
+    for i in range(M):
         for j in range(N-a_row+1):
             s = set()
             for k in range(j, j+a_row):
@@ -39,8 +39,8 @@ def check_win():
     for i in range(N):
         if i+a_row-1 >= N:
             continue
-        for j in range(N):
-            if j+a_row-1 >= N:
+        for j in range(M):
+            if j+a_row-1 >= M:
                 continue
             s = set()
             for k in range(a_row):
@@ -52,7 +52,7 @@ def check_win():
     for i in range(N):
         if i+a_row-1 >= N:
             continue
-        for j in range(N):
+        for j in range(M):
             if j-a_row+1 < 0:
                 continue
             s = set()
@@ -68,7 +68,7 @@ def check_win():
 def check_tie(mark):
     #If row a single type of characters
     for i in range(N):
-        for j in range(N-a_row+1):
+        for j in range(M-a_row+1):
             s = {mark}
             for k in range(j, j+a_row):
                 if grid[i][k] != '.':
@@ -76,7 +76,7 @@ def check_tie(mark):
             if len(s) == 1:
                 return False
     #If column a single type of characters
-    for i in range(N):
+    for i in range(M):
         for j in range(N-a_row+1):
             s = {mark}
             for k in range(j, j+a_row):
@@ -87,8 +87,8 @@ def check_tie(mark):
     for i in range(N):
         if i+a_row-1 >= N:
             continue
-        for j in range(N):
-            if j+a_row-1 >= N:
+        for j in range(M):
+            if j+a_row-1 >= M:
                 continue
             s = {mark}
             for k in range(a_row):
@@ -99,7 +99,7 @@ def check_tie(mark):
     for i in range(N):
         if i+a_row-1 >= N:
             continue
-        for j in range(N):
+        for j in range(M):
             if j-a_row+1 < 0:
                 continue
             s = {mark}
@@ -117,7 +117,7 @@ def check_empty(i, j):
 
 #This function checks if given position is valid or not 
 def check_valid_position(i, j):
-	return 0 <= i < N and 0 <= j < N
+	return 0 <= i < N and 0 <= j < M
 
 #This function sets a value to a cell
 def set_cell(i, j, mark):
@@ -126,7 +126,7 @@ def set_cell(i, j, mark):
 #This function clears the grid
 def grid_clear():
 	global grid
-	grid = [['.'] * N for i in range(N)]
+	grid = [['.'] * M for i in range(N)]
 
 
 #MAIN FUNCTION
