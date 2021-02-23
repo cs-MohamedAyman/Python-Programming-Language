@@ -102,16 +102,18 @@ def move_player(player, moves):
 #This function generates snakes and ladders in the grid
 def generate_snakes_and_ladders(symbol):
     n_mid, m_mid = N//2, M//2
-    areas_beg = [(1, 1, n_mid-1, m_mid-1), (1, m_mid, n_mid-1, M-2), (n_mid, 1, N-2, m_mid-1), \
-                 (n_mid, m_mid, N-2, M-2), (n_mid-2, m_mid-2, n_mid-2, m_mid+1), (0, m_mid-2, 0, m_mid+1)]
-    areas_end = [(1, 1, n_mid-1, m_mid-1), (1, m_mid, n_mid-1, M-2), (n_mid, 1, N-2, m_mid-1), \
-                 (n_mid, m_mid, N-2, M-2), (N-1, m_mid-2, N-1, m_mid+1), (n_mid+1, m_mid-2, n_mid+1, m_mid+1)]
+    areas_beg = [(1, 1, n_mid-1, m_mid-1),             (1, m_mid, n_mid-1, M-2), \
+                 (n_mid, 1, N-2, m_mid-1),             (n_mid, m_mid, N-2, M-2), \
+                 (n_mid-2, m_mid-2, n_mid-2, m_mid+1), (0, m_mid-2, 0, m_mid+1)]
+    areas_end = [(1, 1, n_mid-1, m_mid-1),             (1, m_mid, n_mid-1, M-2), \
+                 (n_mid, 1, N-2, m_mid-1),             (n_mid, m_mid, N-2, M-2), \
+                 (N-1, m_mid-2, N-1, m_mid+1),         (n_mid+1, m_mid-2, n_mid+1, m_mid+1)]
     for i in range(6):
         xb1, yb1, xe1, ye1 = areas_beg[i]
         xb2, yb2, xe2, ye2 = areas_end[i]
         x1, y1 = random.randint(xb1, xe1), random.randint(yb1, ye1)
         x2, y2 = random.randint(xb2, xe2), random.randint(yb2, ye2)
-        while x1 == x2 or y1 == y2 or abs(x1 - x2) + abs(y1 - y2) <= 2 or \
+        while x1 == x2 or y1 == y2 or abs(x1 - x2) + abs(y1 - y2) <= int(min(N**.5, M**.5)) or \
               grid[x1][y1] != '.' or grid[x2][y2] != '.':
             x1, y1 = random.randint(xb1, xe1), random.randint(yb1, ye1)
             x2, y2 = random.randint(xb2, xe2), random.randint(yb2, ye2)
