@@ -1,5 +1,6 @@
 import random
 N, M = 10, 10
+n_players, n_components = 2, 6
 ladder_symbol, snake_symbol = 'L', 'S'
 grid, player_position, snakes, ladders = [], [], [], []
 
@@ -21,12 +22,12 @@ def print_grid():
             symbol = '  '
             p = convert_indices_to_position(i, j)
             if grid[i][j] == ladder_symbol:
-                for k in range(6):
+                for k in range(n_components):
                     if p == ladders[k][0] or p == ladders[k][1]:
                         symbol = ladder_symbol+str(k+1)
                         break
             if grid[i][j] == snake_symbol:
-                for k in range(6):
+                for k in range(n_components):
                     if p == snakes[k][0] or p == snakes[k][1]:
                         symbol = snake_symbol+str(k+1)
                         break
@@ -119,7 +120,7 @@ def generate_snakes_and_ladders(symbol):
     areas_end = [(1, 1, n_mid-1, m_mid-1),             (1, m_mid, n_mid-1, M-2), \
                  (n_mid, 1, N-2, m_mid-1),             (n_mid, m_mid, N-2, M-2), \
                  (N-1, m_mid-2, N-1, m_mid+1),         (n_mid+1, m_mid-2, n_mid+1, m_mid+1)]
-    for i in range(6):
+    for i in range(n_components):
         xb1, yb1, xe1, ye1 = areas_beg[i]
         xb2, yb2, xe2, ye2 = areas_end[i]
         x1, y1 = random.randint(xb1, xe1), random.randint(yb1, ye1)
@@ -153,8 +154,8 @@ def get_snake_minus_value(p):
 def grid_clear():
     global grid, player_position, snakes, ladders
     grid = [['.' for i in range(M)] for j in range(N)]
-    player_position = [0] * 2
-    snakes, ladders = [(0, 0)] * 6, [(0, 0)] * 6
+    player_position = [0] * n_players
+    snakes, ladders = [(0, 0)] * n_components, [(0, 0)] * n_components
 
 
 #MAIN FUNCTION
