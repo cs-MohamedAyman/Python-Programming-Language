@@ -4,6 +4,14 @@ n_players, n_components = 2, 6
 ladder_symbol, snake_symbol = 'L', 'S'
 grid, player_position, snakes, ladders = [], [], [], []
 
+#This function converts the given indices into position
+def convert_indices_to_position(i, j):
+    pass 
+
+#This function converts the given position into indices
+def convert_position_to_indices(p):
+    pass 
+
 #This function prints the grid of Snakes and Ladders as the game progresses
 def print_grid():
     print("Player 1: X  vs  Player 2: O")
@@ -86,14 +94,6 @@ def print_dice_face(i):
 
 #This function checks if given face is valid or not 
 def check_valid_face(i):
-    pass 
-
-#This function converts the given indices into position
-def convert_indices_to_position(i, j):
-    pass 
-
-#This function converts the given position into indices
-def convert_position_to_indices(p):
     pass 
 
 #This function moves the given player by the given value
