@@ -63,3 +63,7 @@ Python programming language lectures for computer science students.
 * Sundeep Saradhi Kanthety - Python Programming for Beginners
 * Harshit vashisth - Complete Python tutorial in Hindi (2020)
 * Amulya's Academy - Python Programming Video Tutorials for Beginners
+
+<img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
+
+## Educational-Projects
