@@ -3,27 +3,64 @@
 # Python-Programming-Language `60H`
 Python programming language lectures for computer science students.
 
-## `Part 1:` Python Basics and Functions `30H`
+<img align="right" width="160" height="160" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
+<br>
 
-## Lecture 01 - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
-## Lecture 02 - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-02-Variable-Types)
-## Lecture 03 - [Basic Operations](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-03-Basic-Operations)
-## Lecture 04 - [Conditions](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-04-Conditions)
-## Lecture 05 - [Loops](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-05-Loops)
-## Lecture 06 - [Functions](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-06-Functions)
+## `Part 1` Python Basics and Functions `30H`
 
-## `Part 2:` Python Collections and Strings `30H`
+### `Lecture 01` - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
+### `Lecture 02` - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-02-Variable-Types)
+### `Lecture 03` - [Basic Operations](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-03-Basic-Operations)
+### `Lecture 04` - [Conditions](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-04-Conditions)
+### `Lecture 05` - [Loops](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-05-Loops)
+### `Lecture 06` - [Functions](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-06-Functions)
 
-## Lecture 07 - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-07-Strings)
-## Lecture 08 - [Lists](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-08-Lists)
-## Lecture 09 - [Tuples](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-09-Tuples)
-## Lecture 10 - [Dictionaries](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-10-Dictionaries)
-## Lecture 11 - [Sets](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-11-Sets)
-## Lecture 12 - [Numbers](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-12-Numbers)
+<img align="right" width="160" height="160" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
+<br>
 
+## `Part 2` Python Collections and Strings `30H`
+
+### `Lecture 07` - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-07-Strings)
+### `Lecture 08` - [Lists](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-08-Lists)
+### `Lecture 09` - [Tuples](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-09-Tuples)
+### `Lecture 10` - [Dictionaries](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-10-Dictionaries)
+### `Lecture 11` - [Sets](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-11-Sets)
+### `Lecture 12` - [Numbers](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-12-Numbers)
+
+<img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice2.jpg">
+<br>
+
+## `Assignments` `50H`
+
+### `Assignment 01` - Basic Operator Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
+### `Assignment 02` - Condition Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
+### `Assignment 03` - Loop Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
+### `Assignment 04` - String Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
+### `Assignment 05` - List Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
+### `Assignment 06` - Basic Operator Problems in [codeforces-phase-1-2](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-2)
+### `Assignment 07` - Condition Problems in [codeforces-phase-1-2](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-2)
+### `Assignment 08` - Loop Problems in [codeforces-phase-1-2](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-2)
+### `Assignment 09` - String Problems in [codeforces-phase-1-2](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-2)
+### `Assignment 10` - List Problems in [codeforces-phase-1-2](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-2)
+
+<img align="right" width="230" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
+<br>
+
+## `Educational-Projects` `80H`
+
+### `Project 01` -
+### `Project 02` -
+### `Project 03` -
+### `Project 04` -
+### `Project 05` -
+### `Project 06` -
+### `Project 07` -
+### `Project 08` -
+
+<br>
 <img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/textbooks.jpg">
 
-# Textbooks
+# `Textbooks`
 
 * ***Python Tutorial***, Guido van Rossum
 * ***Python for Everybody***, Charles R. Severance
@@ -34,7 +71,7 @@ Python programming language lectures for computer science students.
 
 <img align="right" width="90" height="50" src="https://github.com/cs-MohamedAyman/Coursera-Specializations/blob/master/organizations-logos/coursera.jpg">
 
-# Coursera-Specializations
+# `Coursera-Specializations`
 
 * ***Introduction to Scripting in Python Specialization*** by Rice University
 * ***Python 3 Programming Specialization*** by University of Michigan
@@ -43,7 +80,7 @@ Python programming language lectures for computer science students.
 
 <img align="right" width="80" height="50" src="https://github.com/cs-MohamedAyman/YouTube-Playlists/blob/master/organizations-logos/youtube.jpg">
 
-# YouTube-Playlists
+# `YouTube-Playlists`
 
 * MIT OpenCourseWare - Introduction to Computer Science and Programming in Python. Fall 2016
 * freeCodeCamp.org - Python Tutorials
@@ -63,7 +100,3 @@ Python programming language lectures for computer science students.
 * Sundeep Saradhi Kanthety - Python Programming for Beginners
 * Harshit vashisth - Complete Python tutorial in Hindi (2020)
 * Amulya's Academy - Python Programming Video Tutorials for Beginners
-
-<img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
-
-## Educational-Projects
