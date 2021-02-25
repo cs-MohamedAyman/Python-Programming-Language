@@ -60,7 +60,7 @@ Python programming language lectures for computer science students.
 <br>
 <img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/textbooks.jpg">
 
-# `Textbooks`
+## `Textbooks`
 
 * ***Python Tutorial***, Guido van Rossum
 * ***Python for Everybody***, Charles R. Severance
@@ -71,7 +71,7 @@ Python programming language lectures for computer science students.
 
 <img align="right" width="90" height="50" src="https://github.com/cs-MohamedAyman/Coursera-Specializations/blob/master/organizations-logos/coursera.jpg">
 
-# `Coursera-Specializations`
+## `Coursera-Specializations`
 
 * ***Introduction to Scripting in Python Specialization*** by Rice University
 * ***Python 3 Programming Specialization*** by University of Michigan
@@ -80,7 +80,7 @@ Python programming language lectures for computer science students.
 
 <img align="right" width="80" height="50" src="https://github.com/cs-MohamedAyman/YouTube-Playlists/blob/master/organizations-logos/youtube.jpg">
 
-# `YouTube-Playlists`
+## `YouTube-Playlists`
 
 * MIT OpenCourseWare - Introduction to Computer Science and Programming in Python. Fall 2016
 * freeCodeCamp.org - Python Tutorials
