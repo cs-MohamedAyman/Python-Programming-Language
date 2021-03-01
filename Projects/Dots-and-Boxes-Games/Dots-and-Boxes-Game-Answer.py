@@ -140,9 +140,7 @@ def play_game():
         #Set the input position with the mark
         set_side(i1, j1, i2, j2)
         #Set the neighbor boxes with the mark
-        if set_neighbor_boxes(i1, j1, i2, j2, player):
-            #Player number changes to be contiued in the next turn
-            player = (player - 1 + n_players) % n_players
+        box_complete = set_neighbor_boxes(i1, j1, i2, j2, player)
         #Check if the state of the grid has a complete state
         if check_complete():
             #Prints the grid
@@ -153,8 +151,9 @@ def play_game():
             else:
                 print("Woah! That's a tie!")
             break
-        #Player number changes after each turn
-        player = (player + 1) % n_players
+        if not box_complete:
+            #Player number changes after each turn
+            player = (player + 1) % n_players
 
 
 while True:
