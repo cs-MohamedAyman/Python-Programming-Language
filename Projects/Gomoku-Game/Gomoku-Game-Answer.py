@@ -129,7 +129,7 @@ def check_valid_position(i, j):
 def set_cell(i, j, mark):
 	grid[i][j] = mark
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
 	global grid
 	grid = [['.'] * M for i in range(N)]
