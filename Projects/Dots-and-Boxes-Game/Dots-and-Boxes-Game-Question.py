@@ -14,18 +14,12 @@ def print_grid():
     for i in range(N):
         print(' . ', end = '')
         for j in range(M):
-            if horizontal_grid[i][j]:
-                print('---', end = '')
-            else:
-                print('   ', end = '')
+            print('---' if horizontal_grid[i][j] else '   ', end = '')
             if j < M-1:
                 print(' . ', end = '')
         print()
         for j in range(M+1):
-            if vertical_grid[i][j]:
-                print(' |  ', end = '')
-            else:
-                print('    ', end = '')
+            print(' |  ' if vertical_grid[i][j] else '    ', end = '')
             if i < N-1 and j < M-1:
                 print(grid[i][j] if grid[i][j] != '.' else ' ', end='')
             print(' ', end = '')
@@ -38,19 +32,19 @@ def print_grid():
 def check_complete():
     pass
 
-#This function checks if given cell is empty in the horizontal grid or not 
+#This function checks if given horizontal side is empty or not 
 def check_empty_horizontal_side(i, j):
     pass
 
-#This function checks if given cell is empty in the vertical grid or not 
+#This function checks if given vertical side is empty or not 
 def check_empty_vertical_side(i, j):
     pass
 
-#This function checks if given side is empty or not 
+#This function checks if the given side is empty or not 
 def check_empty_side(i1, j1, i2, j2):
     pass
 
-#This function checks if given position is valid in the grid or not 
+#This function checks if the given position is valid in the grid or not 
 def check_valid_position(i, j):
     pass
 
@@ -58,15 +52,15 @@ def check_valid_position(i, j):
 def check_valid_side(i1, j1, i2, j2):
     pass
 
-#This function sets a side to a cell in the horizontal grid
+#This function sets a horizontal side
 def set_horizontal_side(i, j):
     pass
 
-#This function sets a side to a cell in the vertical grid
+#This function sets a vertical side
 def set_vertical_side(i, j):
     pass
 
-#This function sets a side to a cell in the grid
+#This function sets the given side
 def set_side(i1, j1, i2, j2):
     pass
 
@@ -74,15 +68,15 @@ def set_side(i1, j1, i2, j2):
 def is_complete_box(i, j):
     pass
 
-#This function sets a value to a cell in the grid as a complete box
+#This function sets a mark to the given completed box
 def set_box(i, j, player):
     pass
 
-#This function checks and sets a box to a cell in the grid as a complete box
+#This function checks and sets the completed box
 def set_neighbor_box(i1, j1, i2, j2, player):
     pass
 
-#This function checks and sets the neighbor boxes in the grid as a complete boxes
+#This function checks and sets the neighbor completed boxes
 def set_neighbor_boxes(i1, j1, i2, j2, player):
     pass
 
@@ -90,8 +84,12 @@ def set_neighbor_boxes(i1, j1, i2, j2, player):
 def arrange_side_points(i1, j1, i2, j2):
     pass
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
+    pass
+
+#This function reads a valid and arranged side input
+def read_input():
     pass
 
 
@@ -104,14 +102,9 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Read an input from the player
-        print('Player %s' % marks[player])
-        i1, j1, i2, j2 = map(int, input('Enter the two points of the side: ').split())
-        i1, j1, i2, j2 = arrange_side_points(i1, j1, i2, j2)
-        while not check_valid_position(i1, j1) or not check_valid_position(i2, j2) or \
-              not check_valid_side(i1, j1, i2, j2) or not check_empty_side(i1, j1, i2, j2):
-            i1, j1, i2, j2 = map(int, input('Enter a valid two points of the side: ').split())
-            i1, j1, i2, j2 = arrange_side_points(i1, j1, i2, j2)
+        #Read an input position from the player
+        print('Player %s is playing now' % marks[player])
+        i1, j1, i2, j2 = read_input()
         #Set the input position with the mark
         set_side(i1, j1, i2, j2)
         #Set the neighbor boxes with the mark
@@ -122,10 +115,12 @@ def play_game():
             print_grid()
             #Announcement of the final statement
             if count_boxes.count(max(count_boxes)) == 1:
-                print('Congrats, Player %s is won!' % marks[count_boxes.index(max(count_boxes))])
+                idx_max_player = count_boxes.index(max(count_boxes))
+                print('Congrats, Player %s is won!' % marks[idx_max_player])
             else:
                 print("Woah! That's a tie!")
             break
+        #Keep the player if there is a complete box
         if not box_complete:
             #Player number changes after each turn
             player = (player + 1) % n_players
