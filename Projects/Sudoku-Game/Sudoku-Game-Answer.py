@@ -1,6 +1,6 @@
 import random
-N = 9
-root_N = int(N ** 0.5)
+root_N = 3
+N = root_N * root_N
 grid, cpy_grid = [], []
 
 #This function prints the grid of Sudoku Game as the game progresses
@@ -19,23 +19,23 @@ def print_grid():
         if i % root_N == root_N - 1:
             print(('-' * (N*3)) + ('---' * root_N) + '-')
 
-#This function checks if all rows and columns and boxes is full with all numbers
+#This function checks if the game has a win state or not
 def check_win():
-    #If row is not full with all numbers, the game is still running
+    #Check if all rows are not full, the game is still running
     for i in range(N):
         s = set()
         for j in range(N):
             s.add(grid[i][j])
         if len(s) != N or 0 in s:
             return False
-    #If column is not full with all numbers, the game is still running
+    #Check if all columns are not full, the game is still running
     for i in range(N):
         s = set()
         for j in range(N):
             s.add(grid[j][i])
         if len(s) != N or 0 in s:
             return False
-    #If box is not full with all numbers, the game is still running
+    #Check if all boxes are not full, the game is still running
     for i in range(0, N, root_N):
         for j in range(0, N, root_N):
             s = set()
@@ -48,19 +48,19 @@ def check_win():
     #if all cases above not reached		
     return True
 
-#This function checks if given position is valid or not 
+#This function checks if the given position is valid or not 
 def check_valid_position(i, j):
     return 0 <= i < N and 0 <= j < N
 
-#This function checks if given cell is empty or not 
+#This function checks if the given cell is empty or not 
 def check_empty_cell(i, j):
     return grid[i][j] == 0
 
-#This function checks if given cell is original or not
+#This function checks if the given cell is original or not
 def check_original_cell(i, j):
     return cpy_grid[i][j] != 0
 
-#This function checks if the given cell is valid with the given numbers
+#This function checks if the given value is valid with the given cell
 def check_valid_value(i, j, v):
 	#Check delete case
     if v == 0:
@@ -86,11 +86,11 @@ def check_valid_value(i, j, v):
     #if all cases above not reached		
     return True
 
-#This function sets a value to a cell
+#This function sets the given value to the given cell
 def set_cell(i, j, v):
 	grid[i][j] = v
 
-#This function solve the grid
+#This function solves the grid
 def solve_grid(i, j):
     if j == N:
         i += 1
@@ -134,11 +134,18 @@ def generate_cells():
         cpy_grid[i][j] = 0
         prev_x, prev_y = i, j
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
 	global grid, cpy_grid
 	grid = [[0] * N for i in range(N)]
 	cpy_grid = [[0] * N for i in range(N)]
+
+#This function reads a valid position and value inputs
+def read_input():
+    i, j, v = map(int, input('Enter the row index and column index and value: ').split())
+    while not check_valid_position(i, j) or not check_valid_value(i, j, v) or check_original_cell(i, j):
+        i, j, v = map(int, input('Enter a valid row index and column index and value: ').split())
+    return i, j, v
 
 
 #MAIN FUNCTION
@@ -150,15 +157,14 @@ def play_game():
         #Prints the grid
         print_grid()
         #Read an input from the player
-        i, j, v = map(int, input('Enter the position and value: ').split())
-        while not check_valid_position(i, j) or not check_valid_value(i, j, v) or check_original_cell(i, j):
-            i, j, v = map(int, input('Enter a valid position and value: ').split())
+        i, j, v = read_input()
         #Set the input position with the value
         set_cell(i, j, v)
-        #Check if the state of the grid has a win state
+        #Check if the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
+            #Announcement of the final statement
             print('Congrats, You won!')
             break
 
