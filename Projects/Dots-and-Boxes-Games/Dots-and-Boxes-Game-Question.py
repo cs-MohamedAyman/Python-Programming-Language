@@ -6,9 +6,9 @@ count_boxes, grid, horizontal_grid, vertical_grid = [], [], [], []
 #This function prints the grid of Dots-and-Boxes as the game progresses
 def print_grid():
     for i in range(n_players):
-        print('Player %d: %c ' % (i+1, marks[i]), end='')
+        print('Player %d: %c  ' % (i+1, marks[i]), end='')
         if i < n_players-1:
-            print('vs ', end='')
+            print('vs  ', end='')
     print()
     print('--' + '------' * (M-1))
     for i in range(N):
