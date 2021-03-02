@@ -1,9 +1,10 @@
 N = 3
+marks = ['X', 'O']
 grid = []
 
 #This function prints the grid of Tic-Tac-Toe as the game progresses
 def print_grid():
-    print("Player 1: X  vs  Player 2: O")
+    print("Player 1: %c  vs  Player 2: %c" % (marks[0], marks[1]))
     print('--' + '---' * N + '--')
     for i in range(N):
         print(end='|  ')
@@ -13,9 +14,9 @@ def print_grid():
         print()
         print('--' + '---' * N + '--')
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a win state or not
 def check_win():
-    #If row is full with same characters, 
+    #Check if there is a row with full with same characters, 
 	#the game is over and the player with that character has won
 	for i in range(N):
 		s = set()
@@ -23,7 +24,7 @@ def check_win():
 			s |= {grid[i][j]}
 		if len(s) == 1 and '.' not in s:
 			return True
-    #If column is full with same characters, 
+    #Check if there is a column with full with same characters, 
 	#the game is over and the player with that character has won
 	for i in range(N):
 		s = set()
@@ -31,14 +32,14 @@ def check_win():
 			s |= {grid[j][i]}
 		if len(s) == 1 and '.' not in s:
 			return True
-    #If diagonal is full with same characters, 
+    #Check if the left diagonal is full with same characters, 
 	#the game is over and the player with that character has won
 	s = set()
 	for i in range(N):
 		s |= {grid[i][i]}
 	if len(s) == 1 and '.' not in s:
 		return True
-    #If diagonal is full with same characters, 
+    #Check if the right diagonal is full with same characters, 
 	#the game is over and the player with that character has won
 	s = set()
 	for i in range(N):
@@ -49,9 +50,9 @@ def check_win():
     #if all cases above not reached
 	return False
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a tie state or not
 def check_tie(mark):
-    #If row a single type of characters
+    #Check if there is a row with a single type of characters
 	for i in range(N):
 		s = {mark}
 		for j in range(N):
@@ -59,7 +60,7 @@ def check_tie(mark):
 				s |= {grid[i][j]}
 		if len(s) == 1:
 			return False
-    #If column a single type of characters
+    #Check if there is a column with a single type of characters
 	for i in range(N):
 		s = {mark}
 		for j in range(N):
@@ -67,14 +68,14 @@ def check_tie(mark):
 				s |= {grid[j][i]}
 		if len(s) == 1:
 			return False
-    #If diagonal a single type of characters
+    #Check if the left diagonal is a single type of characters
 	s = {mark}
 	for i in range(N):
 		if grid[i][i] != '.':
 			s |= {grid[i][i]}
 	if len(s) == 1:
 			return False
-    #If diagonal a single type of characters
+    #Check if the right diagonal is a single type of characters
 	s = {mark}
 	for i in range(N):
 		if grid[i][N-i-1] != '.':
@@ -93,14 +94,21 @@ def check_empty(i, j):
 def check_valid_position(i, j):
 	return 0 <= i < N and 0 <= j < N
 
-#This function sets a value to a cell
+#This function sets the given mark to the given cell
 def set_cell(i, j, mark):
 	grid[i][j] = mark
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
 	global grid
 	grid = [['.'] * N for i in range(N)]
+
+#This function reads a valid position input
+def read_input():
+    i, j = map(int, input('Enter the row index and column index: ').split())
+    while not check_valid_position(i, j) or not check_empty(i, j):
+        i, j = map(int, input('Enter a valid row index and a valid column index: ').split())
+    return i, j
 
 
 #MAIN FUNCTION
@@ -112,25 +120,23 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Set mark value based on the player
-        mark = 'X' if player == 0 else 'O'
         #Read an input from the player
-        print('Player %s' % mark)
-        i, j = map(int, input('Enter the row index and column index: ').split())
-        while not check_valid_position(i, j) or not check_empty(i, j):
-            i, j = map(int, input('Enter a valid row index and a valid column index: ').split())
+        print('Player %s is playing now' % marks[player])
+        i, j = read_input()
         #Set the input position with the mark
-        set_cell(i, j, mark)
+        set_cell(i, j, marks[player])
         #Check if the state of the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
-            print('Congrats, Player %s is won!' % mark)
+            #Announcement of the final statement
+            print('Congrats, Player %s is won!' % marks[player])
             break
         #Check if the state of the grid has a tie state
-        if check_tie(mark):
+        if check_tie(marks[player]):
             #Prints the grid
             print_grid()
+            #Announcement of the final statement
             print("Woah! That's a tie!")
             break		
         #Player number changes after each turn
@@ -143,4 +149,3 @@ while True:
 	c = input('Play Again [Y/N] ')
 	if c not in 'yY':
 		break
-
