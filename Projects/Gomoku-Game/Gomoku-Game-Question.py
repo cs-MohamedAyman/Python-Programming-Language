@@ -40,7 +40,7 @@ def check_valid_position(i, j):
 def set_cell(i, j, mark):
     pass
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
     pass
 
