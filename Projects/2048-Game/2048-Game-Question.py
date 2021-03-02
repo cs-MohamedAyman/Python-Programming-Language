@@ -1,5 +1,5 @@
 import random
-N = 8
+N = 4
 GOAL = 1 << (3*N-1)
 grid = []
 
