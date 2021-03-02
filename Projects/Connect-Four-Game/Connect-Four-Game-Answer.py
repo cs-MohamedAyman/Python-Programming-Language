@@ -79,7 +79,7 @@ def check_tie(mark):
             s = {mark, grid[i][j], grid[i+1][j-1], grid[i+2][j-2], grid[i+3][j-3]}
             if '.' in s and len(s) == 2:
                 return False
-    #Otherwise, there isn't a win state in the game, 
+    #Otherwise, there isn't a tie state in the game, 
     #if all cases above not reached
     return True
 
