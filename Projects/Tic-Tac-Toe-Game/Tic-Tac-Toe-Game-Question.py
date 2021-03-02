@@ -1,9 +1,10 @@
 N = 3
+marks = ['X', 'O']
 grid = []
 
 #This function prints the grid of Tic-Tac-Toe as the game progresses
 def print_grid():
-    print("Player 1: X  vs  Player 2: O")
+    print("Player 1: %c  vs  Player 2: %c" % (marks[0], marks[1]))
     print('--' + '---' * N + '--')
     for i in range(N):
         print(end='|  ')
@@ -13,11 +14,11 @@ def print_grid():
         print()
         print('--' + '---' * N + '--')
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a win state or not
 def check_win():
     pass
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a tie state or not
 def check_tie(mark):
     pass
 
@@ -29,13 +30,18 @@ def check_empty(i, j):
 def check_valid_position(i, j):
     pass
 
-#This function sets a value to a cell
+#This function sets the given mark to the given cell
 def set_cell(i, j, mark):
     pass
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
     pass
+
+#This function reads a valid position input
+def read_input():
+    pass
+
 
 #MAIN FUNCTION
 def play_game():
@@ -46,25 +52,23 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Set mark value based on the player
-        mark = 'X' if player == 0 else 'O'
-        #Read an input from the player
-        print('Player %s' % mark)
-        i, j = map(int, input('Enter the row index and column index: ').split())
-        while not check_valid_position(i, j) or not check_empty(i, j):
-            i, j = map(int, input('Enter a valid row index and a valid column index: ').split())
-        #Set the input position with the mark
-        set_cell(i, j, mark)
-        #Check if the state of the grid has a win state
+        #Read an input position from the player
+        print('Player %s is playing now' % marks[player])
+        i, j = read_input()
+        #Set the player mark in the input position
+        set_cell(i, j, marks[player])
+        #Check if the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
-            print('Congrats, Player %s is won!' % mark)
+            #Announcement of the final statement
+            print('Congrats, Player %s is won!' % marks[player])
             break
-        #Check if the state of the grid has a tie state
-        if check_tie(mark):
+        #Check if the grid has a tie state
+        if check_tie(marks[player]):
             #Prints the grid
             print_grid()
+            #Announcement of the final statement
             print("Woah! That's a tie!")
             break		
         #Player number changes after each turn
