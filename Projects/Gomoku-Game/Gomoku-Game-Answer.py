@@ -1,10 +1,16 @@
 N, M = 15, 15
 a_row = 5
+n_players = 2
+marks = ['X', 'O']
 grid = []
 
 #This function prints the grid of Gomoku as the game progresses
 def print_grid():
-    print("Player 1: B  vs  Player 2: W")
+    for i in range(n_players):
+        print('Player %d: %c  ' % (i+1, marks[i]), end='')
+        if i < n_players-1:
+            print('vs  ', end='')
+    print()
     print('--' + '---' * M + '--')
     for i in range(N):
         print(end='|  ')
@@ -14,9 +20,9 @@ def print_grid():
         print()
         print('--' + '---' * M + '--')
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a win state or not
 def check_win():
-    #If row is full with same characters, 
+    #Check if there is an accepted row
 	#the game is over and the player with that character has won
     for i in range(N):
         for j in range(M-a_row+1):
@@ -25,8 +31,8 @@ def check_win():
                 s |= {grid[i][k]}
             if len(s) == 1 and '.' not in s:
                 return True
-    #If column is full with same characters, 
-	#the game is over and the player with that character has won
+    #Check if there is an accepted column
+    #the game is over and the player with that character has won
     for i in range(M):
         for j in range(N-a_row+1):
             s = set()
@@ -34,8 +40,8 @@ def check_win():
                 s |= {grid[k][i]}
             if len(s) == 1 and '.' not in s:
                 return True
-    #If diagonal is full with same characters, 
-	#the game is over and the player with that character has won
+    #Check if there is an accepted left diagonal
+    #the game is over and the player with that character has won
     for i in range(N):
         if i+a_row-1 >= N:
             continue
@@ -47,8 +53,8 @@ def check_win():
                 s |= {grid[i+k][j+k]}
             if len(s) == 1 and '.' not in s:
                 return True
-    #If diagonal is full with same characters, 
-	#the game is over and the player with that character has won
+    #Check if there is an accepted right diagonal
+    #the game is over and the player with that character has won
     for i in range(N):
         if i+a_row-1 >= N:
             continue
@@ -64,9 +70,9 @@ def check_win():
     #if all cases above not reached
     return False
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a tie state or not
 def check_tie(mark):
-    #If row a single type of characters
+    #Check if there is an accpted row
     for i in range(N):
         for j in range(M-a_row+1):
             s = {mark}
@@ -75,7 +81,7 @@ def check_tie(mark):
                     s |= {grid[i][k]}
             if len(s) == 1:
                 return False
-    #If column a single type of characters
+    #Check if there is an accpted column
     for i in range(M):
         for j in range(N-a_row+1):
             s = {mark}
@@ -83,7 +89,7 @@ def check_tie(mark):
                 s |= {grid[k][i]}
             if len(s) == 1 and '.' not in s:
                 return True
-    #If diagonal a single type of characters
+    #Check if there is an accpted left diagonal
     for i in range(N):
         if i+a_row-1 >= N:
             continue
@@ -95,7 +101,7 @@ def check_tie(mark):
                 s |= {grid[i+k][j+k]}
             if len(s) == 1 and '.' not in s:
                 return True
-    #If diagonal a single type of characters
+    #Check if there is an accpted right diagonal
     for i in range(N):
         if i+a_row-1 >= N:
             continue
@@ -107,7 +113,7 @@ def check_tie(mark):
                 s |= {grid[i+k][j-k]}
             if len(s) == 1 and '.' not in s:
                 return True
-    #Otherwise, there isn't a win state in the game, 
+    #Otherwise, there isn't a tie state in the game, 
     #if all cases above not reached
     return True
 
@@ -119,7 +125,7 @@ def check_empty(i, j):
 def check_valid_position(i, j):
 	return 0 <= i < N and 0 <= j < M
 
-#This function sets a value to a cell
+#This function sets the given mark to the given cell
 def set_cell(i, j, mark):
 	grid[i][j] = mark
 
@@ -127,6 +133,13 @@ def set_cell(i, j, mark):
 def grid_clear():
 	global grid
 	grid = [['.'] * M for i in range(N)]
+
+#This function reads a valid position input
+def read_input():
+    i, j = map(int, input('Enter the row index and column index: ').split())
+    while not check_valid_position(i, j) or not check_empty(i, j):
+        i, j = map(int, input('Enter a valid row index and a valid column index: ').split())
+    return i, j
 
 
 #MAIN FUNCTION
@@ -138,29 +151,27 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Set mark value based on the player
-        mark = 'B' if player == 0 else 'W'
-        #Read an input from the player
-        print('Player %s' % mark)
-        i, j = map(int, input('Enter the row index and column index: ').split())
-        while not check_valid_position(i, j) or not check_empty(i, j):
-            i, j = map(int, input('Enter a valid row index and a valid column index: ').split())
-        #Set the input position with the mark
-        set_cell(i, j, mark)
-        #Check if the state of the grid has a win state
+        #Read an input position from the player
+        print('Player %s is playing now' % marks[player])
+        i, j = read_input()
+        #Set the player mark in the input position
+        set_cell(i, j, marks[player])
+        #Check if the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
-            print('Congrats, Player %s is won!' % mark)
+            #Announcement of the final statement
+            print('Congrats, Player %s is won!' % marks[player])
             break
-        #Check if the state of the grid has a tie state
-        if check_tie(mark):
+        #Check if the grid has a tie state
+        if check_tie(marks[player]):
             #Prints the grid
             print_grid()
+            #Announcement of the final statement
             print("Woah! That's a tie!")
             break		
         #Player number changes after each turn
-        player = 1 - player 
+        player = (player + 1) % n_players
 
 
 while True:
