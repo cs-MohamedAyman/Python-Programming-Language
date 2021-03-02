@@ -2,7 +2,7 @@ N = 3
 marks = ['X', 'O']
 grid = []
 
-#This function prints the grid of Tic-Tac-Toe as the game progresses
+#This function prints the grid of Tic-Tac-Toe Game as the game progresses
 def print_grid():
     print("Player 1: %c  vs  Player 2: %c" % (marks[0], marks[1]))
     print('--' + '---' * N + '--')
