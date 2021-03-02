@@ -5,7 +5,7 @@ grid = []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
-    print('-' * ((N + 4) * N + N + 1))
+    print('-' * ((N+4) * N + N + 1))
     for i in range(N):
         print(end='|')
         for j in range(N):
