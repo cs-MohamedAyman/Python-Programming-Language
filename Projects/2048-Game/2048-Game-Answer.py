@@ -1,11 +1,11 @@
 import random
-N = 4
+N = 8
 GOAL = 1 << (3*N-1)
 grid = []
 
 #This function prints the grid of 2048 Game as the game progresses
 def print_grid():
-    print(('-' * N) + ('-' * ((N+4) * N)) + '-')
+    print('-' * ((N + 4) * N + N + 1))
     for i in range(N):
         print(end='|')
         for j in range(N):
@@ -18,7 +18,7 @@ def print_grid():
                 e = (' ' * r1) + str(grid[i][j]) + (' ' * r2)
             print(e, end='|')
         print()
-        print(('-' * N) + ('-' * ((N+4) * N)) + '-')
+        print('-' * ((N+4) * N + N + 1))
 
 #This function generates a cell with value 2 
 def generate_cell():
@@ -29,7 +29,7 @@ def generate_cell():
         b = random.randint(0, N-1)
     grid[a][b] = 2
 
-#This function rotates the grid by 90 degree
+#This function rotates the grid by 90 degree anti-clockwise
 def rotate_90():
     for i in range(N//2):
         for j in range(i, N-i-1):
@@ -47,19 +47,22 @@ def check_win():
                 return True
     return False
 
-#This function checks if the direction have state reachs 2048 or not 
+#This function checks if the current right direction has a movement state or not
 def check_available_direction():
     for i in range(N):
         j = 0
-        while j < N and grid[i][j] == 0: j +=1 
-        while j < N and grid[i][j] != 0: j +=1 
-        if j < N: return True
+        while j < N and grid[i][j] == 0: 
+            j +=1 
+        while j < N and grid[i][j] != 0: 
+            j +=1 
+        if j < N: 
+            return True
         for k in range(N-1):
             if grid[i][k] == grid[i][k+1] and grid[i][k] != 0:
                 return True
     return False
 
-#This function checks if any direction have state reachs 2048 or not
+#This function checks if the given direction has a movement state or not
 def check_available_move(d):
     res = False
     #check direction right
@@ -76,7 +79,7 @@ def check_available_move(d):
     rotate_90()
     return res
 
-#This function checks if the game state over or not
+#This function checks if the game has a full state or not
 def check_full():
     for i in range(N):
         for j in range(N):
@@ -94,7 +97,7 @@ def check_full():
                 return False
     return True
 
-#This function merges the grid with given direction 
+#This function merges the grid with the right direction 
 def merge():
     for i in range(N):
         j = N-1
@@ -105,7 +108,7 @@ def merge():
                 j -= 1
             j -= 1
 
-#This function checks if the direction have state reachs 2048 or not 
+#This function merges the grid with the given direction 
 def merge_direction(d):
     #merge direction right
     if d == 3: merge()
@@ -120,7 +123,7 @@ def merge_direction(d):
     if d == 2: merge()
     rotate_90()
 
-#This function moves the grid with given direction 
+#This function moves the grid with the left direction 
 def move():
     for i in range(N):
         temp = []
@@ -130,7 +133,7 @@ def move():
         for j in range(N):
             grid[i][j] = temp[j] if j < len(temp) else 0
 
-#This function checks if the direction have state reachs 2048 or not 
+#This function moves the grid with the given direction 
 def move_direction(d):
     #move direction left
     if d == 1: move()
@@ -145,19 +148,26 @@ def move_direction(d):
     if d == 5: move()
     rotate_90()
 
-#This function checks if given position is valid or not 
+#This function checks if the given direction is valid or not 
 def check_valid_direction(i):
 	return i in [1, 2, 3, 5]
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
 	global grid
 	grid = [[0] * N for i in range(N)]
 
+#This function reads a valid direction
+def read_input():
+    i = int(input('Enter the direction: '))
+    while not check_valid_direction(i) or not check_available_move(i):
+        i = int(input('Enter a valid direction: '))
+    return i
+
 
 #MAIN FUNCTION
 def play_game():
-    print(str(GOAL) + " Game!")
+    print("2048 Game!")
     print("Welcome...")
     print("============================")
     while True:
@@ -170,20 +180,20 @@ def play_game():
             print("Game Over!")
             break
         #Read an input from the player
-        i = int(input('Enter the direction: '))
-        while not check_valid_direction(i) or not check_available_move(i):
-            i = int(input('Enter a valid direction: '))
+        i = read_input()
         #Move with the input direction
         move_direction(i)
         #Merge with the input direction
         merge_direction(i)
         #Move with the input direction
         move_direction(i)
-        #Check if the state of the grid has a win state
+        #Check if the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
+            #Announcement of the final statement
             print('Congrats, You won!')
+            #Ask for continuing the game
             c = input('Continue [Y/N] ')
             if c not in 'yY':
                 break
