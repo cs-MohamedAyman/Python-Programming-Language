@@ -79,7 +79,7 @@ def check_tie(mark):
             for k in range(j, j+a_row):
                 if grid[i][k] != '.':
                     s |= {grid[i][k]}
-            if len(s) == 1:
+            if len(s) == 2 and '.' in s:
                 return False
     #Check if there is an accpted column
     for i in range(M):
@@ -87,8 +87,8 @@ def check_tie(mark):
             s = {mark}
             for k in range(j, j+a_row):
                 s |= {grid[k][i]}
-            if len(s) == 1 and '.' not in s:
-                return True
+            if len(s) == 2 and '.' in s:
+                return False
     #Check if there is an accpted left diagonal
     for i in range(N):
         if i+a_row-1 >= N:
@@ -99,8 +99,8 @@ def check_tie(mark):
             s = {mark}
             for k in range(a_row):
                 s |= {grid[i+k][j+k]}
-            if len(s) == 1 and '.' not in s:
-                return True
+            if len(s) == 2 and '.' in s:
+                return False
     #Check if there is an accpted right diagonal
     for i in range(N):
         if i+a_row-1 >= N:
@@ -111,8 +111,8 @@ def check_tie(mark):
             s = {mark}
             for k in range(a_row):
                 s |= {grid[i+k][j-k]}
-            if len(s) == 1 and '.' not in s:
-                return True
+            if len(s) == 2 and '.' in s:
+                return False
     #Otherwise, there isn't a tie state in the game, 
     #if all cases above not reached
     return True
