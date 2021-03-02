@@ -1,10 +1,16 @@
 N, M = 15, 15
 a_row = 5
+n_players = 2
+marks = ['X', 'O']
 grid = []
 
 #This function prints the grid of Gomoku as the game progresses
 def print_grid():
-    print("Player 1: B  vs  Player 2: W")
+    for i in range(n_players):
+        print('Player %d: %c  ' % (i+1, marks[i]), end='')
+        if i < n_players-1:
+            print('vs  ', end='')
+    print()
     print('--' + '---' * M + '--')
     for i in range(N):
         print(end='|  ')
@@ -14,11 +20,11 @@ def print_grid():
         print()
         print('--' + '---' * M + '--')
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a win state or not
 def check_win():
     pass
 
-#This function checks if row or column or diagonal is full with same characters
+#This function checks if the game has a tie state or not
 def check_tie(mark):
     pass
 
@@ -30,12 +36,16 @@ def check_empty(i, j):
 def check_valid_position(i, j):
     pass
 
-#This function sets a value to a cell
+#This function sets the given mark to the given cell
 def set_cell(i, j, mark):
     pass
 
 #This function clears the grid
 def grid_clear():
+    pass
+
+#This function reads a valid position input
+def read_input():
     pass
 
 
@@ -48,29 +58,27 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Set mark value based on the player
-        mark = 'B' if player == 0 else 'W'
-        #Read an input from the player
-        print('Player %s' % mark)
-        i, j = map(int, input('Enter the row index and column index: ').split())
-        while not check_valid_position(i, j) or not check_empty(i, j):
-            i, j = map(int, input('Enter a valid row index and a valid column index: ').split())
-        #Set the input position with the mark
-        set_cell(i, j, mark)
-        #Check if the state of the grid has a win state
+        #Read an input position from the player
+        print('Player %s is playing now' % marks[player])
+        i, j = read_input()
+        #Set the player mark in the input position
+        set_cell(i, j, marks[player])
+        #Check if the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
-            print('Congrats, Player %s is won!' % mark)
+            #Announcement of the final statement
+            print('Congrats, Player %s is won!' % marks[player])
             break
-        #Check if the state of the grid has a tie state
-        if check_tie(mark):
+        #Check if the grid has a tie state
+        if check_tie(marks[player]):
             #Prints the grid
             print_grid()
+            #Announcement of the final statement
             print("Woah! That's a tie!")
             break		
         #Player number changes after each turn
-        player = 1 - player 
+        player = (player + 1) % n_players
 
 
 while True:
