@@ -120,19 +120,19 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Read an input from the player
+        #Read an input position from the player
         print('Player %s is playing now' % marks[player])
         i, j = read_input()
-        #Set the input position with the mark
+        #Set the player mark in the input position
         set_cell(i, j, marks[player])
-        #Check if the state of the grid has a win state
+        #Check if the grid has a win state
         if check_win():
             #Prints the grid
             print_grid()
             #Announcement of the final statement
             print('Congrats, Player %s is won!' % marks[player])
             break
-        #Check if the state of the grid has a tie state
+        #Check if the grid has a tie state
         if check_tie(marks[player]):
             #Prints the grid
             print_grid()
