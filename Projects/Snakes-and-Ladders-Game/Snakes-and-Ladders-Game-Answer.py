@@ -17,6 +17,8 @@ def convert_indices_to_position(i, j):
 
 #This function converts the given position into indices
 def convert_position_to_indices(p):
+    if p == 0:
+        return -1, -1
     i = N - (p - 1) // M - 1
     if i % 2 == N % 2:
         j = (M - p % M) % M
@@ -35,9 +37,8 @@ def print_grid():
     for i in range(N):
         print('|', end='')
         for j in range(M):
-            cell = ''
+            cell, symbol = '', ''
             p = convert_indices_to_position(i, j)
-            symbol = ''
             for k in range(n_components):
                 if p == ladders[k][0] or p == ladders[k][1]:
                     symbol = ladder_symbol+str(k+1)
