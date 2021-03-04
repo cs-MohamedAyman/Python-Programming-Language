@@ -25,9 +25,8 @@ def print_grid():
     for i in range(N):
         print('|', end='')
         for j in range(M):
-            cell = ''
+            cell, symbol = '', ''
             p = convert_indices_to_position(i, j)
-            symbol = ''
             for k in range(n_components):
                 if p == ladders[k][0] or p == ladders[k][1]:
                     symbol = ladder_symbol+str(k+1)
