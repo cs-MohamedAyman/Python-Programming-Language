@@ -142,7 +142,7 @@ def get_snake_minus_value(p):
 def grid_clear():
     pass
 
-#This function reads a valid and arranged side input
+#This function reads a valid input
 def read_input():
     pass
 
