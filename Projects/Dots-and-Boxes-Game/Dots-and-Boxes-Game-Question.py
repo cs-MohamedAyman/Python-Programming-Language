@@ -32,14 +32,6 @@ def print_grid():
 def check_complete():
     pass
 
-#This function checks if given horizontal side is empty or not 
-def check_empty_horizontal_side(i, j):
-    pass
-
-#This function checks if given vertical side is empty or not 
-def check_empty_vertical_side(i, j):
-    pass
-
 #This function checks if the given side is empty or not 
 def check_empty_side(i1, j1, i2, j2):
     pass
@@ -50,14 +42,6 @@ def check_valid_position(i, j):
 
 #This function checks if given side is valid or not 
 def check_valid_side(i1, j1, i2, j2):
-    pass
-
-#This function sets a horizontal side
-def set_horizontal_side(i, j):
-    pass
-
-#This function sets a vertical side
-def set_vertical_side(i, j):
     pass
 
 #This function sets the given side
