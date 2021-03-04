@@ -56,7 +56,7 @@ def print_grid():
             cell = ''
             for k in range(n_players):
                 p1, p2 = convert_position_to_indices(player_position[k])
-                cell += ' ' + marks[k] if (p1, p2) == (i, j) else ''
+                if (p1, p2) == (i, j): cell += ' ' + marks[k]
             cell += ' ' * (max_cell_width - 1 - len(cell))
             print(cell + '|', end='')
         print()
