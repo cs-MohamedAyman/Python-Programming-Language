@@ -48,18 +48,6 @@ def check_valid_side(i1, j1, i2, j2):
 def set_side(i1, j1, i2, j2):
     pass
 
-#This function checks if the given box is complete or not
-def is_complete_box(i, j):
-    pass
-
-#This function sets a mark to the given completed box
-def set_box(i, j, player):
-    pass
-
-#This function checks and sets the completed box
-def set_neighbor_box(i1, j1, i2, j2, player):
-    pass
-
 #This function checks and sets the neighbor completed boxes
 def set_neighbor_boxes(i1, j1, i2, j2, player):
     pass
