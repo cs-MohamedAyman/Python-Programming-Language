@@ -156,6 +156,12 @@ def get_snake_minus_value(p):
             return p1 - p2
     return 0
 
+#This function gets the movement value of the given position
+def get_entity_value(p):
+    plus_value  = get_ladder_plus_value(p)
+    minus_value = get_snake_minus_value(p)
+    return plus_value if abs(plus_value) > abs(minus_value) else minus_value
+
 #This function clears the game structures
 def grid_clear():
     global grid, player_position, snakes, ladders
@@ -188,24 +194,22 @@ def play_game():
         print(print_dice_face(dice_face))
         #Move the player position
         move_player(player, dice_face)
-        #Get the plus value if there is a ladder
-        plus_value = get_ladder_plus_value(player_position[player])
-        if plus_value > 0:
+        #Get the movement value if there is an entity
+        entity_value = get_entity_value(player_position[player])
+        if entity_value > 0:
             #Prints the grid
             print_grid()
             print('Player %s face a ladder, there is a movement from %d to %d' % \
-                  (marks[player], player_position[player], player_position[player]+plus_value))
+                  (marks[player], player_position[player], player_position[player]+entity_value))
             #Move the player position
-            move_player(player, plus_value)
-        #Get the minus value if there is a snake
-        minus_value = get_snake_minus_value(player_position[player])        
-        if minus_value < 0:
+            move_player(player, entity_value)
+        if entity_value < 0:
             #Prints the grid
             print_grid()
             print('Player %s face a snake, there is a movement from %d to %d' % \
-                  (marks[player], player_position[player], player_position[player]+minus_value))
+                  (marks[player], player_position[player], player_position[player]+entity_value))
             #Move the player position
-            move_player(player, minus_value)
+            move_player(player, entity_value)
         #Check if the state of the grid has a win state
         if check_win(player):
             #Prints the grid
