@@ -162,7 +162,7 @@ def grid_clear():
     player_position = [0] * n_players
     snakes, ladders = [(0, 0)] * n_components, [(0, 0)] * n_components
 
-#This function reads a valid and arranged side input
+#This function reads a valid input
 def read_input():
     i = input('Choose the dice face [A B C D E F]: ')
     while not check_valid_face(i):
