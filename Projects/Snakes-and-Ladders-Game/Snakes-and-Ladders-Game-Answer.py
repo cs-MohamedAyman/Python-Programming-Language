@@ -1,6 +1,8 @@
 import random
 N, M = 10, 10
 n_players, n_components = 2, 6
+marks = ['X', 'O']
+max_cell_width = max(8, n_players * 2 + 2)
 ladder_symbol, snake_symbol = 'L', 'S'
 grid, player_position, snakes, ladders = [], [], [], []
 
@@ -24,40 +26,43 @@ def convert_position_to_indices(p):
 
 #This function prints the grid of Snakes and Ladders as the game progresses
 def print_grid():
-    print("Player 1: X  vs  Player 2: O")
-    print('-------' * M + '-')
+    for i in range(n_players):
+        print('Player %d: %c  ' % (i+1, marks[i]), end='')
+        if i < n_players-1:
+            print('vs  ', end='')
+    print()
+    print('-' * max_cell_width * M + '-')
     for i in range(N):
-        row_res = ''
-        row_res += '|'
+        print('|', end='')
         for j in range(M):
-            p1, p2 = convert_position_to_indices(player_position[0])
-            row_res += 'X  ' if (p1, p2) == (i, j) else '   '
+            cell = ''
             p = convert_indices_to_position(i, j)
-            row_res += '  ' + str(p) if p < 10 else ' ' + str(p) if p < 100 else str(p)
-            row_res += '|'
-        row_res += '\n|'
+            symbol = ''
+            for k in range(n_components):
+                if p == ladders[k][0] or p == ladders[k][1]:
+                    symbol = ladder_symbol+str(k+1)
+                    break
+                if p == snakes[k][0] or p == snakes[k][1]:
+                    symbol = snake_symbol+str(k+1)
+                    break
+            cell += symbol + ' ' * (2 - len(symbol))
+            cell += ' ' * (max_cell_width - 2 - 3 - 1)
+            cell += ' ' * (3 - len(str(p))) + str(p)
+            print(cell + '|', end='')
+        print()
+        print('|', end='')
         for j in range(M):
-            symbol = '  '
-            p = convert_indices_to_position(i, j)
-            if grid[i][j] == ladder_symbol:
-                for k in range(n_components):
-                    if p == ladders[k][0] or p == ladders[k][1]:
-                        symbol = ladder_symbol+str(k+1)
-                        break
-            if grid[i][j] == snake_symbol:
-                for k in range(n_components):
-                    if p == snakes[k][0] or p == snakes[k][1]:
-                        symbol = snake_symbol+str(k+1)
-                        break
-            row_res += symbol + ' '
-            p1, p2 = convert_position_to_indices(player_position[1])
-            row_res += '  O' if (p1, p2) == (i, j) else '   '
-            row_res += '|'
-        print(row_res)
-        print('-------' * M + '-')
-    print('Player X in', player_position[0])
-    print('Player O in', player_position[1])
-    print('-------' * M + '-')
+            cell = ''
+            for k in range(n_players):
+                p1, p2 = convert_position_to_indices(player_position[k])
+                cell += ' ' + marks[k] if (p1, p2) == (i, j) else ''
+            cell += ' ' * (max_cell_width - 1 - len(cell))
+            print(cell + '|', end='')
+        print()
+        print('-' * max_cell_width * M + '-')
+    for i in range(n_players):
+        print('Player %c in %d'% (marks[i], player_position[i]))
+    print('-' * max_cell_width * M + '-')
 
 #This function checks if the given player reach the end of the game or not 
 def check_win(player):
@@ -150,12 +155,19 @@ def get_snake_minus_value(p):
             return p1 - p2
     return 0
 
-#This function clears the grid
+#This function clears the game structures
 def grid_clear():
     global grid, player_position, snakes, ladders
     grid = [['.' for i in range(M)] for j in range(N)]
     player_position = [0] * n_players
     snakes, ladders = [(0, 0)] * n_components, [(0, 0)] * n_components
+
+#This function reads a valid and arranged side input
+def read_input():
+    i = input('Choose the dice face [A B C D E F]: ')
+    while not check_valid_face(i):
+        i = input('Choose a valid dice face [A B C D E F]: ')
+    return i
 
 
 #MAIN FUNCTION
@@ -167,13 +179,9 @@ def play_game():
     while True:
         #Prints the grid
         print_grid()
-        #Set mark value based on the player
-        mark = 'X' if player == 0 else 'O'
-        #Read an input from the player
-        print('Player %s' % mark)
-        i = input('Choose the dice face [A B C D E F]: ')
-        while not check_valid_face(i):
-            i = input('Choose a valid dice face [A B C D E F]: ')
+        #Read an input dice face from the player
+        print('Player %s is playing now' % marks[player])
+        i = read_input()
         #Generate a dice face
         dice_face = generate_dice_face()
         print(print_dice_face(dice_face))
@@ -185,7 +193,7 @@ def play_game():
             #Prints the grid
             print_grid()
             print('Player %s face a ladder, there is a movement from %d to %d' % \
-                  (mark, player_position[player], player_position[player]+plus_value))
+                  (marks[player], player_position[player], player_position[player]+plus_value))
             #Move the player position
             move_player(player, plus_value)
         #Get the minus value if there is a snake
@@ -194,17 +202,17 @@ def play_game():
             #Prints the grid
             print_grid()
             print('Player %s face a snake, there is a movement from %d to %d' % \
-                  (mark, player_position[player], player_position[player]+minus_value))
+                  (marks[player], player_position[player], player_position[player]+minus_value))
             #Move the player position
             move_player(player, minus_value)
         #Check if the state of the grid has a win state
         if check_win(player):
             #Prints the grid
             print_grid()
-            print('Congrats, Player %s is won!' % mark)
+            print('Congrats, Player %s is won!' % marks[player])
             break
         #Player number changes after each turn
-        player = 1 - player 
+        player = (player + 1) % n_players
 
 
 while True:
