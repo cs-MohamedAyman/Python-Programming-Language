@@ -106,14 +106,14 @@ def play_game():
             #Prints the grid
             print_grid()
             #Announcement of the final statement in a box
-            print('Congrats, Player %s is completed the box %s !' % (marks[player], curr_box))
+            print('Congrats, Player %s is completed the box %s.' % (marks[player], curr_box))
             fill_box(i, j, marks[player])
         #Check if the selected box has a full state
         elif check_tie(big_grid, marks[player], i, j) and check_tie(big_grid, marks[1-player], i, j):
             #Prints the grid
             print_grid()
             #Announcement of the final statement in a box
-            print("Woah! That's a tie in the box %s !" % curr_box)
+            print('Woah! That's a tie in the box %s.' % curr_box)
             fill_box(i, j, '#')
         #Calculate the next selected box 
         set_next_box(i, j)
@@ -129,7 +129,7 @@ def play_game():
             #Prints the grid
             print_grid()
             #Announcement of the final statement
-            print("Woah! That's a tie!")
+            print('Woah! That's a tie!')
             break
         #Player number changes after each turn
         player = 1 - player 
