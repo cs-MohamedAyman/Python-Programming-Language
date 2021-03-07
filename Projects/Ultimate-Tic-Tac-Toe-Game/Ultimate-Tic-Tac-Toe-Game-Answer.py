@@ -171,7 +171,7 @@ def read_input():
     si, sj = cvt_big_grid_pos_to_small_grid_pos(i, j)
     while not check_valid_position(i, j) or not check_empty_in_big_grid(i, j) or \
           (next_box != -1 and next_box != cvt_big_grid_pos_to_box(i, j)) or \
-          (next_box == -1 and not cvt_big_grid_pos_to_small_grid_pos(si, sj)):
+          (next_box == -1 and not check_empty_in_small_grid(si, sj)):
         i, j = map(int, input('Enter a valid row index and column index in %s: ' % box_idx).split())
         si, sj = cvt_big_grid_pos_to_small_grid_pos(i, j)
     return i, j
@@ -196,14 +196,14 @@ def play_game():
             #Prints the grid
             print_grid()
             #Announcement of the final statement in a box
-            print('Congrats, Player %s is completed the box %s !' % (marks[player], curr_box))
+            print('Congrats, Player %s is completed the box %s.' % (marks[player], curr_box))
             fill_box(i, j, marks[player])
         #Check if the selected box has a full state
         elif check_tie(big_grid, marks[player], i, j) and check_tie(big_grid, marks[1-player], i, j):
             #Prints the grid
             print_grid()
             #Announcement of the final statement in a box
-            print("Woah! That's a tie in the box %s !" % curr_box)
+            print("Woah! That's a tie in the box %s." % curr_box)
             fill_box(i, j, '#')
         #Calculate the next selected box 
         set_next_box(i, j)
