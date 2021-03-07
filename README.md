@@ -46,7 +46,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="230" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
 <br>
 
-## `Educational-Projects` `80H`
+## `Educational-Projects` `100H`
 
 ### `Project 01` -
 ### `Project 02` -
@@ -56,6 +56,8 @@ Python programming language lectures for computer science students.
 ### `Project 06` -
 ### `Project 07` -
 ### `Project 08` -
+### `Project 09` -
+### `Project 10` -
 
 <br>
 <img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/textbooks.jpg">
