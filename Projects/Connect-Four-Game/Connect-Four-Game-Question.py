@@ -70,7 +70,11 @@ def play_game():
             print('Congrats, Player %s is won!' % marks[player])
             break
         #Check if the grid has a tie state
-        if check_tie(marks[player]):
+        all_tie = True
+        for mark in marks:
+            if not check_tie(mark):
+                all_tie = False
+        if all_tie:
             #Prints the grid
             print_grid()
             #Announcement of the final statement
