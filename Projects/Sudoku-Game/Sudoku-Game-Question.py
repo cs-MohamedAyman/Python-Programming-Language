@@ -2,11 +2,11 @@ import random
 root_N = 3
 N = root_N * root_N
 grid, cpy_grid = [], []
+symbols = ['.', '1', '2', '3', '4', '5', '6', '7', \
+           '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
 
 #This function prints the grid of Sudoku Game as the game progresses
 def print_grid():
-    symbols = ['.', '1', '2', '3', '4', '5', '6', '7', \
-               '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
     print(('-' * (N*3)) + ('---' * root_N) + '-')
     for i in range(N):
         print(end='|  ')
