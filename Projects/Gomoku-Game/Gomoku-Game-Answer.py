@@ -70,7 +70,7 @@ def check_win():
     #if all cases above not reached
     return False
 
-#This function checks if the game has a tie state or not
+#This function checks if the game has a tie state or not for the given mark
 def check_tie(mark):
     #Check if there is an accpted row
     for i in range(N):
@@ -116,6 +116,14 @@ def check_tie(mark):
     #Otherwise, there isn't a tie state in the game, 
     #if all cases above not reached
     return True
+
+#This function checks if the game has a tie state or not
+def check_tie():
+    all_tie = True
+    for mark in marks:
+        if not check_tie(mark):
+            all_tie = False
+    return all_tie
 
 #This function checks if given cell is empty or not 
 def check_empty(i, j):
@@ -164,11 +172,7 @@ def play_game():
             print('Congrats, Player %s is won!' % marks[player])
             break
         #Check if the grid has a tie state
-        all_tie = True
-        for mark in marks:
-            if not check_tie(mark):
-                all_tie = False
-        if all_tie:
+        if check_tie():
             #Prints the grid
             print_grid()
             #Announcement of the final statement
