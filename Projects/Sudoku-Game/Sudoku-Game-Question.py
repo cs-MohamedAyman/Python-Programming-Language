@@ -27,10 +27,6 @@ def check_win():
 def check_valid_position(i, j):
     pass
 
-#This function checks if the given cell is empty or not 
-def check_empty_cell(i, j):
-    pass
-
 #This function checks if the given cell is original or not
 def check_original_cell(i, j):
     pass
