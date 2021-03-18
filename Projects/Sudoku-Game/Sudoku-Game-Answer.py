@@ -52,10 +52,6 @@ def check_win():
 def check_valid_position(i, j):
     return 0 <= i < N and 0 <= j < N
 
-#This function checks if the given cell is empty or not 
-def check_empty_cell(i, j):
-    return grid[i][j] == 0
-
 #This function checks if the given cell is original or not
 def check_original_cell(i, j):
     return cpy_grid[i][j] != 0
