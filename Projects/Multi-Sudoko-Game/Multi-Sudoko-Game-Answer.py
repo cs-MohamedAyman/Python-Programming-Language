@@ -7,6 +7,58 @@ similar_boxes, n_grids, graphs = [], [], []
 symbols = ['.', '1', '2', '3', '4', '5', '6', '7', \
            '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
 
+def print_mode_type(max_height, max_width, n_elements, curr_idx):
+    res = ''
+    res += '\n' * ((max_height - len(graphs[curr_idx].split('\n')) + 1) // 2)
+    for i in range(max_height):
+        for j in range(n_elements):
+            if i < len(graphs[curr_idx+j].split('\n'))-1: 
+                res += graphs[curr_idx+j].split('\n')[i].center(max_width)
+            else: 
+                res += ' ' * max_width
+        res += '\n'
+    for j in range(n_elements):
+        res += str('mode '+str(curr_idx+j)).center(max_width)
+    curr_idx += n_elements
+    return res
+
+#This function prints the modes of Multi-Sudoku Game
+def print_modes():
+    idx, max_width = 0, 22
+    dashes  = ('-' * max_width * 8)
+    spaces1 = (' ' * max_width * 3)
+    spaces2 = (' ' * max_width * 4)
+    print('+' + dashes + '+')
+    print('| ' + spaces1 + '1 Grid Multi-Sudoku' + spaces2 + '  |')
+    print('+' + dashes + '+')
+    print(print_mode_type(3, max_width*7, 1, idx))
+    idx += 1
+    print('+' + dashes + '+')
+    print('| ' + spaces1 + '2 Grids Multi-Sudoku' + spaces2 + ' |')
+    print('+' + dashes + '+')
+    print(print_mode_type(5, max_width, 8, idx))
+    idx += 8
+    print('+' + dashes + '+')
+    print('| ' + spaces1 + '3 Grids Multi-Sudoku' + spaces2 + ' |')
+    print('+' + dashes + '+')
+    print(print_mode_type(7, max_width, 8, idx))
+    idx += 8
+    print('+' + dashes + '+')
+    print('| ' + spaces1 + '3 Grids Multi-Sudoku' + spaces2 + ' |')
+    print('+' + dashes + '+')
+    print(print_mode_type(7, max_width, 8, idx))
+    idx += 8
+    print('+' + dashes + '+')
+    print('| ' + spaces1 + '4 Grids Multi-Sudoku' + spaces2 + ' |')
+    print('+' + dashes + '+')
+    print(print_mode_type(7, max_width, 8, idx))
+    idx += 8
+    print('+' + dashes + '+')
+    print('| ' + spaces1 + '5 Grids Multi-Sudoku' + spaces2 + ' |')
+    print('+' + dashes + '+')
+    print(print_mode_type(7, max_width, 2, idx))
+    idx += 2
+    
 #This function checks if the given mode is valid or not 
 def check_valid_mode(x):
     return 0 <= x < n_modes
@@ -629,8 +681,9 @@ def play_game():
             break
 
 while True:
-    set_config()
     contract_modes()
+    print_modes()
+    set_config()
     grid_clear()
     generate_grids()
     play_game()
