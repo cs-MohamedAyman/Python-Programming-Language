@@ -105,7 +105,7 @@ def solve_grid(i, j):
             cpy_grid[i][j] = 0
     return False
 
-#This function generates cells in the grids
+#This function generates cells in the grid
 def generate_cells():
     for k in range(0, N, root_N):
         for i in range(root_N):
@@ -117,7 +117,7 @@ def generate_cells():
                 grid[k+i][k+j] = n
                 cpy_grid[k+i][k+j] = n
 
-#This function removes cells in the grids
+#This function removes cells in the grid
 def remove_cells():
     for k in range((N+1)//2):
         for i in range(0, N, root_N):
