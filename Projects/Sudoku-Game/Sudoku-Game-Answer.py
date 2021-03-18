@@ -101,13 +101,12 @@ def solve_grid(i, j):
             cpy_grid[i][j] = k
             if solve_grid(i, j + 1):
                 return True
-        grid[i][j] = 0
-        cpy_grid[i][j] = 0
+            grid[i][j] = 0
+            cpy_grid[i][j] = 0
     return False
 
-#This function generates cells in the grid
+#This function generates cells in the grids
 def generate_cells():
-    #Generate cells in the grid
     for k in range(0, N, root_N):
         for i in range(root_N):
             for j in range(root_N):
@@ -117,19 +116,28 @@ def generate_cells():
                     n = random.randint(1, N)
                 grid[k+i][k+j] = n
                 cpy_grid[k+i][k+j] = n
+
+#This function removes cells in the grids
+def remove_cells():
+    for k in range((N+1)//2):
+        for i in range(0, N, root_N):
+            for j in range(0, N, root_N):
+                t1 = random.randint(0, root_N-1)
+                t2 = random.randint(0, root_N-1)
+                while not check_original_cell(i+t1, j+t2):
+                    t1 = random.randint(0, root_N-1)
+                    t2 = random.randint(0, root_N-1)
+                grid[i+t1][j+t2] = 0
+                cpy_grid[i+t1][j+t2] = 0
+
+#This function generates cells in the given grid
+def generate_grid():
+    #Generate cells in the grid
+    generate_cells()    
     #Solve the complete grid
     solve_grid(0, 0)
     #Remove cells in the grid to be solved
-    prev_x, prev_y = 0, 0
-    for k in range(N*N - N//2*N):
-        i = (random.randint(0, N-1) + prev_x + root_N) % N
-        j = (random.randint(0, N-1) + prev_y + root_N) % N
-        while not check_original_cell(i, j):
-            i = (random.randint(0, N-1) + prev_x + root_N) % N
-            j = (random.randint(0, N-1) + prev_y + root_N) % N
-        grid[i][j] = 0
-        cpy_grid[i][j] = 0
-        prev_x, prev_y = i, j
+    remove_cells()
 
 #This function clears the game structures
 def grid_clear():
@@ -167,7 +175,7 @@ def play_game():
 
 while True:
     grid_clear()
-    generate_cells()
+    generate_grid()
     play_game()
     c = input('Play Again [Y/N] ')
     if c not in 'yY':
