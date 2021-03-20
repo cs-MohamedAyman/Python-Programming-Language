@@ -62,7 +62,13 @@ def grid_clear():
 
 #This function reads a valid and arranged side input
 def read_input():
-    pass
+    i1, j1, i2, j2 = map(int, input('Enter the two points of the side: ').split())
+    i1, j1, i2, j2 = arrange_side_points(i1, j1, i2, j2)
+    while not check_valid_position(i1, j1) or not check_valid_position(i2, j2) or \
+          not check_valid_side(i1, j1, i2, j2) or not check_empty_side(i1, j1, i2, j2):
+        i1, j1, i2, j2 = map(int, input('Enter a valid two points of the side: ').split())
+        i1, j1, i2, j2 = arrange_side_points(i1, j1, i2, j2)
+    return i1, j1, i2, j2
 
 
 #MAIN FUNCTION

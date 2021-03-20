@@ -98,7 +98,10 @@ def grid_clear():
 
 #This function reads a valid position and value inputs
 def read_input():
-    pass
+    i, j, v = map(int, input('Enter the row index and column index and value: ').split())
+    while not check_valid_position(i, j) or not check_valid_value(i, j, v) or check_original_cell(i, j):
+        i, j, v = map(int, input('Enter a valid row index and column index and value: ').split())
+    return i, j, v
 
 
 #MAIN FUNCTION

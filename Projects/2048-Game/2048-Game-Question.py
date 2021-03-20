@@ -116,7 +116,10 @@ def grid_clear():
 
 #This function reads a valid direction
 def read_input():
-    pass
+    i = int(input('Enter the direction: '))
+    while not check_valid_direction(i) or not check_available_move(i):
+        i = int(input('Enter a valid direction: '))
+    return i
 
 
 #MAIN FUNCTION

@@ -84,7 +84,15 @@ def grid_clear():
 
 #This function reads a valid position input
 def read_input():
-    pass
+    box_idx = 'any box' if next_box == -1 else 'box ' + str(next_box)
+    i, j = map(int, input('Enter the row index and column index in %s: ' % box_idx).split())
+    si, sj = cvt_big_grid_pos_to_small_grid_pos(i, j)
+    while not check_valid_position(i, j) or not check_empty_in_big_grid(i, j) or \
+          (next_box != -1 and next_box != cvt_big_grid_pos_to_box(i, j)) or \
+          (next_box == -1 and not check_empty_in_small_grid(si, sj)):
+        i, j = map(int, input('Enter a valid row index and column index in %s: ' % box_idx).split())
+        si, sj = cvt_big_grid_pos_to_small_grid_pos(i, j)
+    return i, j
 
 
 #MAIN FUNCTION

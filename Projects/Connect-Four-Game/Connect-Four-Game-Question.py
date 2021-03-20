@@ -49,7 +49,10 @@ def grid_clear():
 
 #This function reads a valid position input
 def read_input():
-    pass
+    i = int(input('Enter the column index: '))
+    while not check_valid_column(i) or not check_empty(i):
+        i = int(input('Enter a valid column index: '))
+    return i
 
 
 #MAIN FUNCTION

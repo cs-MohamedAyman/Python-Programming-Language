@@ -139,7 +139,10 @@ def grid_clear():
 
 #This function reads a valid input
 def read_input():
-    pass
+    i = input('Choose the dice face [A B C D E F]: ')
+    while not check_valid_face(i):
+        i = input('Choose a valid dice face [A B C D E F]: ')
+    return i
 
 
 #MAIN FUNCTION
