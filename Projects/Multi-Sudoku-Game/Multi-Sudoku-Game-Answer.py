@@ -175,8 +175,8 @@ def cpy_similar_boxes(grid_idx):
     for i in range(0, N, root_N):
         for j in range(0, N, root_N):
             box_idx = cvt_grid_pos_to_box(i, j)
-            similar_boxes = get_similar_boxes(grid_idx, box_idx)
-            cpy_box_in_shared_boxes(grid_idx, box_idx, similar_boxes, True)
+            shared_boxes = get_similar_boxes(grid_idx, box_idx)
+            cpy_box_in_shared_boxes(grid_idx, box_idx, shared_boxes, True)
 
 #This function solves the grid
 def solve_grid(grid_idx, i, j):
