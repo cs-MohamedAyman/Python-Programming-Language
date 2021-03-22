@@ -3,8 +3,7 @@ N = root_N * root_N
 mode, n_modes = 0, 35
 similar_boxes, n_grids, graphs = [], [], []
 grids, cpy_grids = [], []
-symbols = ['.', '1', '2', '3', '4', '5', '6', '7', \
-           '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
+symbols = ['.', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 #This function checks if the given mode is valid or not 
 def check_valid_mode(x):
