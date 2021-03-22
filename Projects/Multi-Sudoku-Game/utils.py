@@ -14,7 +14,7 @@ def set_config():
     global mode
     mode = int(input('Enter the mode index: '))
     while not check_valid_mode(mode):
-        mode = int(input('Enter a valid mode index'))
+        mode = int(input('Enter a valid mode index: '))
 
 #This function prints the mode type
 def print_mode_type(max_height, max_width, n_elements, curr_idx, grid_type):
