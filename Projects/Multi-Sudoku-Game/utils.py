@@ -34,7 +34,8 @@ def print_mode_type(max_height, max_width, n_elements, curr_idx, grid_type):
                 res += ' ' * max_width
         res += '\n'
     for j in range(n_elements):
-        res += str('mode '+str(curr_idx+j)).center(max_width)
+        mode_num = str(curr_idx+j) if curr_idx+j > 9 else '0'+str(curr_idx+j)
+        res += str('mode '+mode_num).center(max_width)
     curr_idx += n_elements
     return res
 
