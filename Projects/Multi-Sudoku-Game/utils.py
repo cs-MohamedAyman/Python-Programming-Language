@@ -21,6 +21,7 @@ def print_mode_type(max_height, max_width, n_elements, curr_idx, grid_type):
     dashes  = ('-' * max_width * 8)
     spaces1 = (' ' * max_width * 3)
     spaces2 = (' ' * max_width * 4)
+    max_width += max(0, max_width * (8 - n_elements - 1)) // n_elements
     print('+' + dashes + '+')
     print(('|' + spaces1 + '%d Grid(s) Multi-Sudoku' + spaces2 + '|') % grid_type)
     print('+' + dashes + '+')
