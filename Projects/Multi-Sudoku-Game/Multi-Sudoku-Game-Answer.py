@@ -161,7 +161,7 @@ def is_empty_box(grid_idx, box_idx):
     return True
 
 #This function checks if the given box is divided into empty cells and non-empty cells or not
-def is_mix_box(grid_idx, box_idx):
+def is_half_box(grid_idx, box_idx):
     empty_cells = 0
     a, b = cvt_box_to_grid_pos(box_idx)
     for i in range(a, a+root_N):
@@ -218,7 +218,7 @@ def remove_cells(grid_idx=0):
         for i in range(0, N, root_N):
             for j in range(0, N, root_N):
                 box_idx = cvt_grid_pos_to_box(i, j)
-                if is_mix_box(grid_idx, box_idx):
+                if is_half_box(grid_idx, box_idx):
                     continue
                 t1 = random.randint(0, root_N-1)
                 t2 = random.randint(0, root_N-1)
