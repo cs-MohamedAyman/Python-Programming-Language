@@ -47,12 +47,12 @@ def solve_grid(i, j):
     if i == N:
         return True
     if check_original_cell(i, j):
-        return solve_grid(i, j + 1)
+        return solve_grid(i, j+1)
     for k in range(1, N+1):
         if check_valid_value(i, j, k):
             grid[i][j] = k
             cpy_grid[i][j] = k
-            if solve_grid(i, j + 1):
+            if solve_grid(i, j+1):
                 return True
             grid[i][j] = 0
             cpy_grid[i][j] = 0
