@@ -71,7 +71,7 @@ def check_win():
     return False
 
 #This function checks if the game has a tie state or not for the given mark
-def check_tie(mark):
+def check_tie_player(mark):
     #Check if there is an accpted row
     for i in range(N):
         for j in range(M-a_row+1):
@@ -121,7 +121,7 @@ def check_tie(mark):
 def check_tie():
     all_tie = True
     for mark in marks:
-        if not check_tie(mark):
+        if not check_tie_player(mark):
             all_tie = False
     return all_tie
 
