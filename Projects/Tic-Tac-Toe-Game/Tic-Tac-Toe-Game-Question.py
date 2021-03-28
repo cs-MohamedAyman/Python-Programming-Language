@@ -1,4 +1,5 @@
 N = 3
+n_players = 2
 marks = ['X', 'O']
 grid = []
 
@@ -25,8 +26,8 @@ def check_tie_player(mark):
 #This function checks if the game has a tie state or not
 def check_tie():
     all_tie = True
-    for mark in marks:
-        if not check_tie_player(mark):
+    for i in range(n_players):
+        if not check_tie_player(marks[i]):
             all_tie = False
     return all_tie
 
