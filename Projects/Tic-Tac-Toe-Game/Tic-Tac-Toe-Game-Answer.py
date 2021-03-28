@@ -54,38 +54,34 @@ def check_win():
 #This function checks if the game has a tie state or not for the given mark
 def check_tie_player(mark):
     #Check if there is a row with a single type of characters
-	for i in range(N):
-		s = {mark}
-		for j in range(N):
-			if grid[i][j] != '.':
-				s |= {grid[i][j]}
-		if len(s) == 1:
-			return False
+    for i in range(N):
+        s = {mark}
+        for j in range(N):
+            s |= {grid[i][j]}
+        if '.' in s and len(s) == 2:
+            return False
     #Check if there is a column with a single type of characters
-	for i in range(N):
-		s = {mark}
-		for j in range(N):
-			if grid[j][i] != '.':
-				s |= {grid[j][i]}
-		if len(s) == 1:
-			return False
+    for i in range(N):
+        s = {mark}
+        for j in range(N):
+            s |= {grid[j][i]}
+        if '.' in s and len(s) == 2:
+            return False
     #Check if the left diagonal is a single type of characters
-	s = {mark}
-	for i in range(N):
-		if grid[i][i] != '.':
-			s |= {grid[i][i]}
-	if len(s) == 1:
-			return False
+    s = {mark}
+    for i in range(N):
+        s |= {grid[i][i]}
+    if '.' in s and len(s) == 2:
+        return False
     #Check if the right diagonal is a single type of characters
-	s = {mark}
-	for i in range(N):
-		if grid[i][N-i-1] != '.':
-			s |= {grid[i][N-i-1]}
-	if len(s) == 1:
-		return False
+    s = {mark}
+    for i in range(N):
+        s |= {grid[i][N-i-1]}
+    if '.' in s and len(s) == 2:
+        return False
     #Otherwise, there isn't a win state in the game, 
     #if all cases above not reached
-	return True
+    return True
 
 #This function checks if the game has a tie state or not
 def check_tie():
