@@ -22,12 +22,7 @@ def print_grid():
 
 #This function generates a cell with value 2 
 def generate_cell():
-    a = random.randint(0, N-1)
-    b = random.randint(0, N-1)
-    while grid[a][b] != 0:
-        a = random.randint(0, N-1)
-        b = random.randint(0, N-1)
-    grid[a][b] = 2
+    pass
 
 #This function rotates the grid by 90 degree anti-clockwise
 def rotate_90():
