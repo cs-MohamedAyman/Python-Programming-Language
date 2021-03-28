@@ -29,7 +29,7 @@ def print_grid():
     print('--' + '------' * (M-1))
 
 #This function checks if the grid is full or not
-def check_complete():
+def check_full():
     pass
 
 #This function checks if the given side is empty or not 
@@ -88,7 +88,7 @@ def play_game():
         #Set the neighbor boxes with the mark
         box_complete = set_neighbor_boxes(i1, j1, i2, j2, player)
         #Check if the state of the grid has a complete state
-        if check_complete():
+        if check_full():
             #Prints the grid
             print_grid()
             #Announcement of the final statement
