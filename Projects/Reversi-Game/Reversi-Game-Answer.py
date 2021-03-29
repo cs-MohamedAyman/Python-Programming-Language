@@ -70,7 +70,7 @@ def get_most_cells(i, j, player, target_mark):
     most_cells = []
     dirs = [(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
     for dx, dy in dirs:
-        most_i,  most_j = get_most_cell(i+dx, j+dy, dx, dy, player, target_mark)
+        most_i, most_j = get_most_cell(i+dx, j+dy, dx, dy, player, target_mark)
         if most_i == -1 and most_j == -1:
             continue
         most_cells += [(most_i, most_j)]
