@@ -50,6 +50,8 @@ Enter the row index and column index: 1 1
 Enter a valid row index and a valid column index: 2 3
 Enter a valid row index and a valid column index: 3 3
 Enter a valid row index and a valid column index: 4 4
+Enter a valid row index and a valid column index: 8 8
+Enter a valid row index and a valid column index: -1 -1
 Enter a valid row index and a valid column index: 2 4
 Player 1: X  vs  Player 2: O
 ----------------------------
