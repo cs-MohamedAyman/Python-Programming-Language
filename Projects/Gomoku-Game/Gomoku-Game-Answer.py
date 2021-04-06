@@ -77,8 +77,7 @@ def check_tie_player(mark):
         for j in range(M-a_row+1):
             s = {mark}
             for k in range(j, j+a_row):
-                if grid[i][k] != '.':
-                    s |= {grid[i][k]}
+                s |= {grid[i][k]}
             if len(s) == 2 and '.' in s:
                 return False
     #Check if there is an accpted column
