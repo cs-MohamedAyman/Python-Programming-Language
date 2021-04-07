@@ -142,7 +142,6 @@ def play_game():
         print_grid()
         #Unmark the possible cells
         unmark_possible_cells()
-        #Read an input position from the player
         print('Player %s is playing now' % marks[player])
         #Keep the player if there is not an ability with the other player
         if not check_player_ability():
@@ -150,6 +149,7 @@ def play_game():
             #Player number changes after each turn
             player = 1 - player 
             continue
+        #Read an input position from the player
         i, j = read_input()
         #Set the player mark in the input position
         set_cell(i, j, marks[player])
