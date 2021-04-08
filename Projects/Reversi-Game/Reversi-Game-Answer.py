@@ -1,6 +1,6 @@
 N, M = 8, 8
 n_players = 2
-marks = ['X', 'O']
+marks = ['B', 'W']
 count_cells, grid, possible_cells = [], [], []
 
 #This function prints the grid of Reversi as the game progresses
