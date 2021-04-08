@@ -1,4 +1,4 @@
-N, M = 15, 15
+N, M = 9, 9
 a_row = 5
 n_players = 2
 marks = ['X', 'O']
