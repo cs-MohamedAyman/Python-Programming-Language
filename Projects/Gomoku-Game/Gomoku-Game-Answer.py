@@ -1,7 +1,7 @@
 N, M = 9, 9
 a_row = 5
 n_players = 2
-marks = ['X', 'O']
+marks = ['B', 'W']
 grid = []
 
 #This function prints the grid of Gomoku as the game progresses
