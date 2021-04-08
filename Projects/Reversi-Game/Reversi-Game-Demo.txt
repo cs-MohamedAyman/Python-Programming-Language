@@ -1,7 +1,7 @@
 Reversi Game!
 Welcome...
 ============================
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
@@ -9,9 +9,9 @@ Player 1: X  vs  Player 2: O
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  X  .  .  .  |
+|  .  .  ?  W  B  .  .  .  |
 ----------------------------
-|  .  .  .  X  O  ?  .  .  |
+|  .  .  .  B  W  ?  .  .  |
 ----------------------------
 |  .  .  .  .  ?  .  .  .  |
 ----------------------------
@@ -19,33 +19,33 @@ Player 1: X  vs  Player 2: O
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 0 cells
-Player O has 0 cells
+Player B has 0 cells
+Player W has 0 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 2 3
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  X  ?  .  .  .  |
+|  .  .  ?  B  ?  .  .  .  |
 ----------------------------
-|  .  .  .  X  X  .  .  .  |
+|  .  .  .  B  B  .  .  .  |
 ----------------------------
-|  .  .  ?  X  O  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  .  ?  B  W  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 4 cells
-Player O has 1 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 4 cells
+Player W has 1 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 1
 Enter a valid row index and a valid column index: 2 3
 Enter a valid row index and a valid column index: 3 3
@@ -53,17 +53,17 @@ Enter a valid row index and a valid column index: 4 4
 Enter a valid row index and a valid column index: 8 8
 Enter a valid row index and a valid column index: -1 -1
 Enter a valid row index and a valid column index: 2 4
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  ?  .  .  |
 ----------------------------
-|  .  .  .  X  O  ?  .  .  |
+|  .  .  .  B  W  ?  .  .  |
 ----------------------------
-|  .  .  .  X  O  ?  .  .  |
+|  .  .  .  B  W  ?  .  .  |
 ----------------------------
-|  .  .  .  X  O  ?  .  .  |
+|  .  .  .  B  W  ?  .  .  |
 ----------------------------
 |  .  .  .  .  .  ?  .  .  |
 ----------------------------
@@ -71,45 +71,45 @@ Player 1: X  vs  Player 2: O
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 3 cells
-Player O has 3 cells
+Player B has 3 cells
+Player W has 3 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 2 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  ?  .  .  .  |
 ----------------------------
-|  .  .  ?  X  X  X  .  .  |
+|  .  .  ?  B  B  B  .  .  |
 ----------------------------
-|  .  .  .  X  X  .  .  .  |
+|  .  .  .  B  B  .  .  .  |
 ----------------------------
-|  .  .  ?  X  O  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  .  ?  B  W  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 6 cells
-Player O has 1 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 6 cells
+Player W has 1 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 4 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  .  X  X  X  .  .  |
+|  .  .  .  B  B  B  .  .  |
 ----------------------------
-|  .  .  .  X  X  .  .  .  |
+|  .  .  .  B  B  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  .  .  .  |
+|  .  .  W  W  W  .  .  .  |
 ----------------------------
 |  .  ?  ?  ?  ?  ?  .  .  |
 ----------------------------
@@ -117,1388 +117,1388 @@ Player 1: X  vs  Player 2: O
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 5 cells
-Player O has 3 cells
+Player B has 5 cells
+Player W has 3 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 5 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  ?  ?  .  ?  .  |
 ----------------------------
-|  .  .  ?  X  X  X  .  .  |
+|  .  .  ?  B  B  B  .  .  |
 ----------------------------
-|  .  .  .  X  X  .  .  .  |
+|  .  .  .  B  B  .  .  .  |
 ----------------------------
-|  .  ?  X  O  O  .  .  .  |
+|  .  ?  B  W  W  .  .  .  |
 ----------------------------
-|  .  X  .  .  .  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  B  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 7 cells
-Player O has 2 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 7 cells
+Player W has 2 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 3
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  ?  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  .  .  .  .  |
+|  .  .  ?  W  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  X  X  .  .  |
+|  .  .  ?  W  B  B  .  .  |
 ----------------------------
-|  .  .  ?  O  X  .  .  .  |
+|  .  .  ?  W  B  .  .  .  |
 ----------------------------
-|  .  .  X  O  O  ?  .  .  |
+|  .  .  B  W  W  ?  .  .  |
 ----------------------------
-|  .  X  ?  .  ?  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  B  ?  .  ?  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 5 cells
-Player O has 5 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 5 cells
+Player W has 5 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 2 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  ?  .  O  ?  ?  ?  .  |
+|  .  ?  .  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  X  X  X  X  .  .  |
+|  .  .  B  B  B  B  .  .  |
 ----------------------------
-|  .  ?  .  O  X  ?  .  .  |
+|  .  ?  .  W  B  ?  .  .  |
 ----------------------------
-|  .  ?  X  O  O  .  .  .  |
+|  .  ?  B  W  W  .  .  .  |
 ----------------------------
-|  .  X  .  .  .  .  .  .  |
+|  .  B  .  .  .  .  .  .  |
 ----------------------------
 |  ?  .  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 7 cells
-Player O has 4 cells
+Player B has 7 cells
+Player W has 4 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 3 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  ?  ?  .  .  .  .  |
 ----------------------------
-|  .  .  .  O  .  .  .  .  |
+|  .  .  .  W  .  .  .  .  |
 ----------------------------
-|  ?  ?  O  X  X  X  .  .  |
+|  ?  ?  W  B  B  B  .  .  |
 ----------------------------
-|  .  O  ?  O  X  .  .  .  |
+|  .  W  ?  W  B  .  .  .  |
 ----------------------------
-|  .  .  X  O  O  ?  .  .  |
+|  .  .  B  W  W  ?  .  .  |
 ----------------------------
-|  .  X  ?  ?  ?  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  B  ?  ?  ?  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 6 cells
-Player O has 6 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 6 cells
+Player W has 6 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 3 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  .  O  ?  .  ?  .  |
+|  .  .  .  W  ?  .  ?  .  |
 ----------------------------
-|  .  ?  O  X  X  X  ?  .  |
+|  .  ?  W  B  B  B  ?  .  |
 ----------------------------
-|  .  O  X  X  X  ?  .  .  |
+|  .  W  B  B  B  ?  .  .  |
 ----------------------------
-|  .  ?  X  O  O  .  .  .  |
+|  .  ?  B  W  W  .  .  .  |
 ----------------------------
-|  .  X  ?  ?  .  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  B  ?  ?  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 8 cells
-Player O has 5 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 8 cells
+Player W has 5 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 3 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  .  ?  .  .  |
+|  .  .  ?  W  .  ?  .  .  |
 ----------------------------
-|  ?  ?  O  X  O  X  .  .  |
+|  ?  ?  W  B  W  B  .  .  |
 ----------------------------
-|  .  O  O  O  O  O  .  .  |
+|  .  W  W  W  W  W  .  .  |
 ----------------------------
-|  .  ?  X  O  O  ?  .  .  |
+|  .  ?  B  W  W  ?  .  .  |
 ----------------------------
-|  .  X  ?  ?  .  .  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  B  ?  ?  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 4 cells
-Player O has 10 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 4 cells
+Player W has 10 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 4 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  .  ?  ?  .  |
+|  .  .  ?  W  .  ?  ?  .  |
 ----------------------------
-|  .  ?  O  X  O  X  ?  .  |
+|  .  ?  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  X  O  O  O  .  .  |
+|  .  W  B  W  W  W  .  .  |
 ----------------------------
-|  ?  X  X  O  O  .  .  .  |
+|  ?  B  B  W  W  .  .  .  |
 ----------------------------
-|  .  X  ?  ?  .  .  .  .  |
+|  .  B  ?  ?  .  .  .  .  |
 ----------------------------
 |  ?  ?  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 6 cells
-Player O has 9 cells
+Player B has 6 cells
+Player W has 9 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 5 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  .  .  O  .  ?  .  .  |
+|  .  .  .  W  .  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  .  .  |
+|  .  ?  W  B  W  B  .  .  |
 ----------------------------
-|  .  O  O  O  O  O  .  .  |
+|  .  W  W  W  W  W  .  .  |
 ----------------------------
-|  .  X  O  O  O  ?  .  .  |
+|  .  B  W  W  W  ?  .  .  |
 ----------------------------
-|  .  X  O  ?  .  .  .  .  |
+|  .  B  W  ?  .  .  .  .  |
 ----------------------------
 |  .  ?  .  ?  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 4 cells
-Player O has 12 cells
+Player B has 4 cells
+Player W has 12 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 5 3
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  ?  X  O  X  O  .  .  .  |
+|  ?  B  W  B  W  .  .  .  |
 ----------------------------
-|  ?  X  X  X  ?  .  .  .  |
+|  ?  B  B  B  ?  .  .  .  |
 ----------------------------
 |  ?  ?  ?  ?  ?  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 8 cells
-Player O has 9 cells
+Player B has 8 cells
+Player W has 9 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 5 4
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  .  ?  .  .  |
+|  .  ?  ?  W  .  ?  .  .  |
 ----------------------------
-|  ?  ?  O  X  O  X  ?  .  |
+|  ?  ?  W  B  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  .  X  O  O  O  ?  .  .  |
+|  .  B  W  W  W  ?  .  .  |
 ----------------------------
-|  .  X  X  X  O  ?  .  .  |
-----------------------------
-|  .  .  .  .  .  .  .  .  |
+|  .  B  B  B  W  ?  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 7 cells
-Player O has 11 cells
+|  .  .  .  .  .  .  .  .  |
+----------------------------
+Player B has 7 cells
+Player W has 11 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 5 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  ?  X  O  O  X  ?  .  .  |
+|  ?  B  W  W  B  ?  .  .  |
 ----------------------------
-|  ?  X  X  X  X  X  .  .  |
+|  ?  B  B  B  B  B  .  .  |
 ----------------------------
 |  ?  ?  ?  ?  ?  ?  ?  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 10 cells
-Player O has 9 cells
+Player B has 10 cells
+Player W has 9 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 6 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  ?  ?  .  .  |
+|  .  ?  ?  W  ?  ?  .  .  |
 ----------------------------
-|  ?  ?  O  X  O  X  ?  .  |
+|  ?  ?  W  B  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  .  X  O  O  X  ?  .  .  |
+|  .  B  W  W  B  ?  .  .  |
 ----------------------------
-|  ?  O  X  X  X  X  .  .  |
+|  ?  W  B  B  B  B  .  .  |
 ----------------------------
-|  O  ?  .  .  .  .  .  .  |
+|  W  ?  .  .  .  .  .  .  |
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player X has 9 cells
-Player O has 11 cells
+Player B has 9 cells
+Player W has 11 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 6 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  ?  X  O  O  X  ?  .  .  |
+|  ?  B  W  W  B  ?  .  .  |
 ----------------------------
-|  ?  X  X  X  X  X  .  .  |
+|  ?  B  B  B  B  B  .  .  |
 ----------------------------
-|  O  X  ?  ?  ?  ?  ?  .  |
+|  W  B  ?  ?  ?  ?  ?  .  |
 ----------------------------
 |  ?  ?  .  .  .  .  .  .  |
 ----------------------------
-Player X has 11 cells
-Player O has 10 cells
+Player B has 11 cells
+Player W has 10 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 6 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  .  O  ?  ?  .  .  |
+|  .  ?  .  W  ?  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  .  .  |
+|  .  ?  W  B  W  B  .  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  .  X  O  O  O  ?  .  .  |
+|  .  B  W  W  W  ?  .  .  |
 ----------------------------
-|  .  X  O  O  X  X  .  .  |
+|  .  B  W  W  B  B  .  .  |
 ----------------------------
-|  O  O  O  ?  .  .  .  .  |
+|  W  W  W  ?  .  .  .  .  |
 ----------------------------
 |  ?  ?  .  ?  .  .  .  .  |
 ----------------------------
-Player X has 7 cells
-Player O has 15 cells
+Player B has 7 cells
+Player W has 15 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 6 3
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  ?  X  O  X  O  .  .  .  |
+|  ?  B  W  B  W  .  .  .  |
 ----------------------------
-|  ?  X  X  X  X  X  .  .  |
+|  ?  B  B  B  B  B  .  .  |
 ----------------------------
-|  O  O  O  X  ?  ?  ?  .  |
+|  W  W  W  B  ?  ?  ?  .  |
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-Player X has 11 cells
-Player O has 12 cells
+Player B has 11 cells
+Player W has 12 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 6 4
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  .  ?  .  .  |
+|  .  ?  ?  W  .  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  .  .  |
+|  .  ?  W  B  W  B  .  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  .  X  O  X  O  ?  .  .  |
+|  .  B  W  B  W  ?  .  .  |
 ----------------------------
-|  .  X  X  O  O  X  .  .  |
+|  .  B  B  W  W  B  .  .  |
 ----------------------------
-|  O  O  O  O  O  ?  .  .  |
+|  W  W  W  W  W  ?  .  .  |
 ----------------------------
 |  ?  ?  ?  ?  ?  .  .  .  |
 ----------------------------
-Player X has 8 cells
-Player O has 16 cells
+Player B has 8 cells
+Player W has 16 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 6 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  .  .  |
+|  ?  W  W  B  W  W  .  .  |
 ----------------------------
-|  ?  X  O  X  O  ?  ?  .  |
+|  ?  B  W  B  W  ?  ?  .  |
 ----------------------------
-|  ?  X  X  O  X  X  ?  .  |
+|  ?  B  B  W  B  B  ?  .  |
 ----------------------------
-|  O  O  O  O  O  X  ?  .  |
+|  W  W  W  W  W  B  ?  .  |
 ----------------------------
 |  .  .  .  .  .  .  ?  .  |
 ----------------------------
-Player X has 10 cells
-Player O has 15 cells
+Player B has 10 cells
+Player W has 15 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 6 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  ?  ?  .  .  |
+|  .  ?  ?  W  ?  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  .  .  |
+|  .  ?  W  B  W  B  .  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  .  X  O  X  O  ?  .  .  |
+|  .  B  W  B  W  ?  .  .  |
 ----------------------------
-|  .  X  X  O  X  O  ?  .  |
+|  .  B  B  W  B  W  ?  .  |
 ----------------------------
-|  O  O  O  O  O  O  O  .  |
+|  W  W  W  W  W  W  W  .  |
 ----------------------------
 |  ?  ?  ?  ?  ?  .  ?  ?  |
 ----------------------------
-Player X has 8 cells
-Player O has 18 cells
+Player B has 8 cells
+Player W has 18 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 7 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  .  .  |
+|  ?  W  W  B  W  W  .  .  |
 ----------------------------
-|  ?  X  O  X  O  ?  .  .  |
+|  ?  B  W  B  W  ?  .  .  |
 ----------------------------
-|  ?  X  X  O  X  O  .  .  |
+|  ?  B  B  W  B  W  .  .  |
 ----------------------------
-|  O  X  O  O  O  O  O  .  |
+|  W  B  W  W  W  W  W  .  |
 ----------------------------
-|  X  ?  .  .  .  .  .  .  |
+|  B  ?  .  .  .  .  .  .  |
 ----------------------------
-Player X has 10 cells
-Player O has 17 cells
+Player B has 10 cells
+Player W has 17 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 7 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  ?  ?  .  .  |
+|  .  ?  ?  W  ?  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  .  .  |
+|  .  ?  W  B  W  B  .  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  ?  .  .  |
+|  ?  W  W  B  W  ?  .  .  |
 ----------------------------
-|  ?  O  X  O  X  O  ?  .  |
+|  ?  W  B  W  B  W  ?  .  |
 ----------------------------
-|  O  O  O  O  O  O  O  .  |
+|  W  W  W  W  W  W  W  .  |
 ----------------------------
-|  X  O  ?  ?  ?  .  ?  ?  |
+|  B  W  ?  ?  ?  .  ?  ?  |
 ----------------------------
-Player X has 7 cells
-Player O has 21 cells
+Player B has 7 cells
+Player W has 21 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 7 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  .  O  O  X  O  .  .  .  |
+|  .  W  W  B  W  .  .  .  |
 ----------------------------
-|  .  O  X  O  X  O  .  .  |
+|  .  W  B  W  B  W  .  .  |
 ----------------------------
-|  O  O  X  X  O  O  O  .  |
+|  W  W  B  B  W  W  W  .  |
 ----------------------------
-|  X  X  X  ?  ?  .  .  .  |
+|  B  B  B  ?  ?  .  .  .  |
 ----------------------------
-Player X has 11 cells
-Player O has 18 cells
+Player B has 11 cells
+Player W has 18 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 7 3
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  ?  ?  .  .  |
+|  .  ?  ?  W  ?  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  ?  .  |
+|  .  ?  W  B  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  ?  .  .  |
+|  ?  W  W  B  W  ?  .  .  |
 ----------------------------
-|  ?  O  X  O  X  O  ?  .  |
+|  ?  W  B  W  B  W  ?  .  |
 ----------------------------
-|  O  O  O  O  O  O  O  .  |
+|  W  W  W  W  W  W  W  .  |
 ----------------------------
-|  X  X  X  O  ?  .  ?  ?  |
+|  B  B  B  W  ?  .  ?  ?  |
 ----------------------------
-Player X has 9 cells
-Player O has 21 cells
+Player B has 9 cells
+Player W has 21 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 7 4
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  .  O  O  X  O  .  .  .  |
+|  .  W  W  B  W  .  .  .  |
 ----------------------------
-|  .  O  X  O  X  O  .  .  |
+|  .  W  B  W  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  X  O  O  .  |
+|  W  W  W  B  B  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  ?  .  .  |
+|  B  B  B  B  B  ?  .  .  |
 ----------------------------
-Player X has 13 cells
-Player O has 18 cells
+Player B has 13 cells
+Player W has 18 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 7 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  ?  O  ?  ?  .  .  |
+|  .  ?  ?  W  ?  ?  .  .  |
 ----------------------------
-|  .  ?  O  X  O  X  ?  .  |
+|  .  ?  W  B  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  ?  ?  .  |
+|  ?  W  W  B  W  ?  ?  .  |
 ----------------------------
-|  ?  O  X  O  X  O  ?  .  |
+|  ?  W  B  W  B  W  ?  .  |
 ----------------------------
-|  O  O  O  X  O  O  O  ?  |
+|  W  W  W  B  W  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  O  ?  ?  |
+|  B  B  B  B  B  W  ?  ?  |
 ----------------------------
-Player X has 12 cells
-Player O has 20 cells
+Player B has 12 cells
+Player W has 20 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 7 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  ?  O  ?  ?  ?  .  |
+|  .  .  ?  W  ?  ?  ?  .  |
 ----------------------------
-|  .  .  O  X  O  X  ?  .  |
+|  .  .  W  B  W  B  ?  .  |
 ----------------------------
-|  .  O  O  X  O  O  .  .  |
+|  .  W  W  B  W  W  .  .  |
 ----------------------------
-|  .  O  O  X  O  .  .  .  |
+|  .  W  W  B  W  .  .  .  |
 ----------------------------
-|  .  O  X  O  X  O  .  .  |
+|  .  W  B  W  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  O  X  O  .  |
+|  W  W  W  B  W  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 15 cells
-Player O has 18 cells
+Player B has 15 cells
+Player W has 18 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  ?  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  O  O  ?  ?  .  .  |
+|  .  ?  W  W  ?  ?  .  .  |
 ----------------------------
-|  ?  ?  O  O  O  X  ?  .  |
+|  ?  ?  W  W  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  O  ?  .  |
+|  ?  W  W  B  W  W  ?  .  |
 ----------------------------
-|  ?  O  O  X  O  ?  ?  .  |
+|  ?  W  W  B  W  ?  ?  .  |
 ----------------------------
-|  ?  O  X  O  X  O  ?  ?  |
+|  ?  W  B  W  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  X  O  X  O  ?  |
+|  W  W  W  B  W  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 14 cells
-Player O has 20 cells
+Player B has 14 cells
+Player W has 20 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 1 4
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  ?  ?  .  .  |
 ----------------------------
-|  .  .  O  O  X  ?  ?  .  |
+|  .  .  W  W  B  ?  ?  .  |
 ----------------------------
-|  .  .  O  O  X  X  ?  .  |
+|  .  .  W  W  B  B  ?  .  |
 ----------------------------
-|  .  O  O  X  X  O  .  .  |
+|  .  W  W  B  B  W  .  .  |
 ----------------------------
-|  .  O  O  X  X  ?  .  .  |
+|  .  W  W  B  B  ?  .  .  |
 ----------------------------
-|  .  O  X  O  X  O  .  .  |
+|  .  W  B  W  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  O  X  O  .  |
+|  W  W  W  B  W  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 18 cells
-Player O has 17 cells
+Player B has 18 cells
+Player W has 17 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  .  .  .  |
 ----------------------------
-|  .  ?  O  O  O  O  ?  .  |
+|  .  ?  W  W  W  W  ?  .  |
 ----------------------------
-|  ?  ?  O  O  O  O  ?  .  |
+|  ?  ?  W  W  W  W  ?  .  |
 ----------------------------
-|  ?  O  O  O  X  O  ?  .  |
+|  ?  W  W  W  B  W  ?  .  |
 ----------------------------
-|  ?  O  O  X  X  ?  ?  .  |
+|  ?  W  W  B  B  ?  ?  .  |
 ----------------------------
-|  ?  O  X  O  X  O  ?  ?  |
+|  ?  W  B  W  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  X  O  X  O  ?  |
+|  W  W  W  B  W  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 14 cells
-Player O has 22 cells
+Player B has 14 cells
+Player W has 22 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 1 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  ?  |
 ----------------------------
-|  .  .  O  O  O  O  X  ?  |
+|  .  .  W  W  W  W  B  ?  |
 ----------------------------
-|  .  .  O  O  O  X  ?  .  |
+|  .  .  W  W  W  B  ?  .  |
 ----------------------------
-|  .  O  O  O  X  O  ?  .  |
+|  .  W  W  W  B  W  ?  .  |
 ----------------------------
-|  .  O  O  X  X  ?  .  .  |
+|  .  W  W  B  B  ?  .  .  |
 ----------------------------
-|  .  O  X  O  X  O  .  .  |
+|  .  W  B  W  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  O  X  O  .  |
+|  W  W  W  B  W  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 16 cells
-Player O has 21 cells
+Player B has 16 cells
+Player W has 21 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  ?  .  ?  |
 ----------------------------
-|  .  ?  O  O  O  O  O  O  |
+|  .  ?  W  W  W  W  W  W  |
 ----------------------------
-|  ?  ?  O  O  O  X  ?  .  |
+|  ?  ?  W  W  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  O  X  O  ?  .  |
+|  ?  W  W  W  B  W  ?  .  |
 ----------------------------
-|  ?  O  O  X  X  ?  ?  .  |
+|  ?  W  W  B  B  ?  ?  .  |
 ----------------------------
-|  ?  O  X  O  X  O  ?  ?  |
+|  ?  W  B  W  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  X  O  X  O  ?  |
+|  W  W  W  B  W  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 15 cells
-Player O has 23 cells
+Player B has 15 cells
+Player W has 23 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 2 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  O  O  O  |
+|  .  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  ?  O  O  O  X  ?  .  |
+|  B  ?  W  W  W  B  ?  .  |
 ----------------------------
-|  ?  X  O  O  X  O  ?  .  |
+|  ?  B  W  W  B  W  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  ?  .  .  |
+|  ?  W  B  B  B  ?  .  .  |
 ----------------------------
-|  .  O  X  X  X  O  .  .  |
+|  .  W  B  B  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  X  X  O  .  |
+|  W  W  W  B  B  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 20 cells
-Player O has 19 cells
+Player B has 20 cells
+Player W has 19 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 2 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  X  ?  .  |
+|  B  W  W  W  W  B  ?  .  |
 ----------------------------
-|  ?  O  O  O  X  O  ?  .  |
+|  ?  W  W  W  B  W  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  ?  ?  .  |
+|  ?  W  B  B  B  ?  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  O  ?  ?  |
+|  ?  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  X  X  X  O  ?  |
+|  W  W  W  B  B  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 19 cells
-Player O has 21 cells
+Player B has 19 cells
+Player W has 21 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 2 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  O  O  O  |
+|  .  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  X  X  ?  |
+|  B  W  W  W  W  B  B  ?  |
 ----------------------------
-|  .  O  O  O  X  X  ?  ?  |
+|  .  W  W  W  B  B  ?  ?  |
 ----------------------------
-|  .  O  X  X  X  ?  ?  .  |
+|  .  W  B  B  B  ?  ?  .  |
 ----------------------------
-|  .  O  X  X  X  O  .  .  |
+|  .  W  B  B  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  X  X  O  .  |
+|  W  W  W  B  B  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 21 cells
-Player O has 20 cells
+Player B has 21 cells
+Player W has 20 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 2 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  ?  O  O  O  X  X  .  .  |
+|  ?  W  W  W  B  B  .  .  |
 ----------------------------
-|  ?  O  X  X  X  ?  ?  .  |
+|  ?  W  B  B  B  ?  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  O  ?  ?  |
+|  ?  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  X  X  X  O  ?  |
+|  W  W  W  B  B  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 19 cells
-Player O has 23 cells
+Player B has 19 cells
+Player W has 23 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 3 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  O  O  O  |
+|  .  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  X  X  X  X  X  .  .  |
+|  B  B  B  B  B  B  .  .  |
 ----------------------------
-|  ?  X  X  X  X  ?  ?  .  |
+|  ?  B  B  B  B  ?  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  O  .  .  |
+|  ?  W  B  B  B  W  .  .  |
 ----------------------------
-|  O  O  O  X  X  X  O  .  |
+|  W  W  W  B  B  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 24 cells
-Player O has 19 cells
+Player B has 24 cells
+Player W has 19 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 4 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  X  .  .  |
+|  B  W  B  B  B  B  .  .  |
 ----------------------------
-|  O  X  X  X  X  ?  ?  .  |
+|  W  B  B  B  B  ?  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  O  ?  ?  |
+|  ?  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  X  X  X  O  ?  |
+|  W  W  W  B  B  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 23 cells
-Player O has 21 cells
+Player B has 23 cells
+Player W has 21 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 4 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  ?  .  O  O  O  O  O  O  |
+|  ?  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  X  ?  .  |
+|  B  W  B  B  B  B  ?  .  |
 ----------------------------
-|  O  X  X  X  X  X  ?  .  |
+|  W  B  B  B  B  B  ?  .  |
 ----------------------------
-|  ?  O  X  X  X  X  ?  .  |
+|  ?  W  B  B  B  B  ?  .  |
 ----------------------------
-|  O  O  O  X  X  X  O  .  |
+|  W  W  W  B  B  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 25 cells
-Player O has 20 cells
+Player B has 25 cells
+Player W has 20 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 4 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  ?  ?  |
+|  B  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  O  O  O  O  O  O  O  .  |
+|  W  W  W  W  W  W  W  .  |
 ----------------------------
-|  ?  O  X  X  X  X  ?  ?  |
+|  ?  W  B  B  B  B  ?  ?  |
 ----------------------------
-|  O  O  O  X  X  X  O  ?  |
+|  W  W  W  B  B  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 19 cells
-Player O has 27 cells
+Player B has 19 cells
+Player W has 27 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 5 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  O  O  O  |
+|  .  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  .  .  |
+|  B  W  B  B  B  W  .  .  |
 ----------------------------
-|  X  X  O  O  O  O  O  .  |
+|  B  B  W  W  W  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  .  .  |
+|  B  B  B  B  B  B  .  .  |
 ----------------------------
-|  X  X  O  X  X  X  O  .  |
+|  B  B  W  B  B  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-Player X has 25 cells
-Player O has 22 cells
+Player B has 25 cells
+Player W has 22 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Sorry, you can not play on this turn!
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  ?  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  ?  ?  |
+|  B  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  X  X  O  O  O  O  O  ?  |
+|  B  B  W  W  W  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  ?  ?  |
+|  B  B  B  B  B  B  ?  ?  |
 ----------------------------
-|  X  X  O  X  X  X  O  ?  |
+|  B  B  W  B  B  B  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 25 cells
-Player O has 22 cells
+Player B has 25 cells
+Player W has 22 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 5 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  O  O  O  |
+|  .  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  .  .  |
+|  B  W  B  B  B  W  .  .  |
 ----------------------------
-|  X  X  O  O  O  X  O  .  |
+|  B  B  W  W  W  B  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  X  .  |
+|  B  B  B  B  B  B  B  .  |
 ----------------------------
-|  X  X  O  X  X  X  X  ?  |
+|  B  B  W  B  B  B  B  ?  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 28 cells
-Player O has 20 cells
+Player B has 28 cells
+Player W has 20 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 6 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  O  O  ?  ?  |
+|  B  W  B  B  W  W  ?  ?  |
 ----------------------------
-|  X  X  O  O  O  O  O  ?  |
+|  B  B  W  W  W  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  O  O  |
+|  B  B  W  W  W  W  W  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  ?  |
+|  B  B  B  B  B  B  B  ?  |
 ----------------------------
-Player X has 21 cells
-Player O has 28 cells
+Player B has 21 cells
+Player W has 28 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 7 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-|  .  .  O  O  O  O  O  O  |
+|  .  .  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  O  O  .  .  |
+|  B  W  B  B  W  W  .  .  |
 ----------------------------
-|  X  X  O  O  O  O  O  .  |
+|  B  B  W  W  W  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  O  .  |
+|  B  B  B  B  B  B  W  .  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 23 cells
-Player O has 27 cells
+Player B has 23 cells
+Player W has 27 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Sorry, you can not play on this turn!
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  ?  ?  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  O  O  O  O  O  O  |
+|  B  W  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  O  O  ?  ?  |
+|  B  W  B  B  W  W  ?  ?  |
 ----------------------------
-|  X  X  O  O  O  O  O  ?  |
+|  B  B  W  W  W  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 23 cells
-Player O has 27 cells
+Player B has 23 cells
+Player W has 27 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 0 2
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  ?  X  ?  .  .  .  .  |
+|  .  ?  B  ?  .  .  .  .  |
 ----------------------------
-|  .  ?  X  O  O  O  O  O  |
+|  .  ?  B  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  O  O  O  O  O  |
+|  B  W  B  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  O  O  .  .  |
+|  B  W  B  B  W  W  .  .  |
 ----------------------------
-|  X  X  O  O  O  O  O  .  |
+|  B  B  W  W  W  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  O  .  |
+|  B  B  B  B  B  B  W  .  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 26 cells
-Player O has 25 cells
+Player B has 26 cells
+Player W has 25 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 0 3
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  .  X  O  ?  ?  ?  ?  |
+|  .  .  B  W  ?  ?  ?  ?  |
 ----------------------------
-|  ?  ?  O  O  O  O  O  O  |
+|  ?  ?  W  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  O  O  O  O  O  |
+|  B  W  B  W  W  W  W  W  |
 ----------------------------
-|  X  O  X  X  O  O  ?  ?  |
+|  B  W  B  B  W  W  ?  ?  |
 ----------------------------
-|  X  X  O  O  O  O  O  ?  |
+|  B  B  W  W  W  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 25 cells
-Player O has 27 cells
+Player B has 25 cells
+Player W has 27 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 0 4
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  .  X  X  X  ?  .  .  |
+|  .  .  B  B  B  ?  .  .  |
 ----------------------------
-|  .  .  O  X  X  O  O  O  |
+|  .  .  W  B  B  W  W  W  |
 ----------------------------
-|  X  O  X  O  X  O  O  O  |
+|  B  W  B  W  B  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  .  .  |
+|  B  W  B  B  B  W  .  .  |
 ----------------------------
-|  X  X  O  O  X  O  O  .  |
+|  B  B  W  W  B  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  O  .  |
+|  B  B  B  B  B  B  W  .  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 32 cells
-Player O has 21 cells
+Player B has 32 cells
+Player W has 21 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 0 5
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  ?  X  X  X  O  ?  ?  |
+|  .  ?  B  B  B  W  ?  ?  |
 ----------------------------
-|  ?  ?  O  X  O  O  O  O  |
+|  ?  ?  W  B  W  W  W  W  |
 ----------------------------
-|  X  O  X  O  X  O  O  O  |
+|  B  W  B  W  B  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  ?  ?  |
+|  B  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  X  X  O  O  X  O  O  ?  |
+|  B  B  W  W  B  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 31 cells
-Player O has 23 cells
+Player B has 31 cells
+Player W has 23 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 0 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  .  X  X  X  X  X  .  |
+|  .  .  B  B  B  B  B  .  |
 ----------------------------
-|  .  .  O  X  O  X  O  O  |
+|  .  .  W  B  W  B  W  W  |
 ----------------------------
-|  X  O  X  O  X  O  O  O  |
+|  B  W  B  W  B  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  .  .  |
+|  B  W  B  B  B  W  .  .  |
 ----------------------------
-|  X  X  O  O  X  O  O  .  |
+|  B  B  W  W  B  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  O  .  |
+|  B  B  B  B  B  B  W  .  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 34 cells
-Player O has 21 cells
+Player B has 34 cells
+Player W has 21 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Sorry, you can not play on this turn!
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  ?  X  X  X  X  X  ?  |
+|  .  ?  B  B  B  B  B  ?  |
 ----------------------------
-|  ?  ?  O  X  O  X  O  O  |
+|  ?  ?  W  B  W  B  W  W  |
 ----------------------------
-|  X  O  X  O  X  O  O  O  |
+|  B  W  B  W  B  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  ?  ?  |
+|  B  W  B  B  B  W  ?  ?  |
 ----------------------------
-|  X  X  O  O  X  O  O  ?  |
+|  B  B  W  W  B  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 34 cells
-Player O has 21 cells
+Player B has 34 cells
+Player W has 21 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 0 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  .  X  X  X  X  X  X  |
+|  .  .  B  B  B  B  B  B  |
 ----------------------------
-|  .  .  O  X  O  X  X  O  |
+|  .  .  W  B  W  B  B  W  |
 ----------------------------
-|  X  O  X  O  X  X  O  O  |
+|  B  W  B  W  B  B  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  ?  .  |
+|  B  W  B  B  B  W  ?  .  |
 ----------------------------
-|  X  X  O  O  X  O  O  .  |
+|  B  B  W  W  B  W  W  .  |
 ----------------------------
-|  X  X  X  X  X  X  O  .  |
+|  B  B  B  B  B  B  W  .  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 37 cells
-Player O has 19 cells
+Player B has 37 cells
+Player W has 19 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 3 6
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  ?  X  X  X  X  X  X  |
+|  .  ?  B  B  B  B  B  B  |
 ----------------------------
-|  ?  ?  O  X  O  X  X  O  |
+|  ?  ?  W  B  W  B  B  W  |
 ----------------------------
-|  X  O  X  O  X  O  O  O  |
+|  B  W  B  W  B  W  W  W  |
 ----------------------------
-|  X  O  X  X  X  O  O  ?  |
+|  B  W  B  B  B  W  W  ?  |
 ----------------------------
-|  X  X  O  O  X  O  O  ?  |
+|  B  B  W  W  B  W  W  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 36 cells
-Player O has 21 cells
+Player B has 36 cells
+Player W has 21 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 3 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  .  X  X  X  X  X  X  |
+|  .  .  B  B  B  B  B  B  |
 ----------------------------
-|  .  .  O  X  O  X  X  X  |
+|  .  .  W  B  W  B  B  B  |
 ----------------------------
-|  X  O  X  O  X  O  X  X  |
+|  B  W  B  W  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  X  X  |
+|  B  W  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  ?  |
+|  B  B  W  W  B  W  B  ?  |
 ----------------------------
-|  X  X  X  X  X  X  O  .  |
+|  B  B  B  B  B  B  W  .  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 43 cells
-Player O has 15 cells
+Player B has 43 cells
+Player W has 15 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 4 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  ?  X  X  X  X  X  X  |
+|  .  ?  B  B  B  B  B  B  |
 ----------------------------
-|  ?  ?  O  X  O  X  X  X  |
+|  ?  ?  W  B  W  B  B  B  |
 ----------------------------
-|  X  O  X  O  X  O  X  X  |
+|  B  W  B  W  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  O  O  |
+|  B  B  W  W  B  W  W  W  |
 ----------------------------
-|  X  X  X  X  X  X  O  ?  |
+|  B  B  B  B  B  B  W  ?  |
 ----------------------------
-|  X  X  O  O  O  O  X  O  |
+|  B  B  W  W  W  W  B  W  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 41 cells
-Player O has 18 cells
+Player B has 41 cells
+Player W has 18 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 5 7
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  .  X  X  X  X  X  X  |
+|  .  .  B  B  B  B  B  B  |
 ----------------------------
-|  .  .  O  X  O  X  X  X  |
+|  .  .  W  B  W  B  B  B  |
 ----------------------------
-|  X  O  X  O  X  O  X  X  |
+|  B  W  B  W  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  X  |
+|  B  B  W  W  B  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  O  O  X  X  |
+|  B  B  W  W  W  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 46 cells
-Player O has 14 cells
+Player B has 46 cells
+Player W has 14 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Sorry, you can not play on this turn!
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  ?  X  X  X  X  X  X  |
+|  .  ?  B  B  B  B  B  B  |
 ----------------------------
-|  ?  ?  O  X  O  X  X  X  |
+|  ?  ?  W  B  W  B  B  B  |
 ----------------------------
-|  X  O  X  O  X  O  X  X  |
+|  B  W  B  W  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  X  |
+|  B  B  W  W  B  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  O  O  X  X  |
+|  B  B  W  W  W  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 46 cells
-Player O has 14 cells
+Player B has 46 cells
+Player W has 14 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 0 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  .  X  X  X  X  X  X  X  |
+|  .  B  B  B  B  B  B  B  |
 ----------------------------
-|  .  ?  X  X  O  X  X  X  |
+|  .  ?  B  B  W  B  B  B  |
 ----------------------------
-|  X  O  X  X  X  O  X  X  |
+|  B  W  B  B  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  X  |
+|  B  B  W  W  B  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  O  O  X  X  |
+|  B  B  W  W  W  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 49 cells
-Player O has 12 cells
+Player B has 49 cells
+Player W has 12 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 1
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  ?  X  X  X  X  X  X  X  |
+|  ?  B  B  B  B  B  B  B  |
 ----------------------------
-|  ?  O  O  O  O  X  X  X  |
+|  ?  W  W  W  W  B  B  B  |
 ----------------------------
-|  X  O  X  X  X  O  X  X  |
+|  B  W  B  B  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  X  |
+|  B  B  W  W  B  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  O  O  X  X  |
+|  B  B  W  W  W  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 47 cells
-Player O has 15 cells
+Player B has 47 cells
+Player W has 15 cells
 --------------------------------------------
-Player X is playing now
+Player B is playing now
 Enter the row index and column index: 0 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  ?  X  O  O  O  X  X  X  |
+|  ?  B  W  W  W  B  B  B  |
 ----------------------------
-|  X  O  X  X  X  O  X  X  |
+|  B  W  B  B  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  X  |
+|  B  B  W  W  B  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  O  O  X  X  |
+|  B  B  W  W  W  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 49 cells
-Player O has 14 cells
+Player B has 49 cells
+Player W has 14 cells
 --------------------------------------------
-Player O is playing now
+Player W is playing now
 Enter the row index and column index: 1 0
-Player 1: X  vs  Player 2: O
+Player 1: B  vs  Player 2: W
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  O  O  O  O  O  X  X  X  |
+|  W  W  W  W  W  B  B  B  |
 ----------------------------
-|  X  O  X  X  X  O  X  X  |
+|  B  W  B  B  B  W  B  B  |
 ----------------------------
-|  X  O  X  X  X  X  O  X  |
+|  B  W  B  B  B  B  W  B  |
 ----------------------------
-|  X  X  O  O  X  O  X  X  |
+|  B  B  W  W  B  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-|  X  X  O  O  O  O  X  X  |
+|  B  B  W  W  W  W  B  B  |
 ----------------------------
-|  X  X  X  X  X  X  X  X  |
+|  B  B  B  B  B  B  B  B  |
 ----------------------------
-Player X has 48 cells
-Player O has 16 cells
+Player B has 48 cells
+Player W has 16 cells
 --------------------------------------------
-Congrats, Player X is won!
+Congrats, Player B is won!
 Play Again [Y/N] n
