@@ -38,10 +38,6 @@ def check_empty(i, j):
 def check_valid_position(i, j):
     pass
 
-#This function calculates the total number of cells for each player
-def calc_cells():
-    pass
-
 #This function sets the given mark to the given cell
 def set_cell(i, j, mark):
     pass
@@ -122,8 +118,6 @@ def play_game():
         set_cell(i, j, marks[player])
         #Switch the neighbor cells of the given cell
         switch_cells(i, j, player)
-        #Calculates the total number of cells for each player
-        calc_cells()
         #Check if the grid has a full state
         if check_full():
             #Prints the grid
