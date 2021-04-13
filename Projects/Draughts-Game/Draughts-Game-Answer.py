@@ -72,12 +72,14 @@ def generate_possible_cells_attack_case(player):
         for j in range(M):
             if grid[i][j] != marks[is_king[i][j]][player]:
                 continue
-            direction = -1 if player else 1
-            for k1, k2 in [(direction, -1), (direction, 1)]:
+            d = -1 if player else 1
+            dirs = [(d, -1), (d, 1)]
+            for k1, k2 in dirs:
                 if check_valid_position(i+k1, j+k2) and grid[i+k1][j+k2] == marks[is_king[i+k1][j+k2]][1-player]:
                     if check_valid_position(i+k1*2, j+k2*2) and check_empty(i+k1*2, j+k2*2):
                         possible_cells += [(i, j, i+k1*2, j+k2*2)]
-            for k1, k2 in [(1, -1), (1, 1), (-1, -1), (-1, 1)]:
+            dirs = [(1, -1), (1, 1), (-1, -1), (-1, 1)]
+            for k1, k2 in dirs:
                 if is_king[i][j] and check_valid_position(i+k1, j+k2) and grid[i+k1][j+k2] == marks[is_king[i+k1][j+k2]][1-player]:
                     if check_valid_position(i+k1*2, j+k2*2) and check_empty(i+k1*2, j+k2*2):
                         possible_cells += [(i, j, i+k1*2, j+k2*2)]
@@ -89,11 +91,13 @@ def generate_possible_cells_defence_case(player):
         for j in range(M):
             if grid[i][j] != marks[is_king[i][j]][player]:
                 continue
-            direction = -1 if player else 1
-            for k1, k2 in [(direction, -1), (direction, 1)]:
+            d = -1 if player else 1
+            dirs = [(d, -1), (d, 1)]
+            for k1, k2 in dirs:
                 if check_valid_position(i+k1, j+k2) and check_empty(i+k1, j+k2):
                     possible_cells += [(i, j, i+k1, j+k2)]
-            for k1, k2 in [(1, -1), (1, 1), (-1, -1), (-1, 1)]:
+            dirs = [(1, -1), (1, 1), (-1, -1), (-1, 1)]
+            for k1, k2 in dirs:
                 if is_king[i][j] and check_valid_position(i+k1, j+k2) and check_empty(i+k1, j+k2):
                     possible_cells += [(i, j, i+k1, j+k2)]
 
