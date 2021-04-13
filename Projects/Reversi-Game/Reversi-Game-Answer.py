@@ -42,16 +42,6 @@ def check_empty(i, j):
 def check_valid_position(i, j):
 	return 0 <= i < N and 0 <= j < M
 
-#This function calculates the total number of cells for each player
-def calc_cells():
-    global count_cells
-    count_cells = [0] * n_players
-    for p in range(n_players):
-        for i in range(N):
-            for j in range(M):
-                if grid[i][j] == marks[p]:
-                    count_cells[p] += 1
-
 #This function sets the given mark to the given cell
 def set_cell(i, j, mark):
 	grid[i][j] = mark
@@ -78,13 +68,18 @@ def get_most_cells(i, j, player, target_mark):
 
 #This function switches the neighbor cells of the given cell
 def switch_cells(i, j, player):
+    count_cells[player] += 1
     most_cells = get_most_cells(i, j, player, marks[player])
     for most_i, most_j in most_cells:
         dx = (1 if most_i > i else -1 if most_i < i else 0)
         dy = (1 if most_j > j else -1 if most_j < j else 0)
         curr_i, curr_j = i, j
+        count_cells[player] -= 1
+        count_cells[1-player] += 1
         while abs(curr_i - most_i) + abs(curr_j - most_j) > 0:
             grid[curr_i][curr_j] = marks[player]
+            count_cells[player] += 1
+            count_cells[1-player] -= 1
             curr_i += dx
             curr_j += dy
 
@@ -117,7 +112,7 @@ def grid_clear():
     grid = [['.'] * M for i in range(N)]
     grid[N//2][M//2-1] = grid[N//2-1][M//2] = marks[0]
     grid[N//2-1][M//2-1] = grid[N//2][M//2] = marks[1]
-    count_cells = [0] * n_players
+    count_cells = [2] * n_players
 
 #This function reads a valid position input
 def read_input():
@@ -155,8 +150,6 @@ def play_game():
         set_cell(i, j, marks[player])
         #Switch the neighbor cells of the given cell
         switch_cells(i, j, player)
-        #Calculates the total number of cells for each player
-        calc_cells()
         #Check if the grid has a full state
         if check_full():
             #Prints the grid
