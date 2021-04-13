@@ -19,8 +19,8 @@ Player 1: B  vs  Player 2: W
 ----------------------------
 |  .  .  .  .  .  .  .  .  |
 ----------------------------
-Player B has 0 cells
-Player W has 0 cells
+Player B has 2 cells
+Player W has 2 cells
 --------------------------------------------
 Player B is playing now
 Enter the row index and column index: 2 3
