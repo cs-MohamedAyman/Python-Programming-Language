@@ -39,16 +39,6 @@ def check_valid_position(i, j):
 def check_chosen(i1, j1, i2, j2):
     return (i1, j1, i2, j2) in possible_cells
 
-#This function calculates the total number of cells for each player
-def calc_cells():
-    global count_cells
-    count_cells = [0] * n_players
-    for p in range(n_players):
-        for i in range(N):
-            for j in range(M):
-                if grid[i][j] == marks[0][p] or grid[i][j] == marks[1][p]:
-                    count_cells[p] += 1
-
 #This function sets the given mark to the given cell
 def set_cell(i, j, mark):
 	grid[i][j] = mark
@@ -64,6 +54,7 @@ def move_cell(i1, j1, i2, j2, player):
     set_cell(i2, j2, marks[is_king[i2][j2]][player])
     if abs(i2 - i1) == 2 and abs(j2 - j1) == 2:
         set_cell((i1+i2)//2, (j1+j2)//2, '.')
+        count_cells[1-player] -= 1
 
 #This function generates the possible cells to be chosen in the attack case
 def generate_possible_cells_attack_case(player):
@@ -178,8 +169,6 @@ def play_game():
         i1, j1, i2, j2 = read_input(player)
         #Set the player mark in the input position
         move_cell(i1, j1, i2, j2, player)
-        #Calculates the total number of cells for each player
-        calc_cells()
         #Check if the grid has a win state
         if check_win():
             #Prints the grid
