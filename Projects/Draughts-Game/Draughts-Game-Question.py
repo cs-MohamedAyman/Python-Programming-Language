@@ -39,10 +39,6 @@ def check_valid_position(i, j):
 def check_chosen(i1, j1, i2, j2):
     pass
 
-#This function calculates the total number of cells for each player
-def calc_cells():
-    pass
-
 #This function sets the given mark to the given cell
 def set_cell(i, j, mark):
     pass
@@ -113,8 +109,6 @@ def play_game():
         i1, j1, i2, j2 = read_input(player)
         #Set the player mark in the input position
         move_cell(i1, j1, i2, j2, player)
-        #Calculates the total number of cells for each player
-        calc_cells()
         #Check if the grid has a win state
         if check_win():
             #Prints the grid
