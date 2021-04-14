@@ -6,7 +6,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="160" height="160" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 <br>
 
-## `Part 1` Python Basics and Functions `30 Hrs`
+## `Part 1` Python Basics and Functions `25 Hrs`
 
 ### `Lecture 01` - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
 ### `Lecture 02` - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-02-Variable-Types)
@@ -18,7 +18,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="160" height="160" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 <br>
 
-## `Part 2` Python Collections and Strings `30 Hrs`
+## `Part 2` Python Collections and Strings `25 Hrs`
 
 ### `Lecture 07` - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-07-Strings)
 ### `Lecture 08` - [Lists](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-08-Lists)
