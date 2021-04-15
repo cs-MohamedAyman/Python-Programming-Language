@@ -9,6 +9,13 @@ Python programming language lectures for computer science students.
 ## `Part 1` Python Basics and Functions `25 hrs`
 
 ### `Lecture 01` - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
+  - History of Python
+  - Interpreter vs. Compiler
+  - Python Identifiers and Reserved Words
+  - Lines and Indentation
+  - Multi-Line Statements
+  - Quotation and Comments
+
 ### `Lecture 02` - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-02-Variable-Types)
 ### `Lecture 03` - [Basic Operations](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-03-Basic-Operations)
 ### `Lecture 04` - [Conditions](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-04-Conditions)
