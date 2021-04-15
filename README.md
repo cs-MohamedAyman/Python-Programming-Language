@@ -6,7 +6,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="160" height="160" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 <br>
 
-## `Part 1` Python Basics and Functions `25 Hrs`
+## `Part 1` Python Basics and Functions `25 hrs`
 
 ### `Lecture 01` - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
 ### `Lecture 02` - [Variable Types](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-02-Variable-Types)
@@ -18,7 +18,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="160" height="160" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 <br>
 
-## `Part 2` Python Collections and Strings `25 Hrs`
+## `Part 2` Python Collections and Strings `25 hrs`
 
 ### `Lecture 07` - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-07-Strings)
 ### `Lecture 08` - [Lists](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-08-Lists)
@@ -30,7 +30,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice2.jpg">
 <br>
 
-## `Assignments` `5 Hrs`/`Assignment`
+## `Assignments` `5 hrs`/`Assignment`
 
 ### `Assignment 01` - Basic Operator Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
 ### `Assignment 02` - Condition Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
@@ -56,7 +56,7 @@ Python programming language lectures for computer science students.
 <img align="right" width="230" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
 <br>
 
-## `Educational-Projects` `10 Hrs`/`Project`
+## `Educational-Projects` `10 hrs`/`Project`
 
 ### `Project 01` -
 ### `Project 02` -
