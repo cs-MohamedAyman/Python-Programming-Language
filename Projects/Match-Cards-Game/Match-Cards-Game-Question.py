@@ -20,11 +20,7 @@ def print_grid():
 
 #This function checks if the game state reachs the win state or not 
 def check_win():
-    for i in range(N):
-        for j in range(M):
-            if viewed_grid[i][j] == 0:
-                return False
-    return True
+    pass
 
 #This function generates cells in the given grid
 def generate_grid():
@@ -39,33 +35,31 @@ def generate_grid():
 
 #This function checks if given position is valid or not 
 def check_valid_position(i, j):
-	return 0 <= i < N and 0 <= j < M
+    pass
 
 #This function checks if the given cells are identical cells or not
 def check_identical_cells(i1, j1, i2, j2):
-    return grid[i1][j1] == grid[i2][j2]
+    pass
 
 #This function shows the given cell
 def show(i, j):
-    viewed_grid[i][j] = 1
+    pass
 
 #This function hides the given cell
 def hide(i, j):
-    viewed_grid[i][j] = 0
+    pass
 
 #This function checks if the given position is hidden or not
 def check_hide_cell(i, j):
-    return viewed_grid[i][j] == 0
+    pass
 
 #This function checks if the given positions are the same or not
 def check_same_position(i1, j1, i2, j2):
-    return i1 == i2 and j1 == j2
+    pass
 
 #This function clears the game structures
 def grid_clear():
-    global grid, viewed_grid
-    grid = [[0] * M for i in range(N)]
-    viewed_grid = [[0] * M for i in range(N)]
+    pass
 
 #This function reads a valid input of cells
 def read_input():
