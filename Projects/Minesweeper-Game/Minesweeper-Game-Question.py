@@ -35,20 +35,11 @@ def generate_mines():
 
 #This function checks if given position is valid or not 
 def check_valid_position(i, j):
-	return 0 <= i < N and 0 <= j < M
+    pass
 
 #This function calculates the total number of mines in the neighbour cells
 def calc_neighbour_mines():
-    dirs = [(1, 1), (-1, -1), (1, -1), (-1, 1), (1, 0), (0, 1), (-1, 0), (0, -1)]
-    for i in range(N):
-        for j in range(M):
-            if grid[i][j] == -1:
-                continue
-            cnt = 0
-            for di, dj in dirs:
-                if check_valid_position(i+di, j+dj) and grid[i+di][j+dj] == -1:
-                    cnt += 1
-            grid[i][j] = cnt
+    pass
             
 #This function generates cells in the grid
 def generate_grid():
@@ -59,62 +50,43 @@ def generate_grid():
 
 #This function checks if the given position is hidden or not
 def check_hide_cell(i, j):
-    return viewed_grid[i][j] == 0
+    pass
 
 #This function checks if the given position is viewed or not
 def check_mines_cell(i, j):
-    return grid[i][j] == -1
+    pass
 
 #This function checks if the given position is viewed or not
 def check_view_cell(i, j):
-    return viewed_grid[i][j] == 1
+    pass
 
 #This function checks if the given position is flagged or not
 def check_flag_cell(i, j):
-    return viewed_grid[i][j] == 2
+    pass
 
 #This function checks if the game state reachs the win state or not 
 def check_win():
-    for i in range(N):
-        for j in range(M):
-            if not(check_mines_cell(i, j) and check_flag_cell(i, j) or \
-                   not check_mines_cell(i, j) and check_view_cell(i, j)):
-                return False
-    return True
+    pass
 
 #This function checks if given operation is valid or not 
 def check_valid_operation(x):
-    return x.lower() == 's' or x.lower() == 'f'
+    pass
 
 #This function flips the flag mark to the given cell
 def flip_flag(i, j):
-    if viewed_grid[i][j] == 0:
-        viewed_grid[i][j] = 2
-    elif viewed_grid[i][j] == 2:
-        viewed_grid[i][j] = 0
+    pass
 
 #This function showes the given cell
 def show_cell(i, j):
-    viewed_grid[i][j] = 1
-    if grid[i][j] != 0:
-        return
-    dirs = [(1, 1), (-1, -1), (1, -1), (-1, 1), (1, 0), (0, 1), (-1, 0), (0, -1)]
-    for di, dj in dirs:
-        if check_valid_position(i+di, j+dj) and check_hide_cell(i+di, j+dj):
-            show_cell(i+di, j+dj)
+    pass
 
 #This function showes all mines cells
 def show_all_mines():
-    for i in range(N):
-        for j in range(M):
-            if check_mines_cell(i, j):
-                show_cell(i, j)
+    pass
 
 #This function clears the game structures
 def grid_clear():
-	global grid, viewed_grid
-	grid = [[0] * M for i in range(N)]
-	viewed_grid = [[0] * M for i in range(N)]
+    pass
 
 #This function reads a valid position
 def read_input():
