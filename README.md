@@ -179,16 +179,25 @@ Python programming language lectures for computer science students.
 
 ## `Educational-Projects` `10 hrs`/`Project`
 
-### `Project 01` -
-### `Project 02` -
-### `Project 03` -
-### `Project 04` -
-### `Project 05` -
-### `Project 06` -
-### `Project 07` -
-### `Project 08` -
-### `Project 09` -
-### `Project 10` -
+|`Project 01` | `Project 02` | `Project 03` | `Project 04` |
+|:----:|:----:|:----:|:----:|
+| [Tic Tac Toe Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Connect Four Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Gomoku Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [8 Puzzle Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) |
+|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/tic-tac-toe-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/connect-four-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/gomoku-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/8-puzzle-game.jpg">|
+
+|`Project 05` | `Project 06` | `Project 07` | `Project 08` |
+|:----:|:----:|:----:|:----:|
+| [Mills Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Dots and Boxes Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Snakes and Ladders Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Sudoku Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) |
+|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/mills-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/dots-and-boxes-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/snakes-and-ladders-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/sudoku-game.jpg">|
+
+|`Project 09` | `Project 10` | `Project 11` | `Project 12` |
+|:----:|:----:|:----:|:----:|
+| [Match Cards Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Reversi Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Draughts Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Minesweeper Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) |
+|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/match-cards-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/reversi-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/draughts-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/minesweeper-game.jpg">|
+
+|`Project 13` | `Project 14` | `Project 15` | `Project 16` |
+|:----:|:----:|:----:|:----:|
+| [2048 Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Ultimate Tic Tac Toe Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Battleship Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) | [Multi Sudoku Game](https://github.com/cs-MohamedAyman/Python-Programming-Language/blob/master/Projects/README.md) |
+|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/2048-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/ultimate-tic-tac-toe-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/battleship-game.jpg">|<img width="200" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/multi-sudoku-game.jpg">|
 
 <br>
 <img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/textbooks.jpg">
