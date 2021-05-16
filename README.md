@@ -185,7 +185,7 @@ Python programming language lectures for computer science students.
 <br>
 
 ## `Educational-Projects` `10 hrs`/`Project`
-<img align="medium" width="800" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
+<img align="middle" width="800" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
 
 |`Project 01` | `Project 02` | `Project 03` | `Project 04` |
 |:----:|:----:|:----:|:----:|
