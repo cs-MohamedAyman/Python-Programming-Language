@@ -185,7 +185,7 @@ Python programming language lectures for computer science students.
 <br>
 
 ## `Educational-Projects` `10 hrs`/`Project`
-<img align="middle" width="800" height="200" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
+<img align="middle" width="1000" height="250" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
 
 |`Project 01` | `Project 02` | `Project 03` | `Project 04` |
 |:----:|:----:|:----:|:----:|
@@ -209,6 +209,7 @@ Python programming language lectures for computer science students.
 
 <br>
 <img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/textbooks.jpg">
+
 ## `Textbooks`
 
 * ***Python Tutorial***, Guido van Rossum
@@ -219,6 +220,7 @@ Python programming language lectures for computer science students.
 * ***Python Programming***, John Zelle
 
 <img align="right" width="90" height="50" src="https://github.com/cs-MohamedAyman/Coursera-Specializations/blob/master/organizations-logos/coursera.jpg">
+
 ## `Coursera-Specializations`
 
 * ***Introduction to Scripting in Python Specialization*** by Rice University
@@ -227,6 +229,7 @@ Python programming language lectures for computer science students.
 * ***Programming in Python: A Hands-on Introduction Specialization*** by Codio
 
 <img align="right" width="80" height="50" src="https://github.com/cs-MohamedAyman/YouTube-Playlists/blob/master/organizations-logos/youtube.jpg">
+
 ## `YouTube-Playlists`
 
 * MIT OpenCourseWare - Introduction to Computer Science and Programming in Python. Fall 2016
