@@ -2,9 +2,10 @@
 Python programming language lectures for computer science students.
 
 <img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/python.jpg">
+<br>
+<br>
 
 ## `Part 1` Python Basics and Functions `25 hrs`
-
 <img align="right" width="150" height="125" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 
 ### `Lecture 01` - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
@@ -87,10 +88,11 @@ Python programming language lectures for computer science students.
 </details>
 
 <img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/python.jpg">
-<img align="right" width="150" height="125" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
+<br>
 <br>
 
 ## `Part 2` Python Collections and Strings `25 hrs`
+<img align="right" width="150" height="125" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 
 ### `Lecture 07` - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-07-Strings)
 <details>
@@ -160,10 +162,11 @@ Python programming language lectures for computer science students.
 
 
 <img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/python.jpg">
-<img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice2.jpg">
+<br>
 <br>
 
 ## `Assignments` `5 hrs`/`Assignment`
+<img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice2.jpg">
 
 ### `Assignment 01` - Basic Operator Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
 ### `Assignment 02` - Condition Problems in [codeforces-phase-1-1](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-1)
@@ -177,9 +180,9 @@ Python programming language lectures for computer science students.
 ### `Assignment 10` - List Problems in [codeforces-phase-1-2](https://github.com/cs-MohamedAyman/Problem-Solving-Training/tree/master/level-1/codeforces-phase-1-2)
 
 
+<br>
 <img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/python.jpg">
 <img align="right" width="240" height="180" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
-<br>
 
 ## `Educational-Projects` `10 hrs`/`Project`
 
@@ -205,7 +208,6 @@ Python programming language lectures for computer science students.
 
 <br>
 <img align="right" width="80" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/textbooks.jpg">
-
 ## `Textbooks`
 
 * ***Python Tutorial***, Guido van Rossum
@@ -216,7 +218,6 @@ Python programming language lectures for computer science students.
 * ***Python Programming***, John Zelle
 
 <img align="right" width="90" height="50" src="https://github.com/cs-MohamedAyman/Coursera-Specializations/blob/master/organizations-logos/coursera.jpg">
-
 ## `Coursera-Specializations`
 
 * ***Introduction to Scripting in Python Specialization*** by Rice University
@@ -225,7 +226,6 @@ Python programming language lectures for computer science students.
 * ***Programming in Python: A Hands-on Introduction Specialization*** by Codio
 
 <img align="right" width="80" height="50" src="https://github.com/cs-MohamedAyman/YouTube-Playlists/blob/master/organizations-logos/youtube.jpg">
-
 ## `YouTube-Playlists`
 
 * MIT OpenCourseWare - Introduction to Computer Science and Programming in Python. Fall 2016
