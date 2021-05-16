@@ -6,7 +6,7 @@ Python programming language lectures for computer science students.
 <br>
 
 ## `Part 1` Python Basics and Functions `25 hrs`
-<img align="right" width="150" height="125" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
+<img align="right" width="150" height="150" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 
 ### `Lecture 01` - [Overview](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-01-Overview)
 <details>
@@ -92,7 +92,7 @@ Python programming language lectures for computer science students.
 <br>
 
 ## `Part 2` Python Collections and Strings `25 hrs`
-<img align="right" width="150" height="125" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
+<img align="right" width="150" height="150" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/practice1.jpg">
 
 ### `Lecture 07` - [Strings](https://github.com/cs-MohamedAyman/Python-Programming-Language/tree/master/Lecture-07-Strings)
 <details>
@@ -182,7 +182,7 @@ Python programming language lectures for computer science students.
 
 <br>
 <img align="right" width="120" height="120" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/python.jpg">
-<img align="right" width="240" height="180" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
+<img align="right" width="150" height="150" src="https://github.com/cs-MohamedAyman/Computer-Science-Textbooks/blob/master/logos/educational-projects.jpg">
 
 ## `Educational-Projects` `10 hrs`/`Project`
 
