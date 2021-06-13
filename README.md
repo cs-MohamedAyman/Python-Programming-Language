@@ -114,7 +114,7 @@ Python programming language lectures for computer science students.
   - Introduction to List
   - Basic List Operations
   - List Comprehension
-  - Multi-dimensional Lists
+  - Multidimensional Lists
   - Built-in List Functions
 </details>
 
@@ -125,7 +125,7 @@ Python programming language lectures for computer science students.
   - Introduction to Tuple
   - Basic Tuple Operations
   - Tuple Comprehension
-  - Multi-dimensional Tuple
+  - Multidimensional Tuple
   - Built-in Tuple Functions
 </details>
 
